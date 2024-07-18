@@ -2,6 +2,7 @@ import numpy as np
 import itertools
 import matplotlib.pyplot as plt
 import pickle
+import sys
 
 #FUNCTION
 def partition_N(n):
@@ -105,6 +106,10 @@ for num_variables in num_variables_list:
                     # Load the content of the file using pickle.load()
                     data_lightcone = pickle.load(f)            
                 fidelity = list(data_lightcone['exp_poss_dict'].items())[0][1]
+
+            else:
+                sys.stderr.write('something is wrong with the lightcones')
+                sys.exit()
             
             print('fidelity', fidelity)
 
