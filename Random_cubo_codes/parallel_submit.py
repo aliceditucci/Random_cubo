@@ -19,11 +19,11 @@ job = htcondor.Submit({
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
 
-    "error" : "/lustre/fs24/group/cqta/atucci/QUBO/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).error",
+    "error" : "/lustre/fs24/group/cqta/atucci/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).error",
 
-    "output": "/lustre/fs24/group/cqta/atucci/QUBO/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).out",
+    "output": "/lustre/fs24/group/cqta/atucci/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).out",
 
-    "log" : "/lustre/fs24/group/cqta/atucci/QUBO/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
+    "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
 
     "+RequestRuntime": "432000",
     "request_memory": "128GB",
