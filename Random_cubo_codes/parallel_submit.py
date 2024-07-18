@@ -3,9 +3,9 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [14]
+N_list = [6]
 
-N_r = 100
+N_r = 10
 num_layer = 1
 tau_value = 0.2
 alpha_value = 0.01
@@ -19,11 +19,11 @@ job = htcondor.Submit({
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
 
-    "error" : "/lustre/fs24/group/cqta/atucci/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).error",
+    "error" : "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).error",
 
-    "output": "/lustre/fs24/group/cqta/atucci/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).out",
+    "output": "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).out",
 
-    "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
+    "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
 
     "+RequestRuntime": "432000",
     "request_memory": "128GB",
