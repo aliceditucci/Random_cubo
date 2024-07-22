@@ -3,9 +3,9 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [6]
+N_list = [14]
 
-N_r = 10
+N_r = 100
 num_layer = 1
 tau_value = 0.2
 alpha_value = 0.01

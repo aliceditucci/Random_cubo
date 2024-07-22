@@ -27,8 +27,8 @@ def find_light_cone(pairs):
 
 
 def circuit_update_zz(Edge,State, Tauc, N):
-    i = min(Edge)
-    j = max(Edge)
+    j = min(Edge)
+    i = max(Edge)
 
     zzop = SparsePauliOp.from_sparse_list([('ZZ', [j, i], -sinh(Tauc) )], N)
     zzop += SparsePauliOp.from_list([("I"*N, cosh(Tauc))])
@@ -186,7 +186,7 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
         
     ## ZZ term 
     state = Statevector(circ)
-    updated_state = state 
+    #updated_state = state 
 
     print('\nnumber of columns is:', len(edges_columns))
 
@@ -196,7 +196,7 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
 
         if column_index == 0: 
 
-            first_column_state = state
+            first_column_state = copy.deepcopy(state)
 
             for edge in column:
                 
@@ -217,7 +217,7 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
                                     bounds=None,
                                     method='L-BFGS-B',
                                     callback=None,
-                                    options={'maxiter': 1000})
+                                    options={'maxiter': 10000})
 
                 para = final.x
 
@@ -268,7 +268,7 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
                         bounds=None,
                         method='L-BFGS-B',
                         callback=None,
-                        options={'maxiter': 1000})
+                        options={'maxiter': 10000})
 
                 para = final.x
                 # print('opt paramenters', para)

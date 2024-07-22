@@ -59,7 +59,7 @@ y_qubits = []
 
 fig4, ax4 = plt.subplots()
 
-tau = 0.2
+tau = 0.3
 
 for num_variables in num_variables_list:
 
@@ -76,8 +76,9 @@ for num_variables in num_variables_list:
 
     y_qubits = []
 
-    for initialization in ['warm_start_measure', 'warm_start_measure_lightcone' ]:
-
+    for initialization in ['warm_start_measure', 'warm_start_measure_lightcone']:
+	
+        print('initialization', initialization) 
         y = []
 
         dir_name =  dir_0 + '/num_variables_{}/params_{}_layer_{}/alpha_{}/initial_{}'\
@@ -97,7 +98,7 @@ for num_variables in num_variables_list:
                     data = pickle.load(f)            
                 fidelity = list(data['layers_exp_poss_dict']['l_1'].items())[0][1]
 
-            if initialization == 'warm_start_measure_lightcone':
+            elif initialization == 'warm_start_measure_lightcone':
                 file_path_lightcone = file_dir_name + '/tau_{}.pkl'\
                                                     .format(tau)
                 
@@ -108,7 +109,7 @@ for num_variables in num_variables_list:
                 fidelity = list(data_lightcone['exp_poss_dict'].items())[0][1]
 
             else:
-                sys.stderr.write('something is wrong with the lightcones')
+                sys.stderr.write('something is wrong with initialization')
                 sys.exit()
             
             print('fidelity', fidelity)
@@ -209,8 +210,8 @@ for num_variables in num_variables_list:
         #ax4.set_yscale('log')
         ax4.set_title(f'Warm start fidelity old vs new, all qubits, tau: {tau}')
         ax4.set_xlabel('N qubits')
-        # ax4.set_ylabel('fidelity')
-        ax4.set_ylabel('fidelity log')
+        ax4.set_ylabel('fidelity')
+        #ax4.set_ylabel('fidelity log')
 
         # Display the legend
         #plt.legend()
