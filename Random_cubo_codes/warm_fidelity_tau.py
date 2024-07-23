@@ -212,19 +212,19 @@ for tau in tau_list:
             ax4.scatter(x + 50*(float(num_variables)-6), y2, marker='o', label = tau)
 
             ax4.plot( x + 50*(float(num_variables)-6), y4, '--' , color = 'blue')
-            #ax4.set_yscale('log')
+            ax4.set_yscale('log')
             ax4.set_title(f'Warm start fidelity tau vs tau, all qubits')
             ax4.set_xlabel('N qubits')
-            ax4.set_ylabel('fidelity')
-            #ax4.set_ylabel('fidelity log')
+            #ax4.set_ylabel('fidelity')
+            ax4.set_ylabel('fidelity log')
 
             # Display the legend
             # plt.legend()
             #ax4.legend()
             
             # Save the plot
-            #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_log_taus.png')
-            fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_taus.png')
+            fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_log_taus.png')
+            #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_taus.png')
             #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_taus_oldwarm.png')
             # plt.close()  # Close the figure
         

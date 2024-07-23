@@ -3,11 +3,11 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [14]
+N_list = [12]
 
 N_r = 100
 num_layer = 1
-tau_value = 0.2
+tau_value = 0.3
 alpha_value = 0.01
 init = 'warm_start_measure_lightcone'
 type_of_ansatz = 'structure_like_qubo_YZ_2'

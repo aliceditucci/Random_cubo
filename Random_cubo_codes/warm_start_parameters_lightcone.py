@@ -103,7 +103,9 @@ def square_modulus_cost(Paras : list, *args):
     inner_product = State_zz.inner(State_theta)
 
     # Compute the square modulus of the inner product
-    square_modulus = abs(inner_product)**2
+    #square_modulus = abs(inner_product)**2
+    square_modulus = abs(inner_product)   #I CHANGED THE SQUARE MODULUS TO NORMAL MODULUS BECAUSE ITS LIKE THIS IN THE OLD WARM START MEASURE
+
 
     # Print the inner product and its square modulus
     # print("Inner product:", inner_product)
