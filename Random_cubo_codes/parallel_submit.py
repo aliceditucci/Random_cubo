@@ -7,9 +7,9 @@ N_list = [12]
 
 N_r = 100
 num_layer = 1
-tau_value = 0.3
+tau_value = 1
 alpha_value = 0.01
-init = 'warm_start_measure_lightcone'
+init = 'warm_start_measure'
 type_of_ansatz = 'structure_like_qubo_YZ_2'
 num_shots = 0
 

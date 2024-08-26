@@ -157,7 +157,8 @@ def square_modulus_cost_light_cone(Paras : list, *args):
     inner_product = State_zz.inner(State)
 
     # Compute the square modulus of the inner product
-    square_modulus = abs(inner_product)**2
+    #square_modulus = abs(inner_product)**2
+    square_modulus = abs(inner_product)  #I REMOVED THE SQUARE MODULUS TO JUST MODULUS
 
     # Print the inner product and its square modulus
     # print("Inner product:", inner_product)
@@ -210,7 +211,9 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
 
                 tauc = tau * edge_coeff_dict[edge]
 
-                para_init = [0,0]
+                #para_init = [0,0]
+                #para_init = np.zeros(2)
+                para_init = np.random.uniform(-0.1, 0.1, 2)
 
                 final = minimize(square_modulus_cost,
                                     para_init,
@@ -260,8 +263,9 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
                 
                 tauc = tau * edge_coeff_dict[edge]
 
-                para_init = np.zeros(2 + 2*len(lightcone_dict[edge]))
-                # print('para init', para_init)
+                #para_init = np.zeros(2 + 2*len(lightcone_dict[edge]))
+                para_init = np.random.uniform(-0.1, 0.1, 2 + 2*len(lightcone_dict[edge]))
+                print('para init', para_init)
 
                 final = minimize(square_modulus_cost_light_cone,
                         para_init,

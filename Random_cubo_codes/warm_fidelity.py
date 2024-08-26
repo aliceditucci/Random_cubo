@@ -59,7 +59,7 @@ y_qubits = []
 
 fig4, ax4 = plt.subplots()
 
-tau = 0.3
+tau = 0.2
 
 for num_variables in num_variables_list:
 
@@ -101,6 +101,9 @@ for num_variables in num_variables_list:
             elif initialization == 'warm_start_measure_lightcone':
                 file_path_lightcone = file_dir_name + '/tau_{}.pkl'\
                                                     .format(tau)
+                #file_path_lightcone = file_dir_name + '/tau_{}_random.pkl'\
+                                                    #.format(tau)
+
                 
                 # Open the .pkl file in read mode
                 with open(file_path_lightcone, 'rb') as f:
@@ -138,6 +141,7 @@ for num_variables in num_variables_list:
                             .format(num_variables, num_params, layer, alpha, initialization)
         # Save the plot
         fig1.savefig(specific_dir_name + '/warm_fidelity_tau{}.png'.format(tau))
+        #fig1.savefig(specific_dir_name + '/warm_fidelity_tau{}_random.png'.format(tau))
         # plt.close()  # Close the figure
 
     
@@ -172,6 +176,7 @@ for num_variables in num_variables_list:
                             .format(num_variables)
         # Save the plot
         fig2.savefig(specific_dir_name + '/warm_fidelity_sorted_tau{}.png'.format(tau))
+        #fig2.savefig(specific_dir_name + '/warm_fidelity_sorted_tau{}_random.png'.format(tau))
         # plt.close()  # Close the figure
 
         if initialization == 'warm_start_measure' :
@@ -196,6 +201,7 @@ for num_variables in num_variables_list:
                             .format(num_variables, num_params, layer, alpha, initialization)
         # Save the plot
         fig3.savefig(specific_dir_name + '/warm_fidelity_sorted_2_tau{}.png'.format(tau))
+        #fig3.savefig(specific_dir_name + '/warm_fidelity_sorted_2_tau{}_random.png'.format(tau))
         # plt.close()  # Close the figure
 
         
@@ -220,6 +226,7 @@ for num_variables in num_variables_list:
         # Save the plot
         #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_log_tau{}.png'.format(tau))
         fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_tau{}.png'.format(tau))
+        #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_tau{}_random.png'.format(tau))
         # plt.close()  # Close the figure
     
     # Close the figures after the loop

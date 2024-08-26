@@ -183,7 +183,7 @@ def main():
         
     if initialization == 'warm_start_measure_lightcone':
 
-        gi_file_path2 = dir_name + 'tau_{}.pkl'.format(tau)
+        gi_file_path2 = dir_name + 'tau_{}_random.pkl'.format(tau)
         save_data2 = {
                     'edge_order': edges_columns,
                     'edge_params_dict': edge_params_dict,
