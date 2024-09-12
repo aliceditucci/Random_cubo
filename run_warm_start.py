@@ -41,7 +41,7 @@ def main():
     file_path = data_dir + 'numpara_{}_tau_{}.pkl'.format(numpara, tau)
 
     #region load qubo instances, get Hamiltonian and edge_coeff_dict
-    if N < 16:  # for test
+    if N < 12:  # for test
         G = nx.complete_graph(N)
         coeff_list = [1] * (N + N*(N-1)//2)
     else:
