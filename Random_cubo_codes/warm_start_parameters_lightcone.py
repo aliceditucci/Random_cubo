@@ -10,6 +10,8 @@ from scipy.optimize import minimize
 import sys
 import copy
 
+import itertools
+
 
 def find_light_cone(pairs):
     lightcone_dict = {}
@@ -133,7 +135,7 @@ def square_modulus_cost_Yahui(Paras : list, *args):
 
     # Print the inner product and its square modulus
     # print("Inner product:", inner_product)
-    print("Square modulus of the inner product:", square_modulus)
+    # print("Square modulus of the inner product:", square_modulus)
 
     return - square_modulus
 
@@ -191,11 +193,11 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
     state = Statevector(circ)
     #updated_state = state 
 
-    print('\nnumber of columns is:', len(edges_columns))
+    # print('\nnumber of columns is:', len(edges_columns))
 
     for column_index, column in enumerate(edges_columns):
-        print('\n##################################################')
-        print('column index', column_index, 'column', column)
+        # print('\n##################################################')
+        # print('column index', column_index, 'column', column)
 
         if column_index == 0: 
 
@@ -207,20 +209,21 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
                     sys.stderr.write('something is wrong with the lightcones')
                     sys.exit()
             
-                print('\nedge', edge)  
+                # print('\nedge', edge)  
 
                 tauc = tau * edge_coeff_dict[edge]
 
-                #para_init = [0,0]
+                para_init = [0,0]
                 #para_init = np.zeros(2)
-                para_init = np.random.uniform(-0.1, 0.1, 2)
+                #para_init = np.random.uniform(-0.1, 0.1, 2)
 
                 final = minimize(square_modulus_cost,
                                     para_init,
                                     args = (edge, first_column_state, tauc, N),
                                     jac=False,
                                     bounds=None,
-                                    method='L-BFGS-B',
+                                    # method='L-BFGS-B',
+                                    method='SLSQP',
                                     callback=None,
                                     options={'maxiter': 10000})
 
@@ -240,11 +243,11 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
         else:
             
             for edge in column: 
-                if len(lightcone_dict[edge]) == 0:
-                        sys.stderr.write('something is wrong with the lightcones')
-                        sys.exit()
+                # if len(lightcone_dict[edge]) == 0:
+                #         sys.stderr.write('something is wrong with the lightcones')
+                #         sys.exit()
 
-                print('\nedge', edge)  
+                # print('\nedge', edge)  
 
                 # print('len light cone:', len(lightcone_dict[edge]), ', light cone edges:', lightcone_dict[edge])
 
@@ -263,16 +266,17 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
                 
                 tauc = tau * edge_coeff_dict[edge]
 
-                #para_init = np.zeros(2 + 2*len(lightcone_dict[edge]))
-                para_init = np.random.uniform(-0.1, 0.1, 2 + 2*len(lightcone_dict[edge]))
-                print('para init', para_init)
+                para_init = np.zeros(2 + 2*len(lightcone_dict[edge]))
+                #para_init = np.random.uniform(-0.1, 0.1, 2 + 2*len(lightcone_dict[edge]))
+                # print('para init', para_init)
 
                 final = minimize(square_modulus_cost_light_cone,
                         para_init,
                         args = (edge_list, state, tauc, updated_state, N),
                         jac=False,
                         bounds=None,
-                        method='L-BFGS-B',
+                        # method='L-BFGS-B',
+                        method='SLSQP',
                         callback=None,
                         options={'maxiter': 10000})
 
@@ -305,7 +309,7 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
         state = circuit_update_theta(edge, state, edge_params_dict[edge], N)
 
     # print('circuit updated at the last column i.e.', len(edges_columns) - 1)
-    print('updated statevector', state)
+    # print('updated statevector', state)
 
     #generate params_list
     values_as_arrays = [np.atleast_1d(value) for value in edge_params_dict.values()]
@@ -325,4 +329,94 @@ def warm_start_parameters_lightcone(N : int, tau:float, edge_coeff_dict : dict, 
 
     print('tau:', tau)
 
-    return edge_params_dict, params_list, exp_poss_dict
+    return edge_params_dict, params_list, exp_poss_dict, state
+
+def ITE(N:int, edge_coeff_dict:dict, tau:float, eigen_list:np.array):
+    
+    eigens_ids = np.argsort(eigen_list)[:100]  ## return the id of the lowest 100 eigenvalues    ????
+        
+    edge_params_dict = {} ## to save the initial parameters for each vertex or edge in l'th layer
+    exp_poss_dict = {}   ## save probalities of eigenvalues using warm start circuit
+
+    q = QuantumRegister(N, name = 'q')
+    circ = QuantumCircuit(q)
+    circ.clear()
+    circ.h(q[::])
+
+    ## Z term 
+    for i in range(N):
+        #para = get_initial_para_1op_Y(N, [i], edge_coeff_dict[(i,)], tau, circ, shots, approximation)[0] #use this to extimate para from min expectation value
+        tauc = tau * edge_coeff_dict[(i,)] 
+        para = 2*atan( -exp(-2*tauc) ) + pi/2 #use this to use analytic formula (only valid for 1 layer)
+        edge_params_dict[(i,)] = para
+        circ.ry(para, i)
+            
+    ## ZZ term 
+    state = Statevector(circ)
+    for edge, coeff in edge_coeff_dict.items():
+        if len(edge) == 2:
+            tauc = tau * coeff
+            state = circuit_update_zz(edge, state, tauc, N)
+
+    state = np.array(state)
+    for id in eigens_ids:
+        eigen = eigen_list[id]
+        poss = abs(state[id])**2
+        # print('eigen', eigen, 'poss', poss)
+        exp_poss_dict[eigen] = poss
+    return exp_poss_dict, state
+
+def sorted_gates(coefficients, edges, Abs, invert):
+
+    if Abs:
+        coefficients = np.abs(coefficients)
+
+    sorted_index = np.argsort(coefficients)
+
+    if invert:
+        sorted_index = sorted_index[::-1]
+
+    sorted_edges = [edges[x] for x in sorted_index]
+
+    grouped = []
+    group = []
+
+    for t in sorted_edges:
+        qi, qj = t
+        if any(qi in pair for pair in group) or any(qj in pair for pair in group):
+            grouped.append(group)
+            group = []
+        group.append(t)  
+    grouped.append(group)
+
+    if len(list(itertools.chain.from_iterable(grouped))) != len(edges):
+        sys.stderr.write('something is wrong with the new columns')
+        sys.exit()
+
+    return sorted_edges, grouped 
+
+
+def sorted_columns(edge_coeff_dict, edges_columns, Abs, invert):
+    sum_jcol = []
+
+    if Abs:
+        for column in edges_columns:
+            abs_sum_j = 0
+            for edge in column:
+                abs_sum_j += abs(edge_coeff_dict[edge])
+            sum_jcol.append(abs_sum_j)
+
+    else:
+        for column in edges_columns:
+            sum_j = 0 
+            for edge in column:
+                sum_j += edge_coeff_dict[edge]
+            sum_jcol.append(sum_j)
+
+    new_index = np.argsort(sum_jcol)
+    
+    if invert:
+        new_index = new_index[::-1]
+
+    sorted_edge_columns = copy.deepcopy(np.array(edges_columns,  dtype=object)[new_index]) 
+    return sorted_edge_columns.tolist()

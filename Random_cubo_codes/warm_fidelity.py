@@ -37,7 +37,7 @@ def partition_N(n):
 
 
 
-num_variables_list = [str(num).zfill(3) for num in range(6,14, 2)]
+num_variables_list = [str(num).zfill(3) for num in range(6,8, 2)]
 
 N_ins = 100 ###100 50 number of random instances
 
@@ -59,7 +59,7 @@ y_qubits = []
 
 fig4, ax4 = plt.subplots()
 
-tau = 0.2
+tau =1.0
 
 for num_variables in num_variables_list:
 
@@ -77,7 +77,10 @@ for num_variables in num_variables_list:
     y_qubits = []
 
     for initialization in ['warm_start_measure', 'warm_start_measure_lightcone']:
-	
+        
+        # if initialization == 'warm_start_measure_lightcone':
+        #     tau = str(tau) + "_random"
+
         print('initialization', initialization) 
         y = []
 

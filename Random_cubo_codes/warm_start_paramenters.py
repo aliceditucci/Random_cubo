@@ -11,6 +11,8 @@ from qiskit_aer.primitives import Estimator
 from scipy.optimize import minimize
 import more_itertools as mit
 
+import itertools
+
 def compute_coeffedge_list(hamiltonian):
 
     ''' Buils a dictionary {(i,j) : coeff} for the operators in the hamiltonian. coeff are h_i and J_ij. (i,j) are qubits locations, (i,) for h_i'''
@@ -136,7 +138,8 @@ def get_initial_para_1op_Y(N:int, qi:list, coeff:float, tau:float, circ:QuantumC
                       args = (exp_dict, tauc),
                       jac=False,
                       bounds=None,
-                      method='L-BFGS-B',    #use this optimizers because can use derivatives, I think
+                    #   method='L-BFGS-B',    #use this optimizers because can use derivatives, I think
+                      method='SLSQP',
                       callback=None,
     #                               tol=1e-5,
                       options={'maxiter': 10000})
@@ -213,7 +216,8 @@ def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:Quantum
                       args = (exp_dict, tauc),
                       jac=False,
                       bounds=None,
-                      method='L-BFGS-B',
+                    #   method='L-BFGS-B',
+                      method='SLSQP',
                       callback=None,
                       options={'maxiter': 10000})
     return final.x
@@ -292,7 +296,7 @@ def get_good_initial_params_measure(N:int, tau:float, layer:int, edge_coeff_dict
 
         layers_exp_poss_dict['l_'+str(l)] = exp_poss_dict
     
-    return layers_edge_params_dict, params_list, layers_exp_poss_dict
+    return layers_edge_params_dict, params_list, layers_exp_poss_dict, vec_final
 
 
 def find_light_cone(pairs):
