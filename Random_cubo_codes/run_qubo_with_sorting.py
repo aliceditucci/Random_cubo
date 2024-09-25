@@ -1,7 +1,7 @@
 import numpy as np
 import networkx as nx
 from scipy.optimize import minimize
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 import argparse
 import os
@@ -37,9 +37,9 @@ def main():
     parser.add_argument("--tau", help="imiginary time evolution parameter if using warm start", required=False, type=float, default=1)
     parser.add_argument("--initialization", help="method for initial paramters, warm_start_measure, warm_start_analy, zeros, or random", required=False, type=str, default='warm_start_measure')
 
-    parser.add_argument("--sorting", help="sorting or random order of coefficients", required=False, default=False)
-    parser.add_argument("--absolute", help="sort coefficients in absolute value if true", required=False, default=False)
-    parser.add_argument("--invert", help="sort coefficients in inverse order if true", required=False, default=False)
+    parser.add_argument("--sorting", help="sorting or random order of coefficients", required=False, type=int, default=0)
+    parser.add_argument("--absolute", help="sort coefficients in absolute value if true", required=False, type=int, default=0)
+    parser.add_argument("--invert", help="sort coefficients in inverse order if true", required=False, type=int, default=0)
 
     args = parser.parse_args()
 
@@ -55,11 +55,29 @@ def main():
     absolute = args.absolute 
     invert = args.invert
 
+    print(sorting, absolute, invert)
+    
     if shots == 0:# exact simulation
         shots = None
         approximation = True
     else:#simulation with finite shots
         approximation = False
+    
+    if sorting == 0:
+        sorting = False
+    else:
+        sorting = True
+
+    if absolute == 0:
+        absolute = False
+    else:
+        absolute = True
+
+    if invert == 0:
+        invert = False
+    else:
+        invert = True
+
 
     # optimizer = 'COBYLA'
 

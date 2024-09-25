@@ -1,73 +1,4 @@
-
-N: 8, 
-r: 89, 
-alpha: 0.01, 
-shots: None, 
-ansatz: structure_like_qubo_YZ_2, 
-layer: 1, 
-tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.9526, (1,): -0.7427, (2,): 0.7082, (3,): 0.9799, (4,): -0.8246, (5,): -0.1581, (6,): -0.6383, (7,): -0.914, (0, 1): 0.4756, (0, 2): 0.6282, (0, 3): 0.3563, (0, 4): 0.2209, (0, 5): -0.749, (0, 6): -0.7695, (0, 7): 0.8645, (1, 2): -0.7146, (1, 3): 0.1045, (1, 4): 0.8164, (1, 5): 0.3804, (1, 6): -0.034, (1, 7): -0.9708, (2, 3): 0.5114, (2, 4): 0.5748, (2, 5): 0.813, (2, 6): 0.8801, (2, 7): 0.8835, (3, 4): 0.407, (3, 5): -0.6, (3, 6): 0.2395, (3, 7): 0.5565, (4, 5): -0.092, (4, 6): -0.9229, (4, 7): -0.291, (5, 6): 0.8596, (5, 7): 0.856, (6, 7): -0.2912}
-
-warm start fidelity (-10.950599999999998, 0.17251003005519097)
-num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_89/
-
-N: 8, 
-r: 95, 
-alpha: 0.01, 
-shots: None, 
-ansatz: structure_like_qubo_YZ_2, 
-layer: 1, 
-tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.7708, (1,): -0.1161, (2,): 0.722, (3,): -0.2807, (4,): 0.2465, (5,): 0.4472, (6,): -0.0596, (7,): -0.7347, (0, 1): 0.9469, (0, 2): 0.6415, (0, 3): 0.8098, (0, 4): -0.1311, (0, 5): 0.5665, (0, 6): -0.4972, (0, 7): -0.6539, (1, 2): -0.5131, (1, 3): 0.7387, (1, 4): 0.3253, (1, 5): -0.2412, (1, 6): 0.2236, (1, 7): 0.8642, (2, 3): 0.2231, (2, 4): 0.7127, (2, 5): -0.3236, (2, 6): -0.8585, (2, 7): 0.1271, (3, 4): 0.6237, (3, 5): -0.4929, (3, 6): 0.5074, (3, 7): 0.3812, (4, 5): 0.5663, (4, 6): 0.1161, (4, 7): 0.0088, (5, 6): 0.7907, (5, 7): 0.4659, (6, 7): 0.3517}
-
-warm start fidelity (-11.199900000000001, 0.3913402715328475)
-num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_95/
-
-N: 8, 
-r: 90, 
-alpha: 0.01, 
-shots: None, 
-ansatz: structure_like_qubo_YZ_2, 
-layer: 1, 
-tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.5895, (1,): -0.7604, (2,): 0.0967, (3,): 0.0363, (4,): 0.9474, (5,): 0.1986, (6,): 0.5233, (7,): 0.3466, (0, 1): 0.9201, (0, 2): -0.1641, (0, 3): 0.2314, (0, 4): -0.2252, (0, 5): 0.3624, (0, 6): 0.7182, (0, 7): 0.6242, (1, 2): 0.5104, (1, 3): 0.9665, (1, 4): -0.9758, (1, 5): 0.7356, (1, 6): 0.8232, (1, 7): -0.7807, (2, 3): -0.9976, (2, 4): -0.5181, (2, 5): -0.8736, (2, 6): -0.245, (2, 7): 0.3309, (3, 4): 0.1799, (3, 5): -0.8825, (3, 6): -0.8832, (3, 7): -0.881, (4, 5): -0.4341, (4, 6): -0.2089, (4, 7): -0.1857, (5, 6): -0.4757, (5, 7): -0.5851, (6, 7): 0.9373}
-
-warm start fidelity (-11.127200000000002, 0.09759756817353901)
-num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_90/
-
-N: 8, 
-r: 94, 
-alpha: 0.01, 
-shots: None, 
-ansatz: structure_like_qubo_YZ_2, 
-layer: 1, 
-tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.582, (1,): -0.669, (2,): 0.0679, (3,): 0.346, (4,): -0.631, (5,): -0.2489, (6,): 0.3042, (7,): -0.3944, (0, 1): 0.7417, (0, 2): 0.8648, (0, 3): 0.9406, (0, 4): -0.9643, (0, 5): -0.9922, (0, 6): 0.834, (0, 7): -0.3107, (1, 2): 0.226, (1, 3): 0.6182, (1, 4): 0.8423, (1, 5): 0.9548, (1, 6): -0.2364, (1, 7): -0.4945, (2, 3): 0.4813, (2, 4): 0.7347, (2, 5): 0.5162, (2, 6): 0.9546, (2, 7): 0.3561, (3, 4): 0.0083, (3, 5): 0.4232, (3, 6): 0.0607, (3, 7): 0.7191, (4, 5): -0.2, (4, 6): 0.4251, (4, 7): -0.1207, (5, 6): 0.3978, (5, 7): 0.1381, (6, 7): -0.4206}
-
-warm start fidelity (-10.094399999999995, 0.020608626870265705)
-num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_94/
-
-N: 8, 
-r: 96, 
-alpha: 0.01, 
-shots: None, 
-ansatz: structure_like_qubo_YZ_2, 
-layer: 1, 
-tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): 0.1573, (1,): -0.9504, (2,): 0.3231, (3,): 0.5287, (4,): -0.8047, (5,): 0.2996, (6,): 0.3303, (7,): 0.4195, (0, 1): -0.1969, (0, 2): 0.6756, (0, 3): 0.6494, (0, 4): -0.5051, (0, 5): 0.7194, (0, 6): 0.9122, (0, 7): -0.3895, (1, 2): 0.6207, (1, 3): 0.4691, (1, 4): -0.852, (1, 5): -0.9862, (1, 6): -0.9888, (1, 7): -0.7052, (2, 3): -0.2847, (2, 4): 0.195, (2, 5): 0.7699, (2, 6): -0.8934, (2, 7): 0.351, (3, 4): -0.6935, (3, 5): -0.4468, (3, 6): -0.1683, (3, 7): 0.8376, (4, 5): -0.9362, (4, 6): 0.6638, (4, 7): 0.5124, (5, 6): -0.7608, (5, 7): 0.8292, (6, 7): 0.8992}
-
-warm start fidelity (-10.797900000000002, 0.0006617022258017763)
-num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+0 1 1
 
 N: 8, 
 r: 97, 
@@ -76,26 +7,50 @@ shots: None,
 ansatz: structure_like_qubo_YZ_2, 
 layer: 1, 
 tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.9766, (1,): -0.0872, (2,): -0.0547, (3,): -0.0384, (4,): -0.203, (5,): -0.0649, (6,): -0.4153, (7,): 0.6759, (0, 1): 0.1672, (0, 2): -0.9702, (0, 3): 0.0996, (0, 4): -0.3443, (0, 5): -0.8395, (0, 6): 0.1989, (0, 7): 0.254, (1, 2): 0.4048, (1, 3): -0.6804, (1, 4): 0.014, (1, 5): 0.5128, (1, 6): -0.2127, (1, 7): -0.4185, (2, 3): 0.3275, (2, 4): 0.801, (2, 5): 0.463, (2, 6): 0.5208, (2, 7): 0.1617, (3, 4): -0.3267, (3, 5): 0.2546, (3, 6): -0.8479, (3, 7): -0.4073, (4, 5): 0.1808, (4, 6): 0.3969, (4, 7): -0.6903, (5, 6): 0.0892, (5, 7): 0.7828, (6, 7): -0.5447}
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: True, 
+invert: True
 
-warm start fidelity (-10.503899999999998, 0.3320797886085202)
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.10865250000495079)
+ite overlap 0.6196349696435295
 num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+0 0 1
 
 N: 8, 
-r: 98, 
+r: 97, 
 alpha: 0.01, 
 shots: None, 
 ansatz: structure_like_qubo_YZ_2, 
 layer: 1, 
 tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.0311, (1,): 0.7695, (2,): 0.6345, (3,): 0.9423, (4,): 0.4124, (5,): -0.5929, (6,): 0.904, (7,): -0.619, (0, 1): -0.4, (0, 2): -0.5435, (0, 3): 0.6089, (0, 4): -0.3414, (0, 5): 0.5362, (0, 6): -0.0954, (0, 7): 0.366, (1, 2): -0.7663, (1, 3): -0.7486, (1, 4): -0.2901, (1, 5): -0.4072, (1, 6): 0.2699, (1, 7): -0.6605, (2, 3): 0.5364, (2, 4): 0.3773, (2, 5): -0.4861, (2, 6): 0.0714, (2, 7): 0.8394, (3, 4): 0.8147, (3, 5): 0.2262, (3, 6): -0.5373, (3, 7): 0.4204, (4, 5): 0.8816, (4, 6): 0.0295, (4, 7): -0.8091, (5, 6): 0.0839, (5, 7): 0.8729, (6, 7): 0.9029}
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: True
 
-warm start fidelity (-9.7316, 0.02271197906006589)
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.10865250000495079)
+ite overlap 0.6196349696435295
 num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+0 1 0
 
 N: 8, 
 r: 99, 
@@ -104,9 +59,506 @@ shots: None,
 ansatz: structure_like_qubo_YZ_2, 
 layer: 1, 
 tau: 1.0, 
-initialization: warm_start_measure
-edge_coeff_dict {(0,): -0.4904, (1,): -0.2795, (2,): -0.0319, (3,): 0.0439, (4,): -0.5094, (5,): -0.2081, (6,): 0.7171, (7,): 0.7271, (0, 1): 0.1762, (0, 2): -0.8582, (0, 3): 0.3894, (0, 4): -0.9362, (0, 5): 0.3248, (0, 6): -0.7932, (0, 7): -0.6183, (1, 2): 0.1508, (1, 3): 0.0403, (1, 4): 0.8428, (1, 5): -0.6593, (1, 6): -0.0552, (1, 7): -0.151, (2, 3): 0.1226, (2, 4): -0.7171, (2, 5): 0.7206, (2, 6): 0.6371, (2, 7): 0.8523, (3, 4): 0.892, (3, 5): 0.1231, (3, 6): -0.4262, (3, 7): -0.0005, (4, 5): -0.796, (4, 6): -0.0732, (4, 7): -0.0026, (5, 6): -0.9721, (5, 7): -0.7444, (6, 7): -0.5551}
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: True, 
+invert: False
 
-warm start fidelity (-10.769400000000001, 0.09127582682554557)
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.0029329633366363445)
+ite overlap 0.24822501221553483
 num params 64
-Write sucessfully to ./data/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+0 0 1
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.4258762826430321)
+ite overlap 0.5968275236588713
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+0 0 0
+
+N: 8, 
+r: 96, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-10.532700000000004, 0.0002410494770296699)
+ite overlap 0.01680526887322709
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+0 0 1
+
+N: 8, 
+r: 96, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-10.532700000000004, 0.0002410494770296699)
+ite overlap 0.01680526887322709
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+1 1 0
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(2, 7), (5, 6)], [(4, 5)], [(2, 4), (0, 1), (3, 6)], [(2, 5)], [(1, 5), (4, 7)], [(1, 6), (3, 7)], [(2, 6)], [(6, 7), (1, 4)], [(1, 3), (5, 7)], [(0, 7)], [(1, 7), (4, 6)], [(0, 6), (1, 2)], [(0, 5)], [(0, 2), (3, 4)], [(3, 5)], [(0, 3)], [(0, 4), (2, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.0003008928982491278)
+ite overlap 0.295673307574038
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+1 1 1
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(2, 3), (0, 4)], [(0, 3)], [(3, 5)], [(3, 4), (0, 2)], [(0, 5), (1, 2)], [(0, 6)], [(4, 6), (1, 7)], [(0, 7)], [(5, 7), (1, 3)], [(1, 4), (6, 7)], [(2, 6), (3, 7)], [(1, 6), (4, 7)], [(1, 5)], [(2, 5), (3, 6), (0, 1)], [(2, 4)], [(4, 5)], [(5, 6), (2, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.283321647670216)
+ite overlap 0.7175819656576986
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+0 1 1
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.0029329633366363445)
+ite overlap 0.24822501221553483
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+0 0 1
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.0029329633366363445)
+ite overlap 0.24822501221553483
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 1 1
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(5, 6)], [(6, 7)], [(3, 7)], [(2, 3)], [(2, 4)], [(2, 7), (3, 6)], [(2, 5), (3, 4), (1, 7)], [(3, 5), (4, 6)], [(0, 6), (4, 7), (1, 2)], [(0, 4)], [(4, 5), (0, 3)], [(0, 1)], [(0, 7), (1, 3)], [(1, 6)], [(2, 6), (1, 4)], [(1, 5)], [(0, 5)], [(0, 2), (5, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.0002053976331852088)
+ite overlap 0.2815844082057889
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 0 0
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(5, 6)], [(6, 7), (2, 3)], [(3, 6), (2, 5)], [(3, 4)], [(3, 5), (4, 6)], [(4, 7), (1, 2)], [(0, 4)], [(0, 7), (1, 4)], [(1, 5), (0, 2)], [(5, 7)], [(0, 5), (2, 6)], [(1, 6)], [(1, 3)], [(0, 1)], [(0, 3), (4, 5)], [(0, 6), (1, 7)], [(2, 7)], [(2, 4), (3, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.00032228574895207463)
+ite overlap 0.13725207121341926
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 0 0
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(0, 2), (1, 3)], [(0, 5)], [(0, 7), (2, 3)], [(0, 4), (1, 7)], [(4, 6), (0, 1)], [(6, 7)], [(2, 7)], [(2, 5), (1, 4), (0, 6)], [(5, 6)], [(1, 6)], [(1, 5), (4, 7)], [(3, 5)], [(5, 7), (0, 3), (2, 6)], [(4, 5), (3, 7)], [(2, 4)], [(3, 4)], [(3, 6), (1, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.032262747621885066)
+ite overlap 0.10692842929848788
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+0 0 0
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.0029329633366363445)
+ite overlap 0.24822501221553483
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 1 0
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(5, 7), (0, 2)], [(0, 5)], [(1, 5)], [(1, 4), (2, 6)], [(1, 6)], [(1, 3), (0, 7)], [(0, 1)], [(0, 3), (4, 5)], [(0, 4), (1, 2)], [(4, 7), (0, 6)], [(4, 6), (3, 5), (1, 7)], [(3, 4), (2, 5)], [(3, 6), (2, 7)], [(2, 4)], [(2, 3)], [(3, 7)], [(6, 7)], [(5, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.05981956588315924)
+ite overlap 0.33650820186193076
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 0 1
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(1, 2), (3, 6)], [(3, 4)], [(2, 4), (3, 7)], [(4, 5), (2, 6), (0, 3)], [(5, 7)], [(3, 5), (4, 7)], [(1, 5)], [(1, 6)], [(5, 6)], [(0, 6), (1, 4), (2, 5)], [(2, 7)], [(6, 7), (0, 1)], [(4, 6), (1, 7)], [(0, 4), (2, 3)], [(0, 7)], [(0, 5), (1, 3)], [(0, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.13354253130931865)
+ite overlap 0.43711150637451235
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+1 0 1
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(3, 5)], [(3, 4), (0, 6)], [(4, 6), (1, 7)], [(1, 3)], [(1, 4), (2, 6)], [(1, 6), (4, 7), (2, 5)], [(3, 6), (0, 1), (2, 4)], [(4, 5)], [(5, 6), (2, 7)], [(1, 5), (3, 7)], [(6, 7)], [(5, 7)], [(0, 7), (1, 2)], [(0, 5)], [(0, 2)], [(0, 3)], [(0, 4), (2, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.03962370272560142)
+ite overlap 0.546315483276857
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+1 0 0
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(2, 3), (0, 4)], [(0, 3)], [(0, 2)], [(0, 5), (1, 2)], [(0, 7)], [(5, 7)], [(6, 7)], [(3, 7), (1, 5)], [(2, 7), (5, 6)], [(4, 5)], [(2, 4), (0, 1), (3, 6)], [(2, 5), (4, 7), (1, 6)], [(2, 6), (1, 4)], [(1, 3)], [(1, 7), (4, 6)], [(0, 6), (3, 4)], [(3, 5)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.04592418040166399)
+ite overlap 0.43134377891260123
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+0 0 0
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.10865250000495079)
+ite overlap 0.6196349696435295
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+0 0 1
+
+N: 8, 
+r: 89, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.533000000000001, 0.008985016403520561)
+ite overlap 0.28329985394442014
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_89/
+0 1 0
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 1.0, 
+initialization: warm_start_measure, 
+sorting: False, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Order of gates is random
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.10865250000495079)
+ite overlap 0.6196349696435295
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/

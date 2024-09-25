@@ -3,19 +3,18 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [6]
+N_list = [20]
 
-N_r = 2
+N_r = 100
 num_layer = 1
 tau_value = 1
 alpha_value = 0.01
 init = 'warm_start_measure'
 type_of_ansatz = 'structure_like_qubo_YZ_2'
 num_shots = 0
-
-sort_list = [True, False]
-absolute_list = [True, False] 
-invert_list = [True, False]
+sort_value = [1,0]
+abs_value = [1,0]
+inv_value = [1,0]
 
 job = htcondor.Submit({
     "executable": "job_parallel.sh",
@@ -38,18 +37,21 @@ job = htcondor.Submit({
 itemdata = []
 for N in N_list: 
         for r in range(N_r):
-            for sorting in sort_list:
-                    
-                    if not sorting:
-                        absolute_list = [False] 
-                        invert_list = [False]
-
-                    for absolute in absolute_list:
-                            for invert in invert_list: 
-                                itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "ansatz_type": str(type_of_ansatz), "layer": str(num_layer), "tau": str(tau_value), "initialization":str(init), "sorting": str(sorting), "absolute" : str(absolute), "invert" : str(invert)})
+            for sort in sort_value:
+                for i in abs_value:
+                    for j in inv_value:
+                        itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "ansatz_type": str(type_of_ansatz), "layer": str(num_layer), "tau": str(tau_value), "initialization": str(init), "sorting": str(sort), "absolute": str(i), "invert": str(j)})
 
 schedd = htcondor.Schedd()
 submit_result = schedd.submit(job, itemdata=iter(itemdata))
+print(itemdata[0]['invert'])
+
+print(type(itemdata[0]['invert']))
 
 # "n_ins": str(n_ins), "r": str(r), "alpha": str(alpha), "shots": str(shots), "ansatz_type": str(ansatz_type), "layer": str(layer), "tau": str(tau), "initialization": str(initialization)
 
+
+
+                    #if not sorting:
+                        #absolute_list = [False] 
+                        #invert_list = [False]
