@@ -297,7 +297,7 @@ def square_modulus_cost_light_cone_block(Paras : list, *args):
 
     return - square_modulus
 
-def warm_start_parameters_adaptlightcone(N : int, tau:float, numpara:int, ampth:float, edge_coeff_dict : dict,
+def warm_start_parameters_adaptlightcone(N : int, tau:float, numpara:int, circ:QuantumCircuit, ampth:float, edge_coeff_dict : dict,
     edges_columns :list,  eigen_list:list, Lmax = 1, ifprint = False):
     '''' warm start the parameters for the circuit using the lightcone adaptivly
     Args:
@@ -323,10 +323,10 @@ def warm_start_parameters_adaptlightcone(N : int, tau:float, numpara:int, ampth:
     exp_poss_dict = {}   ## save probalities of eigenvalues using warm start circuit
     edge_coeff_dict_ite = {} ## record the edges has been executed, to get the ite state for each step
 
-    q = QuantumRegister(N, name = 'q')
-    circ = QuantumCircuit(q)
-    circ.clear()
-    circ.h(q[::])
+    # q = QuantumRegister(N, name = 'q')
+    # circ = QuantumCircuit(q)
+    # circ.clear()
+    # circ.h(q[::])
 
     ## Z term 
     for i in range(N):
@@ -373,7 +373,7 @@ def warm_start_parameters_adaptlightcone(N : int, tau:float, numpara:int, ampth:
                 state_opt = np.array(state_opt)
                 if ifprint and (N <= 12):
                     _, state_ite = ITE(N, edge_coeff_dict_ite, tau, eigen_list)
-                    print('overlap between ite and optimized state: ', state_ite.T.conj() @ state_opt)
+                    print('overlap between ite and optimized state: ', abs(state_ite.T.conj() @ state_opt)**2)
                 
         else:
             for ei, edge in enumerate(column):  
@@ -433,7 +433,7 @@ def warm_start_parameters_adaptlightcone(N : int, tau:float, numpara:int, ampth:
                     optimized_state = np.array(optimized_state)
                     if ifprint and (N <= 12):
                         _, state_ite = ITE(N, edge_coeff_dict_ite, tau, eigen_list)
-                        print('overlap between ite and optimized state: ', state_ite.T.conj() @ optimized_state)
+                        print('overlap between ite and optimized state: ', abs(state_ite.T.conj() @ optimized_state)**2)
 
                     if final.fun < -ampth:  ##
                         break
