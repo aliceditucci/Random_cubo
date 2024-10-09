@@ -99,31 +99,6 @@ def main():
 
     print('\n\n#############################################################################')
 
-    # ITE_poss = [] #CHECK IF NEEDED
-
-    #SERVE???????????????
-
-    # # Initialize the dictionary using dictionary comprehension
-    # solution_dict = {
-    # 'old' : {f'Sort_{Abs}_{invert}': [] for Abs in [True, False] for invert in [True, False]},
-    # 'lightcone' :  {f'Sort_{Abs}_{invert}': [] for Abs in [True, False] for invert in [True, False]} }
-    # iteoverlap_dict = {
-    # 'old' : {f'Sort_{Abs}_{invert}': [] for Abs in [True, False] for invert in [True, False]},
-    # 'lightcone' :  {f'Sort_{Abs}_{invert}': [] for Abs in [True, False] for invert in [True, False]} }
-
-    # solution_dict['old']['Random'] = []
-    # solution_dict['lightcone']['Random'] = []
-    # iteoverlap_dict['old']['Random'] = []
-    # iteoverlap_dict['lightcone']['Random'] = []
-
-    # # Print the resulting dictionary
-    # print(solution_dict['old']['Sort_False_False'])
-    # print(iteoverlap_dict)
-
-    # # Print the resulting dictionary
-    # print(solution_dict)
-    # print(iteoverlap_dict)
-
     coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_comp_'+ 'r_'+ str(r)+ '.txt')
     h_list = coeff_list[:n_qubits ]
     J_list = coeff_list[n_qubits :]
@@ -161,7 +136,7 @@ def main():
     if (ansatz_type) == 'structure_like_qubo_YZ_2':
 
         print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE')
-        exp_poss_dict_ite, state_ite = ITE(n_qubits, edge_coeff_dict, tau, eigen_list)
+        #exp_poss_dict_ite, state_ite = ITE(n_qubits, edge_coeff_dict, tau, eigen_list)
         # ITE_poss.append(list(exp_poss_dict.items())[0][1])
         # print('exp_poss_dict', list(exp_poss_dict.items())[0])
 
@@ -170,8 +145,8 @@ def main():
             layers_edge_params_dict, params_init, layers_exp_poss_dict, state_all = get_good_initial_params_measure(\
             n_qubits, tau, layer, edge_coeff_dict, pairs_all, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
             print('\nwarm start fidelity', list(layers_exp_poss_dict['l_'+str(layer)].items())[0])
-            overlap = abs(np.dot(state_ite, state_all))**2
-            print('ite overlap', overlap)
+            # overlap = abs(np.dot(state_ite, state_all))**2
+            # print('ite overlap', overlap)
             # print(' params_init',  params_init)
             # print('layers_edge_params_dict', layers_edge_params_dict)
             # print('layers_exp_poss_dict', layers_exp_poss_dict)
@@ -181,8 +156,8 @@ def main():
             edge_params_dict, params_init, exp_poss_dict, state_all = warm_start_parameters_lightcone(\
             n_qubits, tau, edge_coeff_dict, edges_columns, eigen_list, lightcone_dict)
             print('\nwarm start fidelity lightcone', list(exp_poss_dict.items())[0])
-            overlap = abs(np.dot(state_ite, state_all))**2
-            print('ite overlap', overlap)
+            # overlap = abs(np.dot(state_ite, state_all))**2
+            # print('ite overlap', overlap)
             # print(' params_init',  params_init)
             # print('layers_edge_params_dict', layers_edge_params_dict)
             # print('layers_exp_poss_dict', layers_exp_poss_dict)
@@ -246,8 +221,8 @@ def main():
                     'layers_edge_params_dict': layers_edge_params_dict,
                     'params_list': params_init, ## just for good formula to run vqe
                     'layers_exp_poss_dict': layers_exp_poss_dict,
-                    'exp_poss_dict_ite': exp_poss_dict_ite,
-                    'ite_overlap' : overlap
+                    # 'exp_poss_dict_ite': exp_poss_dict_ite,
+                    # 'ite_overlap' : overlap
                         }
         
         with open(gi_file_path, 'wb') as f:
@@ -268,8 +243,8 @@ def main():
                     'edge_params_dict': edge_params_dict,
                     'params_list': params_init, ## just for good formula to run vqe
                     'exp_poss_dict': exp_poss_dict,
-                    'exp_poss_dict_ite': exp_poss_dict_ite,
-                    'ite_overlap' : overlap
+                    # 'exp_poss_dict_ite': exp_poss_dict_ite,
+                    # 'ite_overlap' : overlap
                         }
 
         with open(gi_file_path2, 'wb') as f:
