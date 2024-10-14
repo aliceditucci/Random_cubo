@@ -3,16 +3,16 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [18]
+N_list = [20]
 
 N_r = 100
 num_layer = 1
-tau_value = 0.6
+tau_value = 0.3
 alpha_value = 0.01
 init = 'warm_start_measure'
 type_of_ansatz = 'structure_like_qubo_YZ_2'
 num_shots = 0
-sort_value = [1,0]
+sort_value = [1]
 abs_value = [1,0]
 inv_value = [1,0]
 

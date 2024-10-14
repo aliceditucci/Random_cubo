@@ -1,0 +1,1161 @@
+1 1 0
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(2, 7), (5, 6)], [(4, 5)], [(2, 4), (0, 1), (3, 6)], [(2, 5)], [(1, 5), (4, 7)], [(1, 6), (3, 7)], [(2, 6)], [(6, 7), (1, 4)], [(1, 3), (5, 7)], [(0, 7)], [(1, 7), (4, 6)], [(0, 6), (1, 2)], [(0, 5)], [(0, 2), (3, 4)], [(3, 5)], [(0, 3)], [(0, 4), (2, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.029839451477783406)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+1 0 1
+
+N: 8, 
+r: 89, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(2, 4), (0, 6)], [(4, 7), (5, 6)], [(3, 4), (2, 7)], [(1, 7), (2, 3)], [(3, 5)], [(5, 7), (2, 6), (0, 1)], [(3, 7), (4, 6)], [(4, 5)], [(0, 4), (6, 7)], [(0, 5)], [(1, 5), (3, 6), (0, 2)], [(1, 2)], [(1, 6)], [(1, 3)], [(0, 3), (2, 5), (1, 4)], [(0, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.533000000000001, 0.04042071319197738)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_89/
+1 1 0
+
+N: 8, 
+r: 89, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(1, 5), (3, 6)], [(0, 5), (6, 7)], [(0, 4)], [(0, 2)], [(1, 2), (4, 5)], [(4, 6), (3, 7), (0, 1)], [(2, 6), (5, 7)], [(3, 5), (1, 6)], [(2, 3)], [(1, 3)], [(0, 3), (2, 5), (1, 7)], [(2, 7), (3, 4), (5, 6)], [(4, 7), (0, 6)], [(2, 4)], [(1, 4), (0, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.533000000000001, 0.03016150869134295)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_89/
+1 0 0
+
+N: 8, 
+r: 89, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(0, 7), (1, 4), (2, 5)], [(0, 3)], [(1, 3)], [(1, 6)], [(1, 2)], [(0, 2), (3, 6), (1, 5)], [(0, 5), (6, 7)], [(0, 4)], [(4, 5)], [(4, 6), (3, 7), (0, 1)], [(2, 6), (5, 7)], [(3, 5)], [(2, 3), (1, 7)], [(2, 7), (3, 4), (5, 6)], [(4, 7), (0, 6)], [(2, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.533000000000001, 0.03403773116317808)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_89/
+1 1 1
+
+N: 8, 
+r: 90, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(2, 6)], [(2, 7), (0, 5)], [(1, 2)], [(0, 1)], [(0, 4), (1, 6), (5, 7)], [(1, 7)], [(1, 5), (0, 7), (4, 6)], [(2, 5), (4, 7)], [(3, 4)], [(3, 5)], [(1, 3), (5, 6)], [(3, 6)], [(0, 3), (2, 4)], [(0, 6), (4, 5)], [(6, 7), (1, 4), (0, 2)], [(3, 7)], [(2, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-7.950399999999998, 0.05726094173979879)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_90/
+1 1 0
+
+N: 8, 
+r: 90, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(2, 3)], [(3, 7), (0, 2), (1, 4)], [(6, 7), (4, 5)], [(0, 6), (2, 4)], [(0, 3)], [(3, 6)], [(5, 6), (1, 3)], [(3, 5)], [(3, 4)], [(4, 7), (2, 5)], [(4, 6), (0, 7), (1, 5)], [(1, 7)], [(5, 7), (1, 6), (0, 4)], [(0, 1)], [(1, 2), (0, 5)], [(2, 7)], [(2, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-7.950399999999998, 0.08789817241701423)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_90/
+1 0 1
+
+N: 8, 
+r: 90, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(0, 5), (1, 2)], [(0, 1)], [(1, 5), (4, 6)], [(2, 5), (4, 7), (1, 3)], [(0, 3), (2, 4)], [(4, 5), (3, 7)], [(2, 3)], [(0, 2), (1, 4), (6, 7)], [(0, 6)], [(3, 6)], [(5, 6)], [(3, 5)], [(3, 4), (0, 7)], [(1, 7)], [(5, 7), (1, 6), (0, 4)], [(2, 7)], [(2, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-7.950399999999998, 0.08917373933745117)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_90/
+1 0 0
+
+N: 8, 
+r: 90, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(2, 6)], [(2, 7), (0, 4), (1, 6)], [(5, 7)], [(1, 7)], [(0, 7), (3, 4)], [(3, 5)], [(5, 6)], [(3, 6)], [(0, 6)], [(6, 7), (1, 4), (0, 2)], [(2, 3)], [(3, 7), (4, 5)], [(2, 4), (0, 3)], [(1, 3), (4, 7), (2, 5)], [(4, 6), (1, 5)], [(0, 1)], [(1, 2), (0, 5)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-7.950399999999998, 0.0608358415969699)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_90/
+1 0 1
+
+N: 8, 
+r: 91, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(0, 4), (2, 7)], [(4, 7)], [(1, 4)], [(1, 5), (2, 4), (6, 7)], [(1, 2), (0, 7)], [(1, 6), (5, 7)], [(3, 6), (1, 7), (4, 5)], [(4, 6), (3, 5)], [(3, 4), (0, 6)], [(1, 3), (2, 5)], [(0, 3)], [(2, 3), (0, 1)], [(2, 6)], [(0, 2), (5, 6)], [(0, 5), (3, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-11.207099999999999, 0.16568901768732316)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_91/
+1 1 1
+
+N: 8, 
+r: 91, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(0, 4), (3, 7)], [(0, 5), (2, 7)], [(5, 6), (0, 2), (4, 7)], [(2, 6), (0, 1)], [(1, 4), (2, 3)], [(0, 3), (1, 5), (2, 4)], [(2, 5), (1, 3), (6, 7)], [(1, 2), (0, 7)], [(1, 6), (5, 7)], [(3, 6), (1, 7)], [(0, 6), (3, 4)], [(4, 5)], [(3, 5), (4, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-11.207099999999999, 0.1749925630213393)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_91/
+1 0 0
+
+N: 8, 
+r: 91, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(3, 7), (0, 5)], [(5, 6), (0, 2)], [(2, 6), (0, 1)], [(2, 3)], [(0, 3), (2, 5)], [(1, 3), (0, 6)], [(3, 4)], [(3, 5), (4, 6)], [(4, 5), (1, 7), (3, 6)], [(5, 7), (1, 6)], [(0, 7), (1, 2)], [(6, 7), (2, 4), (1, 5)], [(1, 4)], [(4, 7)], [(2, 7), (0, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-11.207099999999999, 0.13683384538863785)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_91/
+1 1 0
+
+N: 8, 
+r: 92, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(5, 6)], [(2, 6), (3, 5)], [(3, 6), (2, 5)], [(2, 3)], [(2, 4), (3, 7)], [(4, 7)], [(0, 4)], [(0, 7), (4, 5)], [(4, 6), (0, 3), (1, 7)], [(5, 7), (0, 6)], [(2, 7)], [(1, 2)], [(1, 3)], [(1, 4)], [(0, 1)], [(0, 5), (6, 7)], [(1, 5)], [(1, 6), (0, 2), (3, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-13.233999999999998, 0.21360171892011995)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_92/
+1 1 1
+
+N: 8, 
+r: 92, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(3, 4), (0, 2), (1, 6)], [(1, 5), (6, 7)], [(0, 5)], [(0, 1)], [(1, 4)], [(1, 3)], [(1, 2)], [(2, 7), (0, 6)], [(5, 7)], [(1, 7), (0, 3), (4, 6)], [(4, 5), (0, 7)], [(0, 4)], [(4, 7)], [(3, 7), (2, 4)], [(2, 3)], [(2, 5), (3, 6)], [(3, 5), (2, 6)], [(5, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-13.233999999999998, 0.24285373745395863)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_92/
+1 1 0
+
+N: 8, 
+r: 91, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(4, 6), (3, 5)], [(4, 5)], [(3, 4), (0, 6), (1, 7)], [(3, 6), (5, 7)], [(1, 6), (0, 7)], [(1, 2), (6, 7)], [(1, 3), (2, 5)], [(2, 4), (1, 5), (0, 3)], [(2, 3), (1, 4)], [(0, 1), (2, 6), (4, 7)], [(0, 2), (5, 6)], [(2, 7), (0, 5)], [(3, 7), (0, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-11.207099999999999, 0.15385478959767024)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_91/
+1 0 1
+
+N: 8, 
+r: 92, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(0, 2), (6, 7)], [(0, 5), (1, 2)], [(2, 7)], [(1, 7), (0, 3)], [(0, 7)], [(4, 7)], [(2, 4)], [(2, 3)], [(2, 6)], [(5, 6)], [(3, 5)], [(3, 6), (2, 5)], [(3, 7), (0, 4)], [(4, 5)], [(4, 6), (5, 7)], [(0, 6), (1, 3)], [(1, 4)], [(0, 1)], [(1, 5)], [(1, 6), (3, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-13.233999999999998, 0.20304623359507656)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_92/
+1 0 0
+
+N: 8, 
+r: 92, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(3, 4), (1, 6)], [(1, 5)], [(0, 1)], [(1, 4)], [(1, 3), (0, 6), (5, 7)], [(4, 6)], [(4, 5)], [(0, 4), (3, 7), (2, 5)], [(3, 6)], [(3, 5)], [(5, 6)], [(2, 6)], [(2, 3)], [(2, 4)], [(4, 7)], [(0, 7)], [(0, 3), (1, 7)], [(2, 7)], [(1, 2), (0, 5), (6, 7)], [(0, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-13.233999999999998, 0.2495373492510111)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_92/
+1 1 1
+
+N: 8, 
+r: 93, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(4, 7), (5, 6)], [(0, 5)], [(0, 7)], [(1, 7), (0, 6), (2, 5)], [(1, 3)], [(3, 5), (1, 6)], [(3, 6), (4, 5)], [(0, 3), (5, 7)], [(3, 7)], [(6, 7)], [(4, 6), (2, 3)], [(1, 2)], [(2, 7), (1, 5)], [(0, 1), (2, 4)], [(0, 2)], [(2, 6), (1, 4)], [(3, 4)], [(0, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-9.640799999999997, 0.04681187389165256)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_93/
+1 0 0
+
+N: 8, 
+r: 93, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(4, 7), (5, 6)], [(0, 5)], [(2, 5), (3, 6)], [(4, 5), (3, 7)], [(2, 3)], [(1, 2)], [(2, 7), (1, 5)], [(0, 1), (2, 6)], [(1, 4)], [(3, 4)], [(0, 4)], [(0, 2)], [(2, 4)], [(4, 6)], [(6, 7), (0, 3)], [(5, 7), (1, 6)], [(3, 5)], [(1, 3), (0, 6)], [(1, 7)], [(0, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-9.640799999999997, 0.04041798749920664)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_93/
+1 1 0
+
+N: 8, 
+r: 93, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(0, 4)], [(3, 4)], [(1, 4), (2, 6)], [(0, 2)], [(2, 4), (0, 1)], [(1, 5), (2, 7)], [(1, 2)], [(2, 3), (4, 6)], [(6, 7)], [(3, 7)], [(5, 7), (0, 3)], [(4, 5), (3, 6)], [(1, 6), (3, 5)], [(1, 3), (2, 5), (0, 6)], [(1, 7)], [(0, 7)], [(0, 5)], [(5, 6), (4, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-9.640799999999997, 0.08059530456259349)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_93/
+1 0 1
+
+N: 8, 
+r: 93, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(0, 7)], [(1, 7), (0, 6)], [(1, 3)], [(3, 5), (1, 6)], [(0, 3), (5, 7)], [(6, 7)], [(4, 6)], [(2, 4)], [(0, 2)], [(0, 4)], [(3, 4)], [(1, 4), (2, 6)], [(0, 1)], [(1, 5), (2, 7)], [(1, 2)], [(2, 3)], [(3, 7), (4, 5)], [(3, 6), (2, 5)], [(0, 5)], [(5, 6), (4, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-9.640799999999997, 0.10081293280267475)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_93/
+1 0 0
+
+N: 8, 
+r: 94, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(0, 3), (6, 7)], [(0, 7), (1, 2)], [(4, 7), (1, 5), (3, 6), (0, 2)], [(3, 7), (0, 4)], [(3, 4)], [(1, 3), (2, 4), (5, 6)], [(1, 6)], [(1, 4), (2, 6)], [(1, 7), (0, 5)], [(5, 7)], [(3, 5), (0, 1)], [(2, 5)], [(2, 7)], [(2, 3), (4, 5), (0, 6)], [(4, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.941800000000002, 0.07180923434902763)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_94/
+1 1 0
+
+N: 8, 
+r: 94, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(3, 7), (0, 4)], [(0, 2), (3, 4)], [(3, 6)], [(1, 3)], [(1, 5), (4, 7)], [(2, 4), (5, 6)], [(1, 2)], [(1, 6)], [(1, 4), (2, 6), (0, 7)], [(1, 7), (0, 5)], [(5, 7)], [(3, 5), (0, 1)], [(2, 5)], [(2, 7)], [(2, 3), (4, 5), (0, 6)], [(4, 6)], [(6, 7), (0, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.941800000000002, 0.05621420065434562)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_94/
+1 1 0
+
+N: 8, 
+r: 95, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(0, 2), (1, 4)], [(2, 4), (6, 7)], [(2, 6), (1, 5)], [(4, 6), (1, 7)], [(2, 7)], [(1, 2), (5, 7), (3, 4)], [(1, 6), (2, 5), (0, 4)], [(1, 3)], [(3, 6)], [(0, 3)], [(3, 7)], [(2, 3), (4, 7)], [(3, 5)], [(0, 5)], [(5, 6)], [(4, 5), (0, 6)], [(0, 7)], [(0, 1)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.2897, 0.053286388994252025)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_95/
+1 0 1
+
+N: 8, 
+r: 95, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(0, 1)], [(0, 7), (4, 5)], [(5, 6)], [(0, 5)], [(3, 5)], [(2, 3)], [(3, 7)], [(0, 3)], [(3, 6), (0, 4)], [(3, 4), (5, 7), (1, 2)], [(2, 7), (1, 5)], [(2, 6)], [(2, 4)], [(1, 4), (0, 2), (6, 7)], [(4, 6), (1, 7)], [(1, 6), (2, 5)], [(1, 3), (4, 7), (0, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.2897, 0.05382536834821374)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_95/
+1 0 1
+
+N: 8, 
+r: 94, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(4, 6)], [(0, 6), (4, 5), (2, 3)], [(2, 7)], [(2, 5), (0, 1)], [(3, 5)], [(5, 7)], [(0, 5), (1, 7), (2, 6)], [(1, 4)], [(1, 6)], [(5, 6), (2, 4), (1, 3)], [(3, 4)], [(0, 4), (3, 7)], [(0, 2), (3, 6), (1, 5), (4, 7)], [(1, 2), (0, 7)], [(6, 7), (0, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.941800000000002, 0.04381431166208169)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_94/
+1 1 1
+
+N: 8, 
+r: 94, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(0, 3), (6, 7)], [(4, 6)], [(0, 6), (4, 5), (2, 3)], [(2, 7)], [(2, 5), (0, 1)], [(3, 5)], [(5, 7)], [(0, 5), (1, 7)], [(0, 7), (2, 6), (1, 4)], [(1, 6)], [(1, 2), (5, 6)], [(2, 4)], [(4, 7), (1, 5)], [(1, 3)], [(3, 6)], [(3, 4), (0, 2)], [(0, 4), (3, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.941800000000002, 0.06335412292315228)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_94/
+1 1 1
+
+N: 8, 
+r: 95, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(0, 1)], [(0, 7)], [(0, 6), (4, 5)], [(5, 6)], [(0, 5)], [(3, 5), (4, 7)], [(2, 3)], [(3, 7)], [(0, 3)], [(3, 6)], [(1, 3), (0, 4), (2, 5)], [(1, 6), (3, 4), (5, 7)], [(1, 2)], [(2, 7)], [(1, 7), (4, 6)], [(1, 5), (2, 6)], [(6, 7), (2, 4)], [(1, 4), (0, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.2897, 0.04291294847553274)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_95/
+1 0 0
+
+N: 8, 
+r: 95, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(0, 6), (4, 7), (1, 3), (2, 5)], [(1, 6)], [(1, 7), (4, 6)], [(6, 7), (0, 2), (1, 4)], [(2, 4)], [(2, 6), (1, 5)], [(2, 7)], [(1, 2), (5, 7), (3, 4)], [(0, 4), (3, 6)], [(0, 3)], [(3, 7)], [(2, 3)], [(3, 5)], [(0, 5)], [(5, 6)], [(4, 5), (0, 7)], [(0, 1)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.2897, 0.04999988218096826)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_95/
+1 1 1
+
+N: 8, 
+r: 96, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(1, 5), (4, 6)], [(3, 6), (2, 5)], [(1, 2), (0, 6)], [(2, 7)], [(5, 7), (3, 4)], [(1, 7), (5, 6), (0, 3)], [(0, 7)], [(3, 7)], [(2, 3), (1, 4)], [(4, 5), (1, 3), (0, 2), (6, 7)], [(0, 5), (1, 6), (4, 7)], [(2, 4)], [(2, 6), (0, 1), (3, 5)], [(0, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-10.532700000000004, 0.09498072667699113)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+1 0 0
+
+N: 8, 
+r: 96, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(1, 5), (4, 6)], [(3, 6)], [(0, 6), (2, 7)], [(5, 6), (0, 7)], [(3, 7)], [(6, 7)], [(1, 6), (4, 7)], [(2, 6), (0, 1)], [(0, 4), (3, 5)], [(2, 4), (0, 5)], [(0, 2), (1, 3), (4, 5)], [(1, 4), (2, 3)], [(0, 3), (1, 7)], [(3, 4), (5, 7), (1, 2)], [(2, 5)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-10.532700000000004, 0.07948822265128835)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+1 1 0
+
+N: 8, 
+r: 96, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(0, 4), (3, 5)], [(0, 1), (2, 6)], [(2, 4)], [(4, 7), (1, 6), (0, 5)], [(6, 7), (0, 2), (1, 3), (4, 5)], [(1, 4), (2, 3)], [(3, 7)], [(0, 7)], [(0, 3), (5, 6), (1, 7)], [(3, 4), (5, 7)], [(2, 7), (0, 6)], [(1, 2)], [(2, 5), (3, 6)], [(4, 6), (1, 5)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-10.532700000000004, 0.05992056142963723)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+1 0 1
+
+N: 8, 
+r: 96, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(2, 5)], [(1, 2), (5, 7), (3, 4)], [(1, 7), (0, 3)], [(2, 3), (1, 4)], [(4, 5), (1, 3), (0, 2)], [(0, 5), (2, 4)], [(3, 5), (0, 4)], [(0, 1), (2, 6), (4, 7)], [(1, 6)], [(6, 7)], [(3, 7)], [(0, 7), (5, 6)], [(2, 7), (0, 6)], [(3, 6)], [(4, 6), (1, 5)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-10.532700000000004, 0.06742372444802873)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_96/
+1 1 1
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(2, 3), (0, 4)], [(0, 3)], [(3, 5)], [(3, 4), (0, 2)], [(0, 5), (1, 2)], [(0, 6)], [(4, 6), (1, 7)], [(0, 7)], [(5, 7), (1, 3)], [(1, 4), (6, 7)], [(2, 6), (3, 7)], [(1, 6), (4, 7)], [(1, 5)], [(2, 5), (3, 6), (0, 1)], [(2, 4)], [(4, 5)], [(5, 6), (2, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.04943648366351227)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+1 0 1
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(3, 5)], [(3, 4), (0, 6)], [(4, 6), (1, 7)], [(1, 3)], [(1, 4), (2, 6)], [(1, 6), (4, 7), (2, 5)], [(3, 6), (0, 1), (2, 4)], [(4, 5)], [(5, 6), (2, 7)], [(1, 5), (3, 7)], [(6, 7)], [(5, 7)], [(0, 7), (1, 2)], [(0, 5)], [(0, 2)], [(0, 3)], [(0, 4), (2, 3)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.03598001419662899)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+1 1 1
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(1, 2), (3, 6)], [(3, 4)], [(2, 4), (3, 7)], [(0, 2), (1, 3)], [(0, 5)], [(0, 7), (4, 5), (2, 3)], [(0, 4), (2, 6)], [(0, 3), (1, 7)], [(5, 7), (4, 6), (0, 1)], [(3, 5), (4, 7)], [(6, 7)], [(2, 7), (1, 5)], [(1, 6), (2, 5)], [(5, 6)], [(0, 6), (1, 4)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.0807511889869297)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+1 0 0
+
+N: 8, 
+r: 97, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(2, 3), (0, 4)], [(0, 3)], [(0, 2)], [(0, 5), (1, 2)], [(0, 7)], [(5, 7)], [(6, 7)], [(3, 7), (1, 5)], [(2, 7), (5, 6)], [(4, 5)], [(2, 4), (0, 1), (3, 6)], [(2, 5), (4, 7), (1, 6)], [(2, 6), (1, 4)], [(1, 3)], [(1, 7), (4, 6)], [(0, 6), (3, 4)], [(3, 5)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-6.185900000000002, 0.03874716517275619)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_97/
+1 1 0
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(1, 4), (0, 6)], [(5, 6)], [(2, 5), (1, 6)], [(1, 5), (2, 7)], [(6, 7)], [(4, 7), (3, 5), (0, 1)], [(4, 6), (5, 7)], [(1, 7), (0, 3), (2, 6)], [(0, 4), (2, 3)], [(4, 5), (0, 7)], [(0, 5), (1, 3)], [(0, 2), (3, 7)], [(2, 4)], [(3, 4)], [(3, 6), (1, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.09030518555177151)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+1 0 1
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(1, 2), (3, 6)], [(3, 4)], [(2, 4), (3, 7)], [(4, 5), (2, 6), (0, 3)], [(5, 7)], [(3, 5), (4, 7)], [(1, 5)], [(1, 6)], [(5, 6)], [(0, 6), (1, 4), (2, 5)], [(2, 7)], [(6, 7), (0, 1)], [(4, 6), (1, 7)], [(0, 4), (2, 3)], [(0, 7)], [(0, 5), (1, 3)], [(0, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.07384526640128423)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+1 0 0
+
+N: 8, 
+r: 98, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(0, 2), (1, 3)], [(0, 5)], [(0, 7), (2, 3)], [(0, 4), (1, 7)], [(4, 6), (0, 1)], [(6, 7)], [(2, 7)], [(2, 5), (1, 4), (0, 6)], [(5, 6)], [(1, 6)], [(1, 5), (4, 7)], [(3, 5)], [(5, 7), (0, 3), (2, 6)], [(4, 5), (3, 7)], [(2, 4)], [(3, 4)], [(3, 6), (1, 2)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.081999999999999, 0.07113278932206223)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_98/
+1 1 1
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert True
+
+edge columns [[(5, 6)], [(6, 7)], [(3, 7)], [(2, 3)], [(2, 4)], [(2, 7), (3, 6)], [(2, 5), (3, 4), (1, 7)], [(3, 5), (4, 6)], [(0, 6), (4, 7), (1, 2)], [(0, 4)], [(4, 5), (0, 3)], [(0, 1)], [(0, 7), (1, 3)], [(1, 6)], [(2, 6), (1, 4)], [(1, 5)], [(0, 5)], [(0, 2), (5, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.040898663949874556)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 1 0
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: True, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut True and invert False
+
+edge columns [[(5, 7), (0, 2)], [(0, 5)], [(1, 5)], [(1, 4), (2, 6)], [(1, 6)], [(1, 3), (0, 7)], [(0, 1)], [(0, 3), (4, 5)], [(0, 4), (1, 2)], [(4, 7), (0, 6)], [(4, 6), (3, 5), (1, 7)], [(3, 4), (2, 5)], [(3, 6), (2, 7)], [(2, 4)], [(2, 3)], [(3, 7)], [(6, 7)], [(5, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.06032526496070689)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 0 1
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: True
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert True
+
+edge columns [[(3, 7), (2, 4)], [(2, 7)], [(1, 7), (0, 6), (4, 5)], [(0, 3)], [(0, 1)], [(1, 3)], [(1, 6)], [(2, 6), (0, 5)], [(5, 7), (0, 2)], [(1, 5)], [(1, 4), (0, 7)], [(0, 4), (1, 2)], [(4, 7)], [(4, 6), (3, 5)], [(3, 4), (2, 5)], [(3, 6)], [(2, 3), (6, 7)], [(5, 6)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.060360475197905925)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
+1 0 0
+
+N: 8, 
+r: 99, 
+alpha: 0.01, 
+shots: None, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3, 
+initialization: warm_start_measure, 
+sorting: True, 
+absolute: False, 
+invert: False
+
+edge columns [[(0, 1), (2, 3), (4, 5), (6, 7)], [(0, 3), (2, 5), (4, 7)], [(1, 3), (0, 5), (2, 7), (4, 6)], [(1, 5), (0, 7), (2, 6)], [(3, 5), (1, 7), (0, 6), (2, 4)], [(3, 7), (1, 6), (0, 4)], [(5, 7), (3, 6), (1, 4), (0, 2)], [(5, 6), (3, 4), (1, 2)]]
+
+
+#############################################################################
+Coefficients are sorted according to absolut False and invert False
+
+edge columns [[(5, 6)], [(6, 7), (2, 3)], [(3, 6), (2, 5)], [(3, 4)], [(3, 5), (4, 6)], [(4, 7), (1, 2)], [(0, 4)], [(0, 7), (1, 4)], [(1, 5), (0, 2)], [(5, 7)], [(0, 5), (2, 6)], [(1, 6)], [(1, 3)], [(0, 1)], [(0, 3), (4, 5)], [(0, 6), (1, 7)], [(2, 7)], [(2, 4), (3, 7)]]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITE
+
+warm start fidelity (-8.519400000000001, 0.03667741873156748)
+num params 64
+Write sucessfully to ./data_sorting/ansatz_type_structure_like_qubo_YZ_2/shots_None/num_variables_008/params_64_layer_1/alpha_0.01/initial_warm_start_measure/r_99/
