@@ -2,7 +2,7 @@ import sys
 
 import numpy as np 
 import math
-from math import cos, sin, cosh, sinh, atan, exp, pi, sqrt
+from math import cos, sin, cosh, sinh, atan, exp, pi, sqrt, acos
 
 from qiskit import *
 from qiskit.quantum_info import Pauli, SparsePauliOp
@@ -312,3 +312,151 @@ def find_light_cone(pairs):
                         relevent_pairs.append(pair_layerm1)
             lightcone_dict[pair] = relevent_pairs
     return lightcone_dict
+
+
+
+
+
+
+def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_dict:dict, pairs_all:list, \
+                                    eigen_list:list, shots:int, approximation:bool):
+    """get the warm start parameters by measurement-based approach
+    Args:
+        N: number of qubits
+        tau: time step for imaginary time evolution
+        layer: number of layers in the ansatz
+        edge_coeff_dict: dict, {edge: coeff}, coefficients of edges (or vertexes, i as edge (i,)) in the graph
+        pairs_all: list of qubit index pairs (edges) in a order to parallel the circuit
+        eigen_list: list of eigenvalues of Hamiltonian
+        shots (None or int): The number of shots. If None and approximation is True, it calculates the exact expectation values. 
+                            Otherwise, it calculates expectation values with sampling.
+        approximation:
+        file_path: str, path to save the warm start parameters
+    Return:
+        layers_edge_params_dict: dict, {layer: {edge: params}}, warm start parameters for each edge in the graph from l=1 to maximal layer
+        layers_exp_poss_dict: dict, {layer: {exp: poss}}, probalities of eigenvalues using warm start circuit with l=1 to maximal layer
+    """
+    
+    eigens_ids = np.argsort(eigen_list)[:100]  ## return the id of the lowest 100 eigenvalues    ????
+
+    # print('eigens_ids', eigens_ids)
+    # q = QuantumRegister(N, name = 'q')
+    # circ = QuantumCircuit(q)
+    # circ.clear()
+    # circ.h(q[::])
+
+    layers_edge_params_dict = {}  ## save the warm start parameters for each edge in the graph from l=1 to maximal layer
+    params_list = []  ## save the warm start parameters for each layer, just for good formula to run vqe
+    layers_exp_poss_dict = {} ## save probalities of eigenvalues using warm start circuit with l=1 to maximal layer
+
+    for l in range(1, layer+1): 
+
+        edge_params_dict = {} ## to save the initial parameters for each vertex or edge in l'th layer
+        exp_poss_dict = {}  ### record the {exp:poss} information after the excution of l'th layer
+
+        # Z term
+        for i in range(N):
+
+            para = get_initial_para_1op_Y(N, [i], edge_coeff_dict[(i,)], tau, circ, shots, approximation)[0] #use this to extimate para from min expectation value
+            # tauc = tau * edge_coeff_dict[(i,)] 
+            # para = 2*atan( -exp(-2*tauc) ) + pi/2 #use this to use analytic formula (only valid for 1 layer)
+
+            edge_params_dict[(i,)] = para
+            params_list.append(para)
+            circ.ry(para, i)
+
+        # ZZ term
+        for edge in pairs_all:
+            if edge[0] >= edge[1]:
+                sys.stderr.write('wrong edge in pairs_all')
+                sys.exit()
+
+            para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, shots, approximation)
+            edge_params_dict[edge] = para
+            params_list.extend(para)
+            circ =  quant_circ_update(N, circ, edge, para)
+        
+        layers_edge_params_dict['l_'+str(l)] = edge_params_dict
+
+        # run the l layer circuit
+        backend = Aer.get_backend('statevector_simulator')
+        result = backend.run(circ).result()
+        vec_final = np.array( result.get_statevector() ).real
+
+        for id in eigens_ids:
+            eigen = eigen_list[id]
+            poss = abs(vec_final[id])**2
+            # print('eigen', eigen, 'poss', poss)
+            exp_poss_dict[eigen] = poss
+
+
+        layers_exp_poss_dict['l_'+str(l)] = exp_poss_dict
+    
+    return layers_edge_params_dict, params_list, layers_exp_poss_dict, vec_final
+
+
+def initial_state_ry(N:int, z_list):
+    """initialize the quantum state of each qubit n as: ry(a)|0> = (cos(a/2)|0> + sin(a/2) |1>), <Z> = cos(a/2)^2 - sin(a/2)^2 = cos(a)
+    Args:
+        N: number of qubits
+        z_list: list of expectation values of sigma^z for each qubit
+    Returns:
+        circ_init: QuantumCircuit for the initial state
+    
+    """
+    q = QuantumRegister(N)
+    circ_init = QuantumCircuit(q)
+
+    for n in range(N):
+        # find the angle theta such that sin(theta/2)**2 * C = k_list[n]
+        expz = z_list[n]
+        theta = acos(expz)
+        circ_init.ry(theta, q[n])
+
+    return circ_init
+
+
+def get_expz(N, state_vector, alpha, eigen_list):
+    """get the expectation value of <Z> for each qubit
+    Args:
+        N: number of qubits
+        state_vector: state vector of the quantum circuit
+        alpha: CVaR coefficient
+    Returns:
+        z_list: list of expectation values of sigma^z for each qubit
+    """
+    # backend = Aer.get_backend('statevector_simulator')
+    # job = backend.run(circ)
+    # result = job.result()
+    # outputstate = np.array(result.get_statevector(circ))   ### amplitude
+    # prob_list = [abs(outputstate[i]) ** 2 for i in range(len(outputstate))]
+    prob_list = np.abs(state_vector) ** 2
+
+
+    sorted_indices = np.argsort(eigen_list)
+    probs = np.array(prob_list)[sorted_indices]
+    vals = np.array(eigen_list)[sorted_indices]
+
+    probs_1 = []  ### pribality of the eigenvalues counted in CVaR
+    vals_1 = []   ### eigenvalues counted in CVaR
+
+    cvar = 0
+    total_prob = 0
+    expz_array = np.zeros(N)
+    for i, (p, v) in enumerate(zip(probs, vals)):
+        if p >= alpha - total_prob:
+            p = alpha - total_prob
+        total_prob += p
+        cvar += p * v
+
+        bits = format(sorted_indices[i], '0' + str(N) + 'b')[::-1] # bitstring of the eigen state
+        for j, bit in enumerate(bits):
+            expz_array[j] += pow(-1, int(bit)) * p
+
+        if abs(total_prob - alpha) < 1e-8:
+            break
+
+    cvar /= total_prob
+    expz_array /= total_prob
+   
+    return probs[0], cvar, expz_array
