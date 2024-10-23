@@ -13,11 +13,11 @@ init = 'warm_start_measure'
 type_of_ansatz = 'structure_like_qubo_YZ_2'
 num_shots = 0
 sort_value = [1]
-abs_value = [0]
-inv_value = [0]
+abs_value = [1,0]
+inv_value = [1,0]
 
 job = htcondor.Submit({
-    "executable": "job_parallel_2.sh",
+    "executable": "job_parallel.sh",
     "arguments": "$(N) $(r) $(alpha) $(shots) $(ansatz_type) $(layer) $(tau) $(initialization) $(sorting) $(absolute) $(invert)",
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",

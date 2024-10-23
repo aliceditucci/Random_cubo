@@ -83,6 +83,10 @@ def main():
 
     print('\nN: {}, \nr: {}, \nalpha: {}, \nshots: {}, \nansatz: {}, \nlayer: {}, \ntau: {}, \ninitialization: {}, \nsorting: {}, \nabsolute: {}, \ninvert: {}'\
         .format(n_qubits, r, alpha, shots, ansatz_type, layer, tau, initialization, sorting, absolute, invert))
+    
+    #make data dir
+    dir_0 = './data_iter'
+    os.makedirs(dir_0, exist_ok=True)
 
     #region load qubo instances, get Hamiltonian and edge_coeff_dict
     instance_dir = '../instances/complete/N_' + str(n_qubits )
