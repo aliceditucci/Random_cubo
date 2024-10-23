@@ -16,4 +16,4 @@ invert=${11}
 
 source /lustre/fs24/group/cqta/atucci/environment/bin/activate
 
-/lustre/fs24/group/cqta/atucci/environment/bin/python3 /lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_with_sorting.py --N "$N" --r "$r" --alpha "$alpha" --shots "$shots" --ansatz_type "$ansatz_type" --layer "$layer" --tau "$tau" --initialization "$initialization" --sorting "$sorting" --absolute "$absolute" --invert "$invert"
+/lustre/fs24/group/cqta/atucci/environment/bin/python3 /lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate.py --N "$N" --r "$r" --alpha "$alpha" --shots "$shots" --ansatz_type "$ansatz_type" --layer "$layer" --tau "$tau" --initialization "$initialization" --sorting "$sorting" --absolute "$absolute" --invert "$invert"

@@ -7,17 +7,17 @@ N_list = [20]
 
 N_r = 100
 num_layer = 1
-tau_value = 0.3
+tau_list = [0.3, 0.6]
 alpha_value = 0.01
 init = 'warm_start_measure'
 type_of_ansatz = 'structure_like_qubo_YZ_2'
 num_shots = 0
 sort_value = [1]
-abs_value = [1,0]
-inv_value = [1,0]
+abs_value = [0]
+inv_value = [0]
 
 job = htcondor.Submit({
-    "executable": "job_parallel.sh",
+    "executable": "job_parallel_2.sh",
     "arguments": "$(N) $(r) $(alpha) $(shots) $(ansatz_type) $(layer) $(tau) $(initialization) $(sorting) $(absolute) $(invert)",
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
@@ -29,7 +29,7 @@ job = htcondor.Submit({
     "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
 
     "+RequestRuntime": "432000",
-    "request_memory": "128GB",
+    "request_memory": "10GB",
 
     "PREEMPTION_REQUIREMENTS": "True",
 })
@@ -40,7 +40,8 @@ for N in N_list:
             for sort in sort_value:
                 for i in abs_value:
                     for j in inv_value:
-                        itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "ansatz_type": str(type_of_ansatz), "layer": str(num_layer), "tau": str(tau_value), "initialization": str(init), "sorting": str(sort), "absolute": str(i), "invert": str(j)})
+                        for tau_value in tau_list:
+                            itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "ansatz_type": str(type_of_ansatz), "layer": str(num_layer), "tau": str(tau_value), "initialization": str(init), "sorting": str(sort), "absolute": str(i), "invert": str(j)})
 
 schedd = htcondor.Schedd()
 submit_result = schedd.submit(job, itemdata=iter(itemdata))
