@@ -37,7 +37,7 @@ def partition_N(n):
 
 
 
-num_variables_list = [str(num).zfill(3) for num in range(6,8, 2)]
+num_variables_list = [str(num).zfill(3) for num in range(6,14, 2)]
 
 N_ins = 100 ###100 50 number of random instances
 
@@ -59,7 +59,7 @@ y_qubits = []
 
 fig4, ax4 = plt.subplots()
 
-tau =1.0
+tau =0.3
 
 for num_variables in num_variables_list:
 
@@ -216,19 +216,19 @@ for num_variables in num_variables_list:
         ax4.scatter(x + 50*(float(num_variables)-6), y2, marker='o', label = initialization)
 
         ax4.plot( x + 50*(float(num_variables)-6), y4, '--' , color = 'blue')
-        #ax4.set_yscale('log')
+        ax4.set_yscale('log')
         ax4.set_title(f'Warm start fidelity old vs new, all qubits, tau: {tau}')
         ax4.set_xlabel('N qubits')
-        ax4.set_ylabel('fidelity')
-        #ax4.set_ylabel('fidelity log')
+        #ax4.set_ylabel('fidelity')
+        ax4.set_ylabel('fidelity log')
 
         # Display the legend
         #plt.legend()
         #ax4.legend()
          
         # Save the plot
-        #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_log_tau{}.png'.format(tau))
-        fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_tau{}.png'.format(tau))
+        fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_log_tau{}.png'.format(tau))
+        #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_tau{}.png'.format(tau))
         #fig4.savefig(dir_0 + '/warm_fidelity_sorted_2_qubits_tau{}_random.png'.format(tau))
         # plt.close()  # Close the figure
     

@@ -1,6 +1,5 @@
 from qiskit import *
 from qiskit.quantum_info import SparsePauliOp, Statevector
-from VQE_CVaR import partition_N
 import numpy as np
 from qiskit import QuantumRegister, QuantumCircuit
 

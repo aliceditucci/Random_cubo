@@ -32,6 +32,43 @@ def partition_N(n):
 
     return pairs_all
 
+def partition_graph(G):
+    """
+    Partition the edges of a given graph.
+    G: Input graph (not necessarily complete)
+    Returns: List of edge partitions
+    """
+    edges = list(G.edges())  # Get the edges of the graph
+    n = G.number_of_nodes()  # Number of nodes in the graph
+    pairs_all = []
+
+    # Swapping indices for even and odd iterations
+    swap_even = [i + pow(-1, i) for i in range(n)]
+    swap_odd = [0]
+    swap_odd.extend([i + pow(-1, i + 1) for i in range(1, n - 1)])
+    swap_odd.append(n - 1)
+
+    # Initial indices and first partition
+    indexs = list(range(n))
+    pairs_even = [(i, i + 1) for i in range(0, n, 2) if (i, i + 1) in edges or (i + 1, i) in edges]
+    indexs = np.array(indexs)[swap_even]  # Apply initial swap
+    pairs_all.append(pairs_even)
+
+    # Iterate to create partitions
+    for i in range(1, n):
+        if i % 2 == 1:
+            pair_odd = [(indexs[j], indexs[j + 1]) for j in range(1, n - 1, 2)
+                        if (indexs[j], indexs[j + 1]) in edges or (indexs[j + 1], indexs[j]) in edges]
+            pairs_all.append(pair_odd)
+            indexs = np.array(indexs)[swap_odd]  # Swap for odd iteration
+        else:
+            pair_even = [(indexs[j], indexs[j + 1]) for j in range(0, n - 1, 2)
+                         if (indexs[j], indexs[j + 1]) in edges or (indexs[j + 1], indexs[j]) in edges]
+            pairs_all.append(pair_even)
+            indexs = np.array(indexs)[swap_even]  # Swap for even iteration
+
+    return pairs_all
+
 class VQE:
     """
     Class to represent a VQE run

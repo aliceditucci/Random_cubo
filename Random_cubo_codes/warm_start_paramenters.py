@@ -339,12 +339,6 @@ def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:Qu
     
     eigens_ids = np.argsort(eigen_list)[:100]  ## return the id of the lowest 100 eigenvalues    ????
 
-    # print('eigens_ids', eigens_ids)
-    # q = QuantumRegister(N, name = 'q')
-    # circ = QuantumCircuit(q)
-    # circ.clear()
-    # circ.h(q[::])
-
     layers_edge_params_dict = {}  ## save the warm start parameters for each edge in the graph from l=1 to maximal layer
     params_list = []  ## save the warm start parameters for each layer, just for good formula to run vqe
     layers_exp_poss_dict = {} ## save probalities of eigenvalues using warm start circuit with l=1 to maximal layer
@@ -460,3 +454,65 @@ def get_expz(N, state_vector, alpha, eigen_list):
     expz_array /= total_prob
    
     return probs[0], cvar, expz_array
+
+
+def entanglement_entropy(state, trace_indices, dof_list, tol=1e-12):
+    """
+
+    Inputs:
+
+    state = numpy array statevector
+
+    trace_indices = list of indices of sites to be traced out
+
+    dof_list = list of number of degrees of freedom per site for all sites
+
+    tol = any eigenvalue of the reduced density matrix that is smaller than this tolerence will be neglected
+
+    Outputs:
+
+    ee, rho_reduced = entanglement entropy and reduced density matrix
+
+    """
+
+    # Make sure input is in the right type form and state is normalized to 1
+    state, trace_indices, dof_list = np.array(state) / np.linalg.norm(np.array(state)), list(trace_indices), list(
+        dof_list)
+
+    # Just a simple list containing the indices from 0 to N - 1 where N is the total number of sites
+    site_indices = np.arange(len(dof_list), dtype='int')
+
+    # The dimension of each index to be traced
+    trace_dof = [dof_list[i] for i in trace_indices]
+
+    # List containing the indices of the sites not to be traced
+    untraced_indices = [idx for idx in site_indices if idx not in trace_indices]
+
+    # The dimension of each index in the list of untraced indices
+    untraced_dof = [dof_list[i] for i in untraced_indices]
+
+    # Reshape statevector into tensor of rank N with each index having some degrees of freedom specified by the dof_list
+    # for example if it is a spin-1/2 chain then each site has 2 degrees of freedom and the dof_list should be [2]*N = [2, 2, 2, 2, ..., 2]
+    state = np.reshape(state, dof_list)
+    state = np.transpose(state, axes=site_indices[::-1])   ## to have the smame index order as the qiskit
+
+    # Permute the indices of the rank N tensor so the untraced indices are placed on the left and the ones to be traced on the right
+    state = np.transpose(state, axes=untraced_indices + trace_indices)
+
+    # Reshape the rank N tensor into a matrix where you merge the untraced indices into 1 index and you merge the traced indices into 1 index
+    # if the former index is called I and the latter J then we have state_{I, J}
+    state = np.reshape(state, (np.prod(untraced_dof), np.prod(trace_dof)))
+
+    # The reduced density matrix is given by state_{I, J}*state_complex_conjugated_{J, K}, so we see from here that the indices to be
+    # traced out ie the ones contained in the merged big index J are summed over in the matrix multiplication
+    rho_reduced = np.matmul(state, state.conjugate().transpose())
+
+    evals = np.linalg.eigh(rho_reduced)[0]
+    # Calculate the 'from Newman' (von Neumann) entropy
+    ee = 0
+    for eval in evals:
+        if eval < tol:
+            continue
+        ee += -eval * np.log2(eval)
+
+    return ee, rho_reduced  # return both the entanglement entropy and the reduced density matrix
