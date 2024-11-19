@@ -3,11 +3,11 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [20]
+N_list = [14,16,18]
 N_r = 100
 alpha_value = 0.01
 num_shots = 0
-tau_list = [0.3, 0.6]
+tau_list = [0.3,0.4]
 num_layer = 1
 graph_type_list = ['complete', '3regular', '050', '070', '080', '090', '095']
 adaptive = 0
@@ -24,7 +24,7 @@ job = htcondor.Submit({
 
     "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
 
-    "+RequestRuntime": "432000",
+    "+RequestRuntime": "172800",
     "request_memory": "10GB",
 
     "PREEMPTION_REQUIREMENTS": "True",
@@ -39,14 +39,4 @@ for N in N_list:
 
 schedd = htcondor.Schedd()
 submit_result = schedd.submit(job, itemdata=iter(itemdata))
-print(itemdata[0]['invert'])
-
-print(type(itemdata[0]['invert']))
-
-# "n_ins": str(n_ins), "r": str(r), "alpha": str(alpha), "shots": str(shots), "ansatz_type": str(ansatz_type), "layer": str(layer), "tau": str(tau), "initialization": str(initialization)
-
-
-
-                    #if not sorting:
-                        #absolute_list = [False] 
-                        #invert_list = [False]
+print(itemdata)
