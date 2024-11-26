@@ -179,6 +179,19 @@ def main():
     
     for step in range(5):
         circ_init = initial_state_ry(n_qubits, expz_array)
+
+        # if step == 0:
+        #     edge_params_dict, params_init, exp_poss_dict, state_all, entropy_list = get_good_initial_params_measure_iterate_ENTROPYSAVE(\
+        #     n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
+        #     poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
+        #     entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
+
+        # else:
+        #     edge_params_dict, params_init, exp_poss_dict, state_all = get_good_initial_params_measure_iterate(\
+        #     n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
+        #     poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
+        #     entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
+
         edge_params_dict, params_init, exp_poss_dict, state_all = get_good_initial_params_measure_iterate(\
         n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
         poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
@@ -211,6 +224,7 @@ def main():
                 'steps_exp_poss_dict': steps_exp_poss_dict,
                 'steps_cvar_dict': steps_cvar_dict,
                 'steps_entropy_dict': steps_entropy_dict,
+                # 'entropy_list':entropy_list,
                 'sorting' : sorting,
                 'abs' : best_abs,
                 'invert' : best_inv
@@ -219,7 +233,7 @@ def main():
     with open(gi_file_path, 'wb') as f:
         pickle.dump(save_data, f)
     
-    print('Write sucessfully to ' + dir_name)
+    print('Write sucessfully to ' + gi_file_path)
 
     #endregion
 

@@ -12,6 +12,7 @@ from scipy.optimize import minimize
 import more_itertools as mit
 
 import itertools
+import copy
 
 def compute_coeffedge_list(hamiltonian):
 
@@ -516,3 +517,89 @@ def entanglement_entropy(state, trace_indices, dof_list, tol=1e-12):
         ee += -eval * np.log2(eval)
 
     return ee, rho_reduced  # return both the entanglement entropy and the reduced density matrix
+
+
+
+
+
+
+#ONLY TO COMPUTE THE ENTROPY
+
+def get_good_initial_params_measure_iterate_ENTROPYSAVE(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_dict:dict, pairs_all:list, \
+                                    eigen_list:list, shots:int, approximation:bool):
+    """get the warm start parameters by measurement-based approach
+    Args:
+        N: number of qubits
+        tau: time step for imaginary time evolution
+        layer: number of layers in the ansatz
+        edge_coeff_dict: dict, {edge: coeff}, coefficients of edges (or vertexes, i as edge (i,)) in the graph
+        pairs_all: list of qubit index pairs (edges) in a order to parallel the circuit
+        eigen_list: list of eigenvalues of Hamiltonian
+        shots (None or int): The number of shots. If None and approximation is True, it calculates the exact expectation values. 
+                            Otherwise, it calculates expectation values with sampling.
+        approximation:
+        file_path: str, path to save the warm start parameters
+    Return:
+        layers_edge_params_dict: dict, {layer: {edge: params}}, warm start parameters for each edge in the graph from l=1 to maximal layer
+        layers_exp_poss_dict: dict, {layer: {exp: poss}}, probalities of eigenvalues using warm start circuit with l=1 to maximal layer
+    """
+    
+    eigens_ids = np.argsort(eigen_list)[:100]  ## return the id of the lowest 100 eigenvalues    ????
+
+    layers_edge_params_dict = {}  ## save the warm start parameters for each edge in the graph from l=1 to maximal layer
+    params_list = []  ## save the warm start parameters for each layer, just for good formula to run vqe
+    layers_exp_poss_dict = {} ## save probalities of eigenvalues using warm start circuit with l=1 to maximal layer
+
+    entropy_list = []
+    for l in range(1, layer+1): 
+
+        edge_params_dict = {} ## to save the initial parameters for each vertex or edge in l'th layer
+        exp_poss_dict = {}  ### record the {exp:poss} information after the excution of l'th layer
+
+        # Z term
+        for i in range(N):
+
+            para = get_initial_para_1op_Y(N, [i], edge_coeff_dict[(i,)], tau, circ, shots, approximation)[0] #use this to extimate para from min expectation value
+            # tauc = tau * edge_coeff_dict[(i,)] 
+            # para = 2*atan( -exp(-2*tauc) ) + pi/2 #use this to use analytic formula (only valid for 1 layer)
+
+            edge_params_dict[(i,)] = para
+            params_list.append(para)
+            circ.ry(para, i)
+
+        # ZZ term
+        for edge in pairs_all:
+            if edge[0] >= edge[1]:
+                sys.stderr.write('wrong edge in pairs_all')
+                sys.exit()
+
+            para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, shots, approximation)
+            edge_params_dict[edge] = para
+            params_list.extend(para)
+            circ =  quant_circ_update(N, circ, edge, para)
+
+            circ_ent = copy.deepcopy(circ)
+            # run the l layer circuit
+            backend = Aer.get_backend('statevector_simulator')
+            result = backend.run(circ_ent).result()
+            vec_final_ent = np.array( result.get_statevector() ).real
+            entropy = entanglement_entropy(vec_final_ent , range(round(N/2)), [2]*N, tol=1e-12)[0]
+            entropy_list.append(entropy)
+        
+        layers_edge_params_dict['l_'+str(l)] = edge_params_dict
+
+        # run the l layer circuit
+        backend = Aer.get_backend('statevector_simulator')
+        result = backend.run(circ).result()
+        vec_final = np.array( result.get_statevector() ).real
+
+        for id in eigens_ids:
+            eigen = eigen_list[id]
+            poss = abs(vec_final[id])**2
+            # print('eigen', eigen, 'poss', poss)
+            exp_poss_dict[eigen] = poss
+
+
+        layers_exp_poss_dict['l_'+str(l)] = exp_poss_dict
+    
+    return layers_edge_params_dict, params_list, layers_exp_poss_dict, vec_final,entropy_list
