@@ -72,48 +72,59 @@ def main():
     dir_0 = './data_iter_adap_sorting'
     os.makedirs(dir_0, exist_ok=True)
 
-    #region load qubo instances, get Hamiltonian and edge_coeff_dict
-    if n_qubits < 12:  # for test
-        if graph_type == "complete":
-            G = nx.complete_graph(n_qubits)
-            edge_list = list(itertools.chain.from_iterable(partition_N(n_qubits)))
-        elif graph_type == "3regular":
-            G = nx.random_regular_graph(3, n_qubits)
-            # edge_list = list(G.edges())
-            edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
-        coeff_list = np.random.uniform(-1, 1, n_qubits + n_qubits*(n_qubits-1)//2) #is this correct for 3reg??
-    else:
-        if graph_type == "complete":
-            #instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/complete/N_' + str(n_qubits)
-            instance_dir = '../instances/complete/N_' + str(n_qubits )
-            with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_comp_'+ '.gpickle', 'rb') as f:
-                G = pickle.load(f)
-            # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_comp_'+ '.gpickle')
-            coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_comp_'+ 'r_'+ str(r)+ '.txt')
-            edge_list = list(itertools.chain.from_iterable(partition_N(n_qubits)))
-        elif graph_type == "3regular":
-            instance_dir = '../instances/3reg/N_' + str(n_qubits )
-            # instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/3reg/N_' + str(n_qubits)
-            # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_' + 'r_'+str(r) + '.gpickle')
-            with open(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_'+ '.gpickle', 'rb') as f:
-                G = pickle.load(f)
-            coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_3reg_'+ 'r_'+ str(r)+ '.txt')
-            # edge_list = list(G.edges())
-            edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
-        else:
-            density = graph_type
-            instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
-            # instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/3reg/N_' + str(n_qubits)
-            # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_' + 'r_'+str(r) + '.gpickle')
-            with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ '.gpickle', 'rb') as f:
-                G = pickle.load(f)
-            coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_'+ 'r_'+ str(r)+ '.txt')
-            # edge_list = list(G.edges())
-            edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
+    # #region load qubo instances, get Hamiltonian and edge_coeff_dict
+    # if n_qubits < 12:  # for test
+    #     if graph_type == "complete":
+    #         G = nx.complete_graph(n_qubits)
+    #         edge_list = list(itertools.chain.from_iterable(partition_N(n_qubits)))
+    #     elif graph_type == "3regular":
+    #         G = nx.random_regular_graph(3, n_qubits)
+    #         # edge_list = list(G.edges())
+    #         edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
+    #     coeff_list = np.random.uniform(-1, 1, n_qubits + n_qubits*(n_qubits-1)//2) #is this correct for 3reg??
+    # else:
+    #     if graph_type == "complete":
+    #         #instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/complete/N_' + str(n_qubits)
+    #         instance_dir = '../instances/complete/N_' + str(n_qubits )
+    #         with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_comp_'+ '.gpickle', 'rb') as f:
+    #             G = pickle.load(f)
+    #         # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_comp_'+ '.gpickle')
+    #         coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_comp_'+ 'r_'+ str(r)+ '.txt')
+    #         edge_list = list(itertools.chain.from_iterable(partition_N(n_qubits)))
+    #     elif graph_type == "3regular":
+    #         instance_dir = '../instances/3reg/N_' + str(n_qubits )
+    #         # instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/3reg/N_' + str(n_qubits)
+    #         # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_' + 'r_'+str(r) + '.gpickle')
+    #         with open(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_'+ '.gpickle', 'rb') as f:
+    #             G = pickle.load(f)
+    #         coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_3reg_'+ 'r_'+ str(r)+ '.txt')
+    #         # edge_list = list(G.edges())
+    #         edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
+    #     else:
+    #         density = graph_type
+    #         instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
+    #         # instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/3reg/N_' + str(n_qubits)
+    #         # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_' + 'r_'+str(r) + '.gpickle')
+    #         with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ '.gpickle', 'rb') as f:
+    #             G = pickle.load(f)
+    #         coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_'+ 'r_'+ str(r)+ '.txt')
+    #         # edge_list = list(G.edges())
+    #         edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
+
+    density = graph_type
+    instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
+    # instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/3reg/N_' + str(n_qubits)
+    # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_' + 'r_'+str(r) + '.gpickle')
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ '.gpickle', 'rb') as f:
+        G = pickle.load(f)
+    coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_'+ 'r_'+ str(r)+ '.txt')
+    # edge_list = list(G.edges())
+    edge_list = list(itertools.chain.from_iterable(partition_graph(G)))
 
     print('\n\n#############################################################################')
     h_list = coeff_list[:n_qubits ]
-    J_list = coeff_list[n_qubits : n_qubits + len(edge_list)]
+    # J_list = coeff_list[n_qubits : n_qubits + len(edge_list)]
+    J_list = coeff_list[n_qubits :]
 
     #extrcact Hamiltonian, edge coefficients and eigen list
     H = Hamiltonian_qubo(n_qubits, edge_list, h_list, J_list)   #This is changes from the old version of the code!!
@@ -128,7 +139,7 @@ def main():
     #endregion
 
 
-    eff_layers = 0
+    # eff_layers = 0
     #region get best sorting way from cvar value
     
     expz_array = np.array([0]*n_qubits)
@@ -180,22 +191,22 @@ def main():
     for step in range(5):
         circ_init = initial_state_ry(n_qubits, expz_array)
 
-        if step == 0:
-            edge_params_dict, params_init, exp_poss_dict, state_all, entropy_list = get_good_initial_params_measure_iterate_ENTROPYSAVE(\
-            n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
-            poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
-            entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
+        # if step == 0:
+        #     edge_params_dict, params_init, exp_poss_dict, state_all, entropy_list = get_good_initial_params_measure_iterate_ENTROPYSAVE(\
+        #     n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
+        #     poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
+        #     entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
 
-        else:
-            edge_params_dict, params_init, exp_poss_dict, state_all = get_good_initial_params_measure_iterate(\
-            n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
-            poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
-            entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
+        # else:
+        #     edge_params_dict, params_init, exp_poss_dict, state_all = get_good_initial_params_measure_iterate(\
+        #     n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
+        #     poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
+        #     entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
 
-        #edge_params_dict, params_init, exp_poss_dict, state_all = get_good_initial_params_measure_iterate(\
-        #n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
-        #poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
-        #entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
+        edge_params_dict, params_init, exp_poss_dict, state_all = get_good_initial_params_measure_iterate(\
+        n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)     #HO SPOSTATO IL SALVADATI A DOPO
+        poss, cvar, expz_array = get_expz(n_qubits, state_all, alpha, eigen_list)
+        entropy = entanglement_entropy(state_all , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
 
         steps_edge_params_dict['step_'+str(step)] = edge_params_dict
         steps_exp_poss_dict['step_'+str(step)] = exp_poss_dict
@@ -211,7 +222,7 @@ def main():
     dir_0 = './data_iter_adap_sorting'
     os.makedirs(dir_0, exist_ok=True)
     dir_name =  dir_0 + '/graph_{}/shots_{}/num_variables_{:03d}/params_{}_layer_{}/alpha_{}/r_{}/'\
-        .format(graph_type,  shots, n_qubits, num_params, layer*(1 + eff_layers), alpha, r)
+        .format(graph_type,  shots, n_qubits, num_params, layer, alpha, r)
     os.makedirs(dir_name, exist_ok=True)
 
         
@@ -224,7 +235,7 @@ def main():
                 'steps_exp_poss_dict': steps_exp_poss_dict,
                 'steps_cvar_dict': steps_cvar_dict,
                 'steps_entropy_dict': steps_entropy_dict,
-                'entropy_list':entropy_list,
+                # 'entropy_list':entropy_list,
                 'sorting' : sorting,
                 'abs' : best_abs,
                 'invert' : best_inv
