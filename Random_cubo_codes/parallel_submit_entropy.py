@@ -3,13 +3,13 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [20]
-N_r = 100
+N_list = [24]
+N_r = 400
 alpha_value = 0.01
 num_shots = 0
 tau_list = [0.3]
 num_layer = 1
-graph_type_list = ['3regular', '050', '070', '080', '090', '095','complete']
+graph_type_list = ['3regular', '050', '070', '080', '090', '095', '100', 'complete']
 adaptive = 1
 
 job = htcondor.Submit({
@@ -32,7 +32,7 @@ job = htcondor.Submit({
 
 itemdata = []
 for N in N_list: 
-        for r in range(N_r, 2*N_r):
+        for r in range(N_r):
             for tau_value in tau_list:
                 for graph in graph_type_list:
                     itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "layer": str(num_layer), "tau": str(tau_value), "graph_type": str(graph), "if_adsorting": str(adaptive)})
