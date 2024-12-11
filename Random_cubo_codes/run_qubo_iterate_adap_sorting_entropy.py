@@ -115,7 +115,7 @@ def main():
     instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
     # instance_dir = '/lustre/fs23/group/nic/yahuichai/code/COP/code_qiskit_1/QUBO/instances/3reg/N_' + str(n_qubits)
     # G = nx.read_gpickle(instance_dir + '/QUBO_' + str(n_qubits) + 'V_3reg_' + 'r_'+str(r) + '.gpickle')
-    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ '.gpickle', 'rb') as f:
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
         G = pickle.load(f)
     coeff_list = np.loadtxt(instance_dir + '/QUBO_coeff_' + str(n_qubits) + 'V_'+ 'r_'+ str(r)+ '.txt')
     # edge_list = list(G.edges())
