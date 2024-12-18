@@ -1,49 +1,9 @@
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 Traceback (most recent call last):
   File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
     main()
   File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
     with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
-FileNotFoundError: [Errno 2] No such file or directory: '../instances/3regular/N_16/QUBO_16V_r_397.gpickle'
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
-/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
-  backends.update(_get_backends("networkx.backends"))
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_374.gpickle'
 /lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
   backends.update(_get_backends("networkx.backends"))
 /bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
@@ -52,7 +12,29 @@ Traceback (most recent call last):
     main()
   File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
     with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
-FileNotFoundError: [Errno 2] No such file or directory: '../instances/3regular/N_16/QUBO_16V_r_399.gpickle'
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_376.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_380.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_298.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
   backends.update(_get_backends("networkx.backends"))
@@ -61,15 +43,239 @@ Traceback (most recent call last):
     main()
   File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
     with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
-FileNotFoundError: [Errno 2] No such file or directory: '../instances/3regular/N_16/QUBO_16V_r_398.gpickle'
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_378.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_356.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_320.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_384.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_381.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_382.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
   backends.update(_get_backends("networkx.backends"))
 /bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_322.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_390.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_386.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_393.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_387.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
   backends.update(_get_backends("networkx.backends"))
 /lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
   backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_391.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
 /lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
   backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_396.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_392.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_379.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_394.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_398.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_395.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_397.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_383.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_399.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_363.gpickle'
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_388.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_377.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_365.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_385.gpickle'
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_349.gpickle'
+/bin/bash: /afs/ifh.de/user/t/tuccia/.profile: Permission denied
+/lustre/fs24/group/cqta/atucci/environment/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 253, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/run_qubo_iterate_adap_sorting_entropy.py", line 118, in main
+    with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../instances/complete/N_16/QUBO_16V_r_389.gpickle'
