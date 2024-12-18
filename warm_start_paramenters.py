@@ -2,16 +2,50 @@ import sys
 
 import numpy as np 
 import math
-from math import cos, sin, cosh, sinh, atan, exp, pi, sqrt
+from math import cos, sin, cosh, sinh, atan, exp, pi, sqrt, acos
 
 from qiskit import *
 from qiskit.quantum_info import Pauli, SparsePauliOp
 from qiskit_aer.primitives import Estimator
+from qiskit_aer import AerSimulator
 
 from scipy.optimize import minimize
 import more_itertools as mit
 
 import itertools
+import time
+import copy
+
+def partition_N(n):
+    '''do the partition of a complete graph'''
+    indexs = range(n)
+    pairs_all = []
+
+    swap_even = [i + pow(-1, i) for i in range(n)]
+
+    swap_odd = [0]
+    swap_odd.extend([i + pow(-1, i+1) for i in range(1,n-1)])
+    swap_odd.append(n-1)
+
+    pairs_even = [(i, i+1) for i in range(0, n, 2)]
+    indexs = np.array(indexs)[swap_even]   ### indexs after swap even
+    #     print('\nindexs after swap {}: {}'.format(0, indexs))
+    pairs_all.append(pairs_even)
+    for i in range(1, n):
+        if (i%2)==1:
+            pair_odd = [(indexs[i], indexs[i+1]) for i in range(1, n-1, 2)]
+            pairs_all.append(pair_odd)
+            indexs = np.array(indexs)[swap_odd]   ### indexs after swap even
+    #             print('\nindexs after swap {}: {}'.format(i, indexs))
+
+        elif (i%2)==0:
+            pair_even = [(indexs[i], indexs[i+1]) for i in range(0, n-1, 2)]
+            pairs_all.append(pair_even)
+            indexs = np.array(indexs)[swap_even]   ### indexs after swap even
+    #             print('\nindexs after swap {}: {}'.format(i, indexs))
+
+    return pairs_all
+
 
 def compute_coeffedge_list(hamiltonian):
 
@@ -100,7 +134,7 @@ def cost_mimic_1op(para:list, *args:tuple):
 
     return -abs(cost)
 
-def get_initial_para_1op_Y(N:int, qi:list, coeff:float, tau:float, circ:QuantumCircuit, shots:int, approximation:bool):
+def get_initial_para_1op_Y(N:int, qi:list, coeff:float, tau:float, circ:QuantumCircuit, backendoptions:dict):
     """Get the good initial parameters for operations in qubit [i] by mimic the ITE e^{-tau*coeff*Zi}
     Args:
         N: number of qubits
@@ -117,7 +151,9 @@ def get_initial_para_1op_Y(N:int, qi:list, coeff:float, tau:float, circ:QuantumC
     i = qi[0] # qubit index
     tauc = tau * coeff
 
-    estimator = Estimator(approximation =  approximation, run_options={"shots": shots})
+    options = copy.deepcopy(backendoptions)
+    options['shots'] = 1000
+    estimator = Estimator(backend_options=options)
 
     op_dict = {}
     op_dict['Z'] = SparsePauliOp.from_sparse_list([('Z', [i], 1)], N)  
@@ -131,6 +167,7 @@ def get_initial_para_1op_Y(N:int, qi:list, coeff:float, tau:float, circ:QuantumC
         exp = estimator.run(circ, op).result().values[0]    #Computes the expectation value of the given operator
         exp_dict[op_str] = exp
         #print(estimator.run(circ, op).result())
+
 
     para_init = [0]
     final = minimize(cost_mimic_1op,
@@ -169,7 +206,7 @@ def cost_mimic_2op(para:list, *args:tuple):
 
     return -abs(cost)
 
-def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:QuantumCircuit, shots:int, approximation:bool):
+def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:QuantumCircuit, backendoptions:dict):
     """Get the good initial parameters for gates acting on qubits [i,j] by mimic the ITE e^{-tau*coeff*ZiZj}.
        Only for structure_like_qubo_YZ_2 ansatz 
     Args:
@@ -189,8 +226,9 @@ def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:Quantum
     tauc = tau * coeff
 
     # print('tauc', tauc)
-
-    estimator = Estimator(approximation =  approximation, run_options={"shots": shots})
+    options = copy.deepcopy(backendoptions)
+    options['shots'] = 1000
+    estimator = Estimator(backend_options=options)
 
     op_dict = {}
     op_dict['ZZ'] = SparsePauliOp.from_sparse_list([('ZZ', [j, i], 1)], N)
@@ -210,7 +248,6 @@ def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:Quantum
         #print(estimator.run(circ, op).result())
 
     para_init = [0, 0]
-
     final = minimize(cost_mimic_2op,
                       para_init,
                       args = (exp_dict, tauc),
@@ -220,6 +257,7 @@ def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:Quantum
                       method='SLSQP',
                       callback=None,
                       options={'maxiter': 10000})
+
     return final.x
 
 def get_good_initial_params_measure(N:int, tau:float, layer:int, edge_coeff_dict:dict, pairs_all:list, \
@@ -298,82 +336,6 @@ def get_good_initial_params_measure(N:int, tau:float, layer:int, edge_coeff_dict
     
     return layers_edge_params_dict, params_list, layers_exp_poss_dict, vec_final
 
-def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_dict:dict, pairs_all:list, \
-                                    eigen_list:list, shots:int, approximation:bool):
-    """get the warm start parameters by measurement-based approach
-    Args:
-        N: number of qubits
-        tau: time step for imaginary time evolution
-        layer: number of layers in the ansatz
-        edge_coeff_dict: dict, {edge: coeff}, coefficients of edges (or vertexes, i as edge (i,)) in the graph
-        pairs_all: list of qubit index pairs (edges) in a order to parallel the circuit
-        eigen_list: list of eigenvalues of Hamiltonian
-        shots (None or int): The number of shots. If None and approximation is True, it calculates the exact expectation values. 
-                            Otherwise, it calculates expectation values with sampling.
-        approximation:
-        file_path: str, path to save the warm start parameters
-    Return:
-        layers_edge_params_dict: dict, {layer: {edge: params}}, warm start parameters for each edge in the graph from l=1 to maximal layer
-        layers_exp_poss_dict: dict, {layer: {exp: poss}}, probalities of eigenvalues using warm start circuit with l=1 to maximal layer
-    """
-    
-    eigens_ids = np.argsort(eigen_list)[:100]  ## return the id of the lowest 100 eigenvalues    ????
-    # print('eigens_ids', eigens_ids)
-    # q = QuantumRegister(N, name = 'q')
-    # circ = QuantumCircuit(q)
-    # circ.clear()
-    # circ.h(q[::])
-
-    layers_edge_params_dict = {}  ## save the warm start parameters for each edge in the graph from l=1 to maximal layer
-    params_list = []  ## save the warm start parameters for each layer, just for good formula to run vqe
-    layers_exp_poss_dict = {} ## save probalities of eigenvalues using warm start circuit with l=1 to maximal layer
-
-    for l in range(1, layer+1): 
-
-        edge_params_dict = {} ## to save the initial parameters for each vertex or edge in l'th layer
-        exp_poss_dict = {}  ### record the {exp:poss} information after the excution of l'th layer
-
-        # Z term
-        for i in range(N):
-
-            para = get_initial_para_1op_Y(N, [i], edge_coeff_dict[(i,)], tau, circ, shots, approximation)[0] #use this to extimate para from min expectation value
-            # tauc = tau * edge_coeff_dict[(i,)] 
-            # para = 2*atan( -exp(-2*tauc) ) + pi/2 #use this to use analytic formula (only valid for 1 layer)
-
-            edge_params_dict[(i,)] = para
-            params_list.append(para)
-            circ.ry(para, i)
-
-        # ZZ term
-        for edge in pairs_all:
-
-            if edge[0] >= edge[1]:
-                sys.stderr.write('wrong edge in pairs_all')
-                sys.exit()
-
-            para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, shots, approximation)
-            edge_params_dict[edge] = para
-            params_list.extend(para)
-            circ =  quant_circ_update(N, circ, edge, para)
-        
-        layers_edge_params_dict['l_'+str(l)] = edge_params_dict
-
-        # run the l layer circuit
-        backend = Aer.get_backend('statevector_simulator')
-        result = backend.run(circ).result()
-        vec_final = np.array( result.get_statevector() ).real
-
-        for id in eigens_ids:
-            eigen = eigen_list[id]
-            poss = abs(vec_final[id])**2
-            # print('eigen', eigen, 'poss', poss)
-            exp_poss_dict[eigen] = poss
-
-
-        layers_exp_poss_dict['l_'+str(l)] = exp_poss_dict
-    
-    return layers_edge_params_dict, params_list, layers_exp_poss_dict, vec_final
-
 
 def find_light_cone(pairs):
     lightcone_dict = {}
@@ -388,3 +350,225 @@ def find_light_cone(pairs):
                         relevent_pairs.append(pair_layerm1)
             lightcone_dict[pair] = relevent_pairs
     return lightcone_dict
+
+
+
+
+
+
+def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_dict:dict, pairs_all:list, \
+                                    eigen_idvalue_dict:dict, shots:int, backendoptions:str):
+    """get the warm start parameters by measurement-based approach
+    Args:
+        N: number of qubits
+        tau: time step for imaginary time evolution
+        layer: number of layers in the ansatz
+        edge_coeff_dict: dict, {edge: coeff}, coefficients of edges (or vertexes, i as edge (i,)) in the graph
+        pairs_all: list of qubit index pairs (edges) in a order to parallel the circuit
+        eigen_idvalue_dict: dict, {id: eigenvalue}, eigenvalues of Hamiltonian from smallest to largest, id is the index of eigenvalue, i.e. decimel representation of the binary string
+        shots (None or int): The number of shots. If None and approximation is True, it calculates the exact expectation values. 
+                            Otherwise, it calculates expectation values with sampling.
+        approximation:
+        file_path: str, path to save the warm start parameters
+    Return:
+        layers_edge_params_dict: dict, {layer: {edge: params}}, warm start parameters for each edge in the graph from l=1 to maximal layer
+        layers_exp_poss_dict: dict, {layer: {exp: poss}}, probalities of eigenvalues using warm start circuit with l=1 to maximal layer
+    """
+
+    layers_edge_params_dict = {}  ## save the warm start parameters for each edge in the graph from l=1 to maximal layer
+    params_list = []  ## save the warm start parameters for each layer, just for good formula to run vqe
+    layers_exp_poss_dict = {} ## save probalities of eigenvalues using warm start circuit with l=1 to maximal layer
+
+    for l in range(1, layer+1): 
+
+        edge_params_dict = {} ## to save the initial parameters for each vertex or edge in l'th layer
+        exp_poss_dict = {(eigen, id):0 for (id, eigen) in list(eigen_idvalue_dict.items())[:10]}  ### initialize the dict with the smallest 10 eigenvalues
+        # print('\nexp_poss_dict', exp_poss_dict)
+
+        # Z term
+        for i in range(N):
+            para = get_initial_para_1op_Y(N, [i], edge_coeff_dict[(i,)], tau, circ, backendoptions)[0] #use this to extimate para from min expectation value
+            edge_params_dict[(i,)] = para
+            params_list.append(para)
+            circ.ry(para, i)
+
+        # ZZ term
+        for edge in pairs_all:
+            para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, backendoptions)
+            edge_params_dict[edge] = para
+            params_list.extend(para)
+            circ =  quant_circ_update(N, circ, edge, para)
+        
+        layers_edge_params_dict['l_'+str(l)] = edge_params_dict
+
+
+        # run the l layer circuit
+        if backendoptions['method'] == 'statevector':
+            simulator = AerSimulator(method='statevector')
+            shots = backendoptions['shots']
+
+            if shots == 0:
+                circ.save_statevector() 
+                tcirc = transpile(circ, simulator)
+                result = simulator.run(tcirc).result()
+
+                vec_final = np.array( result.get_statevector() ).real
+                for id in list(eigen_idvalue_dict.keys())[:min(1000, 2**N)]:
+                    eigen = eigen_idvalue_dict[id]
+                    poss = abs(vec_final[id])**2
+                    exp_poss_dict[(eigen, id)] = float(poss)
+            else:
+                circ.measure_all()
+                tcirc = transpile(circ, simulator)
+                result = simulator.run(tcirc, shots = shots).result()
+                
+                counts= result.get_counts()
+                for bitstr, count in counts.items():
+                    id = int(bitstr, 2)  ## q_{N-1}..... q1 q0, in statevector backend
+                    eigen = eigen_idvalue_dict[id]
+                    exp_poss_dict[(eigen, id)] = count/shots
+
+                    
+        elif backendoptions['method'] == 'matrix_product_state':
+            maxbond = backendoptions['matrix_product_state_max_bond_dimension']
+            shots = backendoptions['shots']
+            circ.measure_all()
+            simulator = AerSimulator(method='matrix_product_state', matrix_product_state_max_bond_dimension=maxbond, shots=shot)
+            tcirc = transpile(circ, simulator)
+            result = simulator.run(tcirc, shots = shots).result()
+            counts= result.get_counts()
+       
+            for bitstr, count in counts.items():
+                id = int(bitstr, 2)   ## q_{N-1}..... q1 q0, in mps backend
+                eigen = eigen_idvalue_dict[id]
+                poss = count/shots
+                exp_poss_dict[(eigen, id)] = poss
+            
+        exp_poss_dict = dict(sorted(exp_poss_dict.items(), key=lambda item: item[0][0])[:100])  ## sort the dict by eigen values in ascending order
+
+
+        layers_exp_poss_dict['l_'+str(l)] = exp_poss_dict
+
+    return layers_edge_params_dict, params_list, layers_exp_poss_dict
+
+
+def initial_state_ry(N:int, z_list):
+    """initialize the quantum state of each qubit n as: ry(a)|0> = (cos(a/2)|0> + sin(a/2) |1>), <Z> = cos(a/2)^2 - sin(a/2)^2 = cos(a)
+    Args:
+        N: number of qubits
+        z_list: list of expectation values of sigma^z for each qubit
+    Returns:
+        circ_init: QuantumCircuit for the initial state
+    
+    """
+    q = QuantumRegister(N)
+    circ_init = QuantumCircuit(q)
+
+    for n in range(N):
+        # find the angle theta such that sin(theta/2)**2 * C = k_list[n]
+        expz = z_list[n]
+        theta = acos(expz)
+        circ_init.ry(theta, q[n])
+
+    return circ_init
+
+
+def get_expz(N, exp_poss_dict, alpha):
+    """get the expectation value of <Z> for each qubit
+    Args:
+        N: number of qubits
+        exp_poss_dict: dict, {(exp, id): poss}, probalities of eigenvalues by measurement results
+        alpha: CVaR coefficient
+    Returns:
+        z_list: list of expectation values of sigma^z for each qubit
+    """
+    # backend = Aer.get_backend('statevector_simulator')
+    # job = backend.run(circ)
+    # result = job.result()
+    # outputstate = np.array(result.get_statevector(circ))   ### amplitude
+    # prob_list = [abs(outputstate[i]) ** 2 for i in range(len(outputstate))]
+    # prob_list = np.abs(np.array(state_vector)) ** 2
+
+    exp_poss_dict = dict(sorted(exp_poss_dict.items(), key=lambda item: item[0][0]))  ## sort the dict by eigen values in ascending order
+
+    cvar = 0
+    total_prob = 0
+    expz_array = np.zeros(N)
+    for (v, id), p in exp_poss_dict.items():
+        if p >= alpha - total_prob:
+            p = alpha - total_prob
+        total_prob += p
+        cvar += p * v
+
+        bits = format(id, '0' + str(N) + 'b')[::-1] # bitstring of the eigen state, (id, binary) = q_{N-1}..... q1 q0, revers it to q0 q1 ... q_{N-1}
+        for j, bit in enumerate(bits):
+            expz_array[j] += pow(-1, int(bit)) * p
+
+        if abs(total_prob - alpha) < 1e-8:
+            break
+
+    cvar /= total_prob
+    expz_array /= total_prob
+   
+    return cvar, expz_array
+
+def entanglement_entropy(state, trace_indices, dof_list, tol=1e-12):
+    """
+
+    Inputs:
+
+    state = numpy array statevector
+
+    trace_indices = list of indices of sites to be traced out
+
+    dof_list = list of number of degrees of freedom per site for all sites
+
+    tol = any eigenvalue of the reduced density matrix that is smaller than this tolerence will be neglected
+
+    Outputs:
+
+    ee, rho_reduced = entanglement entropy and reduced density matrix
+
+    """
+
+    # Make sure input is in the right type form and state is normalized to 1
+    state, trace_indices, dof_list = np.array(state) / np.linalg.norm(np.array(state)), list(trace_indices), list(
+        dof_list)
+
+    # Just a simple list containing the indices from 0 to N - 1 where N is the total number of sites
+    site_indices = np.arange(len(dof_list), dtype='int')
+
+    # The dimension of each index to be traced
+    trace_dof = [dof_list[i] for i in trace_indices]
+
+    # List containing the indices of the sites not to be traced
+    untraced_indices = [idx for idx in site_indices if idx not in trace_indices]
+
+    # The dimension of each index in the list of untraced indices
+    untraced_dof = [dof_list[i] for i in untraced_indices]
+
+    # Reshape statevector into tensor of rank N with each index having some degrees of freedom specified by the dof_list
+    # for example if it is a spin-1/2 chain then each site has 2 degrees of freedom and the dof_list should be [2]*N = [2, 2, 2, 2, ..., 2]
+    state = np.reshape(state, dof_list)
+    state = np.transpose(state, axes=site_indices[::-1])   ## to have the smame index order as the qiskit
+
+    # Permute the indices of the rank N tensor so the untraced indices are placed on the left and the ones to be traced on the right
+    state = np.transpose(state, axes=untraced_indices + trace_indices)
+
+    # Reshape the rank N tensor into a matrix where you merge the untraced indices into 1 index and you merge the traced indices into 1 index
+    # if the former index is called I and the latter J then we have state_{I, J}
+    state = np.reshape(state, (np.prod(untraced_dof), np.prod(trace_dof)))
+
+    # The reduced density matrix is given by state_{I, J}*state_complex_conjugated_{J, K}, so we see from here that the indices to be
+    # traced out ie the ones contained in the merged big index J are summed over in the matrix multiplication
+    rho_reduced = np.matmul(state, state.conjugate().transpose())
+
+    evals = np.linalg.eigh(rho_reduced)[0]
+    # Calculate the 'from Newman' (von Neumann) entropy
+    ee = 0
+    for eval in evals:
+        if eval < tol:
+            continue
+        ee += -eval * np.log2(eval)
+
+    return ee, rho_reduced  # return both the entanglement entropy and the reduced density matrix
