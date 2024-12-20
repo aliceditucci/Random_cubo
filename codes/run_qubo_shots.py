@@ -43,8 +43,10 @@ def main():
     if shots == 0:# exact simulation
         shots = None
         approximation = True
+        shotparams = None
     else:#simulation with finite shots
         approximation = False
+        shotparams = 1000
     
     if if_adsorting == 0:
         if_adsorting = False
@@ -59,7 +61,7 @@ def main():
     
     
     #make data dir
-    dir_0 = './data_iter_adap_sorting'
+    dir_0 = '../Random_cubo_codes/data_iter_adap_sorting'
     os.makedirs(dir_0, exist_ok=True)
 
     instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
@@ -86,9 +88,9 @@ def main():
     circ_init = initial_state_ry(n_qubits, expz_array)
      
     edge_params_dict, params_init, circ = get_parameters(\
-    n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation) 
+    n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shotparams, approximation) 
 
-    poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shotsmulti*shots, alpha)
+    poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shots, alpha)
 
     best_cvar = cvar 
     sorting = False
@@ -104,8 +106,8 @@ def main():
 
                 circ_init = initial_state_ry(n_qubits, expz_array)
                 edge_params_dict, params_init, circ = get_parameters(\
-                n_qubits, tau, layer, circ_init, edge_coeff_dict, sorted_edge_list, eigen_list, shots, approximation)     
-                poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shotsmulti*shots, alpha)
+                n_qubits, tau, layer, circ_init, edge_coeff_dict, sorted_edge_list, eigen_list, shotparams, approximation)     
+                poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shots, alpha)
 
                 if cvar < best_cvar:
                     best_cvar = cvar
@@ -130,14 +132,14 @@ def main():
         circ_init = initial_state_ry(n_qubits, expz_array)
 
         edge_params_dict, params_init, circ = get_parameters(\
-        n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shots, approximation)
+        n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shotparams, approximation)
         
         if not shots:
             entropy = entanglement_entropy(circ , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
         else:
             entropy = 0 
 
-        poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shotsmulti*shots, alpha)
+        poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shots, alpha)
 
         steps_edge_params_dict['step_'+str(step)] = edge_params_dict
         steps_exp_poss_dict['step_'+str(step)] = exp_poss_dict
@@ -151,8 +153,6 @@ def main():
     
     num_params = len(params_init)   
 
-    dir_0 = './data_iter_adap_sorting'
-    os.makedirs(dir_0, exist_ok=True)
     dir_name =  dir_0 + '/graph_{}/shots_{}/num_variables_{:03d}/params_{}_layer_{}/alpha_{}/r_{}/'\
         .format(graph_type,  shots, n_qubits, num_params, layer, alpha, r)
     os.makedirs(dir_name, exist_ok=True)

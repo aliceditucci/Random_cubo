@@ -6,23 +6,23 @@ import os
 N_list = [22]
 N_r = 400
 alpha_value = 0.01
-num_shots = 0
+num_shots = 10000
 tau_list = [0.3]
 num_layer = 1
 graph_type_list = ['3regular', '050', '070', '080', '090', '095', '100', 'complete']
 adaptive = 1
 
 job = htcondor.Submit({
-    "executable": "job_parallel_entropy.sh",
+    "executable": "job_parallel.sh",
     "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting)",
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
 
-    "error" : "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).error",
+    "error" : "/lustre/fs24/group/cqta/atucci/Random_cubo/codes/Logs/QUBO_N$(N)_shots$(shots).error",
 
-    "output": "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).out",
+    "output": "/lustre/fs24/group/cqta/atucci/Random_cubo/codes/Logs/QUBO_N$(N)_shots$(shots).out",
 
-    "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo/Random_cubo_codes/Logs/QUBO_N$(N)_shots$(shots).log",
+    "log" : "/lustre/fs24/group/cqta/atucci/Random_cubo/codes/Logs/QUBO_N$(N)_shots$(shots).log",
 
     "+RequestRuntime": "172800",
     "request_memory": "10GB",

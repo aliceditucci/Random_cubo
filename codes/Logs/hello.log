@@ -1,0 +1,189 @@
+000 (3691577.000.000) 2024-12-18 14:59:45 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_8749_aa2e>
+...
+001 (3691577.000.000) 2024-12-18 15:00:01 Job executing on host: <141.34.15.13:9618?addrs=141.34.15.13-9618+[2001-638-700-f00f--1-d]-9618&alias=bladej1.zeuthen.desy.de&noUDP&sock=startd_10805_e8e5>
+	SlotName: slot1_14@bladej1.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_1086099"
+	Cpus = 1
+	Disk = 1696878
+	Memory = 10240
+...
+009 (3691485.000.000) 2024-12-18 15:00:03 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+006 (3691577.000.000) 2024-12-18 15:00:07 Image size of job updated: 1920
+	2  -  MemoryUsage of job (MB)
+	1920  -  ResidentSetSize of job (KB)
+...
+005 (3691577.000.000) 2024-12-18 15:00:07 Job terminated.
+	(1) Normal termination (return value 127)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1024000   1696878 
+	   Memory (MB)          :        2    10240     10240 
+
+	Job terminated of its own accord at 2024-12-18T14:00:07Z with exit-code 127.
+...
+000 (3691707.000.000) 2024-12-18 15:02:36 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_8749_aa2e>
+...
+001 (3691707.000.000) 2024-12-18 15:02:45 Job executing on host: <141.34.14.28:9618?addrs=141.34.14.28-9618+[2001-638-700-f00e--1-1c]-9618&alias=turing02.zeuthen.desy.de&noUDP&sock=startd_6729_1cdf>
+	SlotName: slot1_26@turing02.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_1812689"
+	Cpus = 1
+	Disk = 2905548
+	GPUs = 0
+	Memory = 10240
+...
+006 (3691707.000.000) 2024-12-18 15:02:57 Image size of job updated: 48204
+	48  -  MemoryUsage of job (MB)
+	48204  -  ResidentSetSize of job (KB)
+...
+005 (3691707.000.000) 2024-12-18 15:02:57 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:01, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:01, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  1024000   2905548 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       48    10240     10240 
+
+	Job terminated of its own accord at 2024-12-18T14:02:57Z with exit-code 0.
+...
+000 (3692193.000.000) 2024-12-18 15:07:08 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_8749_aa2e>
+...
+001 (3692193.000.000) 2024-12-18 15:07:13 Job executing on host: <141.34.15.61:9618?addrs=141.34.15.61-9618+[2001-638-700-f00f--1-3d]-9618&alias=bladej6.zeuthen.desy.de&noUDP&sock=startd_9341_ba3f>
+	SlotName: slot1_6@bladej6.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2799960"
+	Cpus = 1
+	Disk = 1696878
+	Memory = 10240
+...
+006 (3692193.000.000) 2024-12-18 15:07:19 Image size of job updated: 2564
+	3  -  MemoryUsage of job (MB)
+	2564  -  ResidentSetSize of job (KB)
+...
+005 (3692193.000.000) 2024-12-18 15:07:19 Job terminated.
+	(1) Normal termination (return value 127)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        0  1024000   1696878 
+	   Memory (MB)          :        3    10240     10240 
+
+	Job terminated of its own accord at 2024-12-18T14:07:19Z with exit-code 127.
+...
+000 (3692365.000.000) 2024-12-18 15:08:35 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_8749_aa2e>
+...
+001 (3692365.000.000) 2024-12-18 15:08:56 Job executing on host: <141.34.14.28:9618?addrs=141.34.14.28-9618+[2001-638-700-f00e--1-1c]-9618&alias=turing02.zeuthen.desy.de&noUDP&sock=startd_6729_1cdf>
+	SlotName: slot1_8@turing02.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_1833433"
+	Cpus = 1
+	Disk = 2905548
+	GPUs = 0
+	Memory = 10240
+...
+006 (3692365.000.000) 2024-12-18 15:09:04 Image size of job updated: 1700
+	2  -  MemoryUsage of job (MB)
+	1700  -  ResidentSetSize of job (KB)
+...
+005 (3692365.000.000) 2024-12-18 15:09:04 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  1024000   2905548 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        2    10240     10240 
+
+	Job terminated of its own accord at 2024-12-18T14:09:04Z with exit-code 0.
+...
+000 (3692606.000.000) 2024-12-18 15:10:26 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_8749_aa2e>
+...
+001 (3692606.000.000) 2024-12-18 15:10:27 Job executing on host: <141.34.15.73:9618?addrs=141.34.15.73-9618+[2001-638-700-f00f--1-49]-9618&alias=bladek0.zeuthen.desy.de&noUDP&sock=startd_10909_3ebf>
+	SlotName: slot1_2@bladek0.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_603569"
+	Cpus = 1
+	Disk = 1696878
+	Memory = 10240
+...
+006 (3692606.000.000) 2024-12-18 15:10:32 Image size of job updated: 1064
+	2  -  MemoryUsage of job (MB)
+	1064  -  ResidentSetSize of job (KB)
+...
+005 (3692606.000.000) 2024-12-18 15:10:33 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1024000   1696878 
+	   Memory (MB)          :        2    10240     10240 
+
+	Job terminated of its own accord at 2024-12-18T14:10:32Z with exit-code 1.
+...
+000 (3692974.000.000) 2024-12-18 15:12:02 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_8749_aa2e>
+...
+001 (3692974.000.000) 2024-12-18 15:12:10 Job executing on host: <141.34.15.200:9618?addrs=141.34.15.200-9618+[2001-638-700-f00f--1-c8]-9618&alias=pizza02.zeuthen.desy.de&noUDP&sock=startd_7942_2140>
+	SlotName: slot1_15@pizza02.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3500731"
+	Cpus = 1
+	Disk = 3556190
+	Memory = 10240
+...
+006 (3692974.000.000) 2024-12-18 15:12:21 Image size of job updated: 49628
+	49  -  MemoryUsage of job (MB)
+	49628  -  ResidentSetSize of job (KB)
+...
+005 (3692974.000.000) 2024-12-18 15:12:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1024000   3556190 
+	   Memory (MB)          :       49    10240     10240 
+
+	Job terminated of its own accord at 2024-12-18T14:12:21Z with exit-code 0.
+...
