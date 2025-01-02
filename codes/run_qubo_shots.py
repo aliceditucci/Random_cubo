@@ -158,8 +158,8 @@ def main():
     os.makedirs(dir_name, exist_ok=True)
 
         
-    gi_file_path = dir_name + 'ifadsorting_{}_tau_{}_entropy_saved.pkl'.format(if_adsorting, tau)
-    #gi_file_path = dir_name + 'ifadsorting_{}_tau_{}_entro.pkl'.format(if_adsorting, tau)
+    #gi_file_path = dir_name + 'ifadsorting_{}_tau_{}_entropy_saved.pkl'.format(if_adsorting, tau)
+    gi_file_path = dir_name + 'ifadsorting_{}_tau_{}.pkl'.format(if_adsorting, tau)
 
     save_data = {
                 'edge_order': edge_list,
