@@ -336,7 +336,6 @@ def get_good_initial_params_measure(N:int, tau:float, layer:int, edge_coeff_dict
     
     return layers_edge_params_dict, params_list, layers_exp_poss_dict, vec_final
 
-
 def find_light_cone(pairs):
     lightcone_dict = {}
     for index, list in enumerate(pairs):
@@ -352,12 +351,24 @@ def find_light_cone(pairs):
     return lightcone_dict
 
 
-
-
+def get_eigenvalue_from_bitstring(bitstr, edge_coeff_dict):
+    """get the eigenvalue of Hamiltonian from the bitstring"""
+    # Convert bitstring to Ising spins (s_i = 1 - 2x_i)
+    s = np.array([1 - 2 * int(b) for b in reversed(bitstr)])
+    eigen = 0
+    for edge, coeff in edge_coeff_dict.items():
+        if len(edge) == 1:
+            i = edge[0]
+            eigen += coeff * s[i]
+        elif len(edge) == 2:
+            i, j = edge
+            eigen += coeff * s[i] * s[j]
+        
+    return eigen
 
 
 def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_dict:dict, pairs_all:list, \
-                                    eigen_idvalue_dict:dict, shots:int, backendoptions:str):
+                                    eigen_idvalue_dict:dict, shots:int, backendoptions:str, if_analytic:int):
     """get the warm start parameters by measurement-based approach
     Args:
         N: number of qubits
@@ -370,6 +381,7 @@ def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:Qu
                             Otherwise, it calculates expectation values with sampling.
         approximation:
         file_path: str, path to save the warm start parameters
+        if_analytic: int 1 or 0, 1: use the analytic formula (estimate all parameters from product state) to get the initial parameters; 0: use the measurement-based approach to get the initial parameters
     Return:
         layers_edge_params_dict: dict, {layer: {edge: params}}, warm start parameters for each edge in the graph from l=1 to maximal layer
         layers_exp_poss_dict: dict, {layer: {exp: poss}}, probalities of eigenvalues using warm start circuit with l=1 to maximal layer
@@ -393,11 +405,22 @@ def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:Qu
             circ.ry(para, i)
 
         # ZZ term
-        for edge in pairs_all:
-            para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, backendoptions)
-            edge_params_dict[edge] = para
-            params_list.extend(para)
-            circ =  quant_circ_update(N, circ, edge, para)
+        if if_analytic == 1:
+            ## got all the initial parameters from product state first, then update it in circuit
+            for edge in pairs_all:
+                para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, backendoptions)
+                edge_params_dict[edge] = para
+                params_list.extend(para)
+            for edge in pairs_all:
+                para = edge_params_dict[edge]
+                circ =  quant_circ_update(N, circ, edge, para)
+        else:
+            ## got the initial parameters for each edge in the graph by measurement-based approach
+            for edge in pairs_all:
+                para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, backendoptions)
+                edge_params_dict[edge] = para
+                params_list.extend(para)
+                circ =  quant_circ_update(N, circ, edge, para)
         
         layers_edge_params_dict['l_'+str(l)] = edge_params_dict
 
@@ -425,26 +448,25 @@ def get_good_initial_params_measure_iterate(N:int, tau:float, layer:int, circ:Qu
                 counts= result.get_counts()
                 for bitstr, count in counts.items():
                     id = int(bitstr, 2)  ## q_{N-1}..... q1 q0, in statevector backend
-                    eigen = eigen_idvalue_dict[id]
-                    exp_poss_dict[(eigen, id)] = count/shots
-
-                    
+                    eigen = get_eigenvalue_from_bitstring(bitstr, edge_coeff_dict)
+                    exp_poss_dict[(eigen, id)] = count/shots    
         elif backendoptions['method'] == 'matrix_product_state':
             maxbond = backendoptions['matrix_product_state_max_bond_dimension']
             shots = backendoptions['shots']
             circ.measure_all()
-            simulator = AerSimulator(method='matrix_product_state', matrix_product_state_max_bond_dimension=maxbond, shots=shot)
-            tcirc = transpile(circ, simulator)
-            result = simulator.run(tcirc, shots = shots).result()
+            simulator = AerSimulator(method='matrix_product_state', matrix_product_state_max_bond_dimension=maxbond, shots=shots, max_memory_mb=10**12)
+            # tcirc = transpile(circ, simulator)
+            result = simulator.run(circ, shots = shots).result()
             counts= result.get_counts()
        
             for bitstr, count in counts.items():
                 id = int(bitstr, 2)   ## q_{N-1}..... q1 q0, in mps backend
-                eigen = eigen_idvalue_dict[id]
+                eigen = get_eigenvalue_from_bitstring(bitstr, edge_coeff_dict)
+                eigen = round(eigen, 4)  ## round the eigenvalue to 4 decimal places, because all coefficients are rounded to 4 decimal places
                 poss = count/shots
                 exp_poss_dict[(eigen, id)] = poss
             
-        exp_poss_dict = dict(sorted(exp_poss_dict.items(), key=lambda item: item[0][0])[:100])  ## sort the dict by eigen values in ascending order
+        exp_poss_dict = dict(sorted(exp_poss_dict.items(), key=lambda item: item[0][0]))  ## sort the dict by eigen values in ascending order
 
 
         layers_exp_poss_dict['l_'+str(l)] = exp_poss_dict
