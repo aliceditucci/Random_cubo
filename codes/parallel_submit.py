@@ -6,11 +6,12 @@ import os
 N_list = [22]
 N_r = 400
 alpha_value = 0.01
-num_shots = 10000
+num_shots = None
 tau_list = [0.3]
 num_layer = 1
 graph_type_list = ['3regular', '050', '070', '080', '090', '095', '100', 'complete']
 adaptive_list = [0,1]
+analytic = 1
 
 job = htcondor.Submit({
     "executable": "job_parallel.sh",
@@ -36,7 +37,7 @@ for N in N_list:
             for tau_value in tau_list:
                 for graph in graph_type_list:
                     for adaptive in adaptive_list:
-                        itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "layer": str(num_layer), "tau": str(tau_value), "graph_type": str(graph), "if_adsorting": str(adaptive)})
+                        itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "layer": str(num_layer), "tau": str(tau_value), "graph_type": str(graph), "if_adsorting": str(adaptive), "if_analytic": str(analytic)})
 
 schedd = htcondor.Schedd()
 submit_result = schedd.submit(job, itemdata=iter(itemdata))

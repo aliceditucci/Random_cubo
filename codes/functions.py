@@ -146,7 +146,7 @@ def initial_state_ry(N:int, z_list):
 #Optimization Iterations
 
 def get_parameters(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_dict:dict, pairs_all:list, \
-                                    eigen_list:list, shots:int, approximation:bool):
+                                    eigen_list:list, shots:int, approximation:bool, if_analytic:int):
     """get the warm start parameters by measurement-based approach
     Args:
         N: number of qubits
@@ -159,6 +159,7 @@ def get_parameters(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_
                             Otherwise, it calculates expectation values with sampling.
         approximation:
         file_path: str, path to save the warm start parameters
+        if_analytic: int 1 or 0, 1: use the analytic formula (estimate all parameters from product state) to get the initial parameters; 0: use the measurement-based approach to get the initial parameters
     Return:
         layers_edge_params_dict: dict, {layer: {edge: params}}, warm start parameters for each edge in the graph from l=1 to maximal layer
         layers_exp_poss_dict: dict, {layer: {exp: poss}}, probalities of eigenvalues using warm start circuit with l=1 to maximal layer
@@ -186,15 +187,25 @@ def get_parameters(N:int, tau:float, layer:int, circ:QuantumCircuit, edge_coeff_
             # print('parameters', para)
 
         # ZZ term
-        for edge in pairs_all:
-            if edge[0] >= edge[1]:
-                sys.stderr.write('wrong edge in pairs_all')
-                sys.exit() 
+        if if_analytic == 1:
+            ## got all the initial parameters from product state first, then update it in circuit
+            for edge in pairs_all:
+                para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, shots, approximation)
+                edge_params_dict[edge] = para
+                params_list.extend(para)
+            for edge in pairs_all:
+                para = edge_params_dict[edge]
+                circ =  quant_circ_update(N, circ, edge, para)
+        else:
+            for edge in pairs_all:
+                if edge[0] >= edge[1]:
+                    sys.stderr.write('wrong edge in pairs_all')
+                    sys.exit() 
 
-            para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, shots, approximation)
-            edge_params_dict[edge] = para
-            params_list.extend(para)
-            circ =  quant_circ_update(N, circ, edge, para)
+                para = get_initial_para_2op_YZ(N, edge, edge_coeff_dict[edge], tau, circ, shots, approximation)
+                edge_params_dict[edge] = para
+                params_list.extend(para)
+                circ =  quant_circ_update(N, circ, edge, para)
 
             # print('quadratic parameters', para)
         

@@ -27,6 +27,7 @@ def main():
     parser.add_argument("--graph_type", help="type of graph, complete or 3regular", required=False, type=str, default='complete')
 
     parser.add_argument("--if_adsorting", help="adaptive sorting or random order of coefficients", required=False, type=int, default=0)
+    parser.add_argument("--if_analytic", help="if use analytic way to estimate parameters in product states", required=False, type=int, default=0)
 
     args = parser.parse_args()
 
@@ -39,6 +40,7 @@ def main():
     layer = args.layer
 
     if_adsorting = args.if_adsorting
+    if_analytic = args.if_analytic
     
     if shots == 0:# exact simulation
         shots = None
@@ -56,13 +58,17 @@ def main():
 
     shotsmulti = 10 #to use more shots to evaluate the final circuit
 
-    print('\nN: {}, \nr: {}, \nalpha: {}, \nshots: {}, \ngraph_type: {},  \ntau: {}, \nif_adsorting: {}'\
-        .format(n_qubits, r, alpha, shots, graph_type, tau, if_adsorting))
+    print('\nN: {}, \nr: {}, \nalpha: {}, \nshots: {}, \ngraph_type: {},  \ntau: {}, \nif_adsorting: {}, \nif_analytic: {}'\
+        .format(n_qubits, r, alpha, shots, graph_type, tau, if_adsorting , if_analytic))
     
     
     #make data dir
-    dir_0 = '../Random_cubo_codes/data_iter_adap_sorting'
-    os.makedirs(dir_0, exist_ok=True)
+    if if_analytic == 1:
+        dir_0 = '../Random_cubo_codes/data_iter_adap_sorting_analytic'
+        os.makedirs(dir_0, exist_ok=True)
+    else:
+        dir_0 = '../Random_cubo_codes/data_iter_adap_sorting'
+        os.makedirs(dir_0, exist_ok=True)
 
     instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
     with open(instance_dir + '/QUBO_' + str(n_qubits ) + 'V_'+ 'r_'+ str(r)+ '.gpickle', 'rb') as f:
@@ -88,7 +94,7 @@ def main():
     circ_init = initial_state_ry(n_qubits, expz_array)
      
     edge_params_dict, params_init, circ = get_parameters(\
-    n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shotparams, approximation) 
+    n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shotparams, approximation, if_analytic) 
 
     poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shots, alpha)
 
@@ -106,7 +112,7 @@ def main():
 
                 circ_init = initial_state_ry(n_qubits, expz_array)
                 edge_params_dict, params_init, circ = get_parameters(\
-                n_qubits, tau, layer, circ_init, edge_coeff_dict, sorted_edge_list, eigen_list, shotparams, approximation)     
+                n_qubits, tau, layer, circ_init, edge_coeff_dict, sorted_edge_list, eigen_list, shotparams, approximation, if_analytic)     
                 poss, exp_poss_dict, cvar, expz_array = compute_expectations(n_qubits, eigen_list, circ, shots, alpha)
 
                 if cvar < best_cvar:
@@ -132,7 +138,7 @@ def main():
         circ_init = initial_state_ry(n_qubits, expz_array)
 
         edge_params_dict, params_init, circ = get_parameters(\
-        n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shotparams, approximation)
+        n_qubits, tau, layer, circ_init, edge_coeff_dict, edge_list, eigen_list, shotparams, approximation, if_analytic)
         
         if not shots:
             entropy = entanglement_entropy(circ , range(round(n_qubits/2)), [2]*n_qubits, tol=1e-12)[0]
