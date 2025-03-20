@@ -6,16 +6,16 @@ import os
 N_list = [22]
 N_r = 400
 alpha_value = 0.01
-num_shots = None
+num_shots = 10000
 tau_list = [0.3]
 num_layer = 1
-graph_type_list = ['3regular', '050', '070', '080', '090', '095', '100', 'complete']
+graph_type_list = ['3regular', '050', '070', '080', '090', '095', 'complete']
 adaptive_list = [0,1]
 analytic = 1
 
 job = htcondor.Submit({
     "executable": "job_parallel.sh",
-    "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting)",
+    "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting) $(if_analytic)",
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
 
