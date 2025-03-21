@@ -3,19 +3,21 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [22]
-N_r = 400
+N_list = [40]
+N_r = 100
 alpha_value = 0.01
 num_shots = 10000
-tau_list = [0.3]
+tau_list = [0.2, 0.3]
 num_layer = 1
-graph_type_list = ['3regular', '050', '070', '080', '090', '095', 'complete']
+graph_type_list = ['3regular']
 adaptive_list = [0,1]
 analytic = 1
+bond_dimension = 100 
+backend = 'matrix_product_state'
 
 job = htcondor.Submit({
     "executable": "job_parallel.sh",
-    "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting) $(if_analytic)",
+    "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting) $(if_analytic) $(bond) $(backend_method)",
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
 
@@ -37,7 +39,7 @@ for N in N_list:
             for tau_value in tau_list:
                 for graph in graph_type_list:
                     for adaptive in adaptive_list:
-                        itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "layer": str(num_layer), "tau": str(tau_value), "graph_type": str(graph), "if_adsorting": str(adaptive), "if_analytic": str(analytic)})
+                        itemdata.append({"N": str(N), "r": str(r), "alpha": str(alpha_value), "shots": str(num_shots), "layer": str(num_layer), "tau": str(tau_value), "graph_type": str(graph), "if_adsorting": str(adaptive), "if_analytic": str(analytic), "bond": str(bond_dimension), "backend_method": str(backend)})
 
 schedd = htcondor.Schedd()
 submit_result = schedd.submit(job, itemdata=iter(itemdata))
