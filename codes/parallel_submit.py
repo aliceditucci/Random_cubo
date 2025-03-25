@@ -4,10 +4,10 @@ import os
 
 
 N_list = [40]
-N_r = 100
-alpha_value = 0.01
-num_shots = 10000
-tau_list = [0.2, 0.3]
+N_r = 10
+alpha_value = 0.001
+num_shots = 100000
+tau_list = [0.05, 0.1, 0.2, 0.4]
 num_layer = 1
 graph_type_list = ['3regular']
 adaptive_list = [0,1]
@@ -17,7 +17,7 @@ backend = 'matrix_product_state'
 
 job = htcondor.Submit({
     "executable": "job_parallel.sh",
-    "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting) $(if_analytic) $(bond) $(backend_method)",
+    "arguments": "$(N) $(r) $(alpha) $(shots) $(tau) $(layer) $(graph_type) $(if_adsorting) $(if_analytic)",
     "requirements": 'OpSysAndVer == "AlmaLinux9"',
     "should_transfer_files" : "IF_NEEDED",
 
@@ -35,7 +35,7 @@ job = htcondor.Submit({
 
 itemdata = []
 for N in N_list: 
-        for r in range(N_r):
+        for r in range(N_r, N_r+1):
             for tau_value in tau_list:
                 for graph in graph_type_list:
                     for adaptive in adaptive_list:
@@ -44,3 +44,4 @@ for N in N_list:
 schedd = htcondor.Schedd()
 submit_result = schedd.submit(job, itemdata=iter(itemdata))
 #print(itemdata)
+#print(f"Job submission data: {itemdata[-1]}")  # Print the last job added

@@ -1,0 +1,68 @@
+000 (11936388.000.000) 2025-03-25 11:39:31 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7533_9704>
+...
+000 (11936388.001.000) 2025-03-25 11:39:31 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7533_9704>
+...
+001 (11936388.001.000) 2025-03-25 11:39:32 Job executing on host: <141.34.15.76:9618?addrs=141.34.15.76-9618+[2001-638-700-f00f--1-4c]-9618&alias=bladek3.zeuthen.desy.de&noUDP&sock=startd_9445_1018>
+	SlotName: slot1_10@bladek3.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_1881886"
+	Cpus = 1
+	Disk = 1696878
+	Memory = 10240
+...
+001 (11936388.000.000) 2025-03-25 11:39:32 Job executing on host: <141.34.15.222:9618?addrs=141.34.15.222-9618+[2001-638-700-f00f--1-de]-9618&alias=pizza30.zeuthen.desy.de&noUDP&sock=startd_9119_7438>
+	SlotName: slot1_13@pizza30.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_24690"
+	Cpus = 1
+	Disk = 3556190
+	Memory = 10240
+...
+006 (11936388.001.000) 2025-03-25 11:39:46 Image size of job updated: 82872
+	81  -  MemoryUsage of job (MB)
+	82872  -  ResidentSetSize of job (KB)
+...
+006 (11936388.000.000) 2025-03-25 11:39:46 Image size of job updated: 85108
+	84  -  MemoryUsage of job (MB)
+	85108  -  ResidentSetSize of job (KB)
+...
+006 (11936388.000.000) 2025-03-25 11:40:33 Image size of job updated: 164416
+	84  -  MemoryUsage of job (MB)
+	85108  -  ResidentSetSize of job (KB)
+...
+005 (11936388.000.000) 2025-03-25 11:40:33 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:48, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:48, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1024000   3556190 
+	   Memory (MB)          :       84    10240     10240 
+
+	Job terminated of its own accord at 2025-03-25T10:40:33Z with exit-code 0.
+...
+006 (11936388.001.000) 2025-03-25 11:41:00 Image size of job updated: 108980
+	81  -  MemoryUsage of job (MB)
+	82872  -  ResidentSetSize of job (KB)
+...
+005 (11936388.001.000) 2025-03-25 11:41:00 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:01:16, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:16, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1696878 
+	   Memory (MB)          :    81       10240     10240 
+
+	Job terminated of its own accord at 2025-03-25T10:41:00Z with exit-code 0.
+...
