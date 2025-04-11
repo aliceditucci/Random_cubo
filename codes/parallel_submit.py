@@ -3,13 +3,13 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [22]
-N_r = 400
-alpha_value = 0.01
-num_shots = 10000
+N_list = [60, 80, 100]
+N_r = 50
+alpha_value = 0.001
+num_shots = 100000
 tau_list = [0.3]
 num_layer = 1
-graph_type_list = [0.9,0.95, 'complete']
+graph_type_list = ['3regular']
 adaptive_list = [1]
 analytic = 1
 bond_dimension = 100 

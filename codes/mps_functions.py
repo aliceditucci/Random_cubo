@@ -241,9 +241,9 @@ def get_initial_para_1op_Y(N:int, qi:list, coeff:float, tau:float, circ:QuantumC
     i = qi[0] # qubit index
     tauc = tau * coeff
 
-    options = copy.deepcopy(backendoptions)
-    options['shots'] = 1000
-    estimator = Estimator(backend_options=options)
+    #options = copy.deepcopy(backendoptions)
+    #options['shots'] = 1000 #I REMOVED THIS FOR VERY HIGH NUMBER OF QUBITS >=60
+    estimator = Estimator(backend_options=backendoptions)
 
     op_dict = {}
     op_dict['Z'] = SparsePauliOp.from_sparse_list([('Z', [i], 1)], N)  
@@ -316,9 +316,9 @@ def get_initial_para_2op_YZ(N:int, qi:list, coeff:float, tau:float, circ:Quantum
     tauc = tau * coeff
 
     # print('tauc', tauc)
-    options = copy.deepcopy(backendoptions)
-    options['shots'] = 1000
-    estimator = Estimator(backend_options=options)
+    #options = copy.deepcopy(backendoptions) 
+    #options['shots'] = 1000 #I REMOVED THIS FOR VERY HIGH NUMBER OF QUBITS >=60
+    estimator = Estimator(backend_options=backendoptions)
 
     op_dict = {}
     op_dict['ZZ'] = SparsePauliOp.from_sparse_list([('ZZ', [j, i], 1)], N)
