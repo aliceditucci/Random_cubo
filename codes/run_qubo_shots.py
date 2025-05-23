@@ -62,12 +62,20 @@ def main():
         .format(n_qubits, r, alpha, shots, graph_type, tau, if_adsorting , if_analytic))
     
     
-    #make data dir
+    # #make data dir
+    # if if_analytic == 1:
+    #     dir_0 = '../Random_cubo_codes/data_iter_adap_sorting_analytic'
+    #     os.makedirs(dir_0, exist_ok=True)
+    # else:
+    #     dir_0 = '../Random_cubo_codes/data_iter_adap_sorting'
+    #     os.makedirs(dir_0, exist_ok=True)
+
+        #make data dir
     if if_analytic == 1:
-        dir_0 = '../Random_cubo_codes/data_iter_adap_sorting_analytic'
+        dir_0 = '../Random_cubo_codes/data_plot11_analytic'
         os.makedirs(dir_0, exist_ok=True)
     else:
-        dir_0 = '../Random_cubo_codes/data_iter_adap_sorting'
+        dir_0 = '../Random_cubo_codes/data_plot11'
         os.makedirs(dir_0, exist_ok=True)
 
     instance_dir = '../instances/'+ graph_type + '/N_' + str(n_qubits )
