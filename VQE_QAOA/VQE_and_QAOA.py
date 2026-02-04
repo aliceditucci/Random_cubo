@@ -5,18 +5,20 @@
 
 
 from qiskit import *
+from qiskit_aer import AerSimulator
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 class VQE_and_QAOA:
-    def __init__(self, Hamiltonian = None, n_qubits = None, ansatz_type = None, alpha = None, circuit_show = False, shots = False):
+    def __init__(self, Hamiltonian = None, n_qubits = None, ansatz_type = None, alpha = None, backendoptions = None, circuit_show = False, shots = False):
         """Args:
             Hamiltonian: PauliSumOp in qiskit
             n_qubits: int, number of qubits
             ansatz_type: string, type of ansatz
             alpha: float, CVaR coefficient
+            backendoptions: options for simulate backend
             circuit_show: bool, show circuit or not
             shots: False for exact simulation; int number for finite shots simulation
         """
@@ -31,6 +33,7 @@ class VQE_and_QAOA:
         self.n_qubits = n_qubits
         self.ansatz_type = ansatz_type  ### linear_cnot, circular_cnot, parallel_cz, sstructure_like_qubo_YZ_2 .。。。
         self.alpha = alpha  ### CVaR coefficient
+        self.backendoptions = backendoptions
         
         
         
@@ -432,7 +435,6 @@ class VQE_and_QAOA:
             poss: float, probability of the optimal solution
         """
         
-        backend = Aer.get_backend('aer_simulator')
         q = QuantumRegister(self.n_qubits, name='q')
         circ = QuantumCircuit(q)
         circ.clear()
@@ -478,32 +480,53 @@ class VQE_and_QAOA:
             print('\n Show circuit!')
             circ.draw(output='mpl', filename = 'ansatz_{}_circuit_N_{}_layer_{}'.format(self.ansatz_type, self.n_qubits, self.layer))
             
-        if self.shots:
-            ### with finite shots
-            circ.measure_all()
-            job = backend.run(circ, shots=self.shots)
-            counts_dict = job.result().get_counts(0)  # dict with key being bitstring : {q_n ....q_0:count}
+        if self.backendoptions['method'] == 'statevector':
+            simulator = AerSimulator(method='statevector')
 
+            if self.shots == 0:
+                circ.save_statevector() 
+                tcirc = transpile(circ, simulator)
+                result = simulator.run(tcirc).result()
+
+                outputstate = np.array(result.get_statevector(circ))   ### amplitude
+                prob_list = [abs(outputstate[i]) ** 2 for i in range(len(outputstate))]
+                val_list = self.eigen_list
+                poss = 0
+                for i in self.ground_id_list:
+                    poss += prob_list[i]
+
+            else:
+                circ.measure_all()
+                tcirc = transpile(circ, simulator)
+                result = simulator.run(tcirc, shots = self.shots).result()
+                
+                counts= result.get_counts()
+                prob_list = []
+                val_list = []
+                poss = 0 ### fidelity, possibility of the optimal solution(s) in the current quantum state
+                for bitstr, count in counts.items():
+                    id = int(bitstr, 2)  ## q_{N-1}..... q1 q0, in statevector backend
+                    val_list.append(self.eigen_list[id])
+                    prob_list.append(count / self.shots)
+                    if id in self.ground_id_list:
+                        poss += count / self.shots
+        elif self.backendoptions['method'] == 'matrix_product_state':
+            maxbond = self.backendoptions['matrix_product_state_max_bond_dimension']
+            circ.measure_all()
+            simulator = AerSimulator(method='matrix_product_state', matrix_product_state_max_bond_dimension=maxbond, shots=self.shots, max_memory_mb=10**12)
+            result = simulator.run(circ, shots = self.shots).result()
+
+            counts= result.get_counts()
             prob_list = []
             val_list = []
             poss = 0 ### fidelity, possibility of the optimal solution(s) in the current quantum state
-            for bitstr, count in counts_dict.items():
-                index = int(bitstr, 2)  # convert binary number to decimal
-                val_list.append(self.eigen_list[index])
+            for bitstr, count in counts.items():
+                id = int(bitstr, 2)  ## q_{N-1}..... q1 q0, in statevector backend
+                val_list.append(self.eigen_list[id])
                 prob_list.append(count / self.shots)
-                if index in self.ground_id_list:
+                if id in self.ground_id_list:
                     poss += count / self.shots
-        else:
-            ### exact simulation with infinate shots
-            circ.save_statevector()
-            job = backend.run(circ)
-            result = job.result()
-            outputstate = np.array(result.get_statevector(circ))   ### amplitude
-            prob_list = [abs(outputstate[i]) ** 2 for i in range(len(outputstate))]
-            val_list = self.eigen_list
-            poss = 0
-            for i in self.ground_id_list:
-                poss += prob_list[i]
+
         
         return val_list, prob_list, poss
 
