@@ -10,9 +10,23 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
+def get_eigenvalue_from_bitstring(bitstr, edge_coeff_dict):
+    """get the eigenvalue of Hamiltonian from the bitstring"""
+    # Convert bitstring to Ising spins (s_i = 1 - 2x_i)
+    s = np.array([1 - 2 * int(b) for b in reversed(bitstr)])
+    eigen = 0
+    for edge, coeff in edge_coeff_dict.items():
+        if len(edge) == 1:
+            i = edge[0]
+            eigen += coeff * s[i]
+        elif len(edge) == 2:
+            i, j = edge
+            eigen += coeff * s[i] * s[j]
+        
+    return eigen
 
 class VQE_and_QAOA:
-    def __init__(self, Hamiltonian = None, n_qubits = None, ansatz_type = None, alpha = None, backendoptions = None, circuit_show = False, shots = False):
+    def __init__(self, Hamiltonian = None, n_qubits = None, ansatz_type = None, alpha = None, backendoptions = None, circuit_show = False, shots = False, edge_coeff_dict = None):
         """Args:
             Hamiltonian: PauliSumOp in qiskit
             n_qubits: int, number of qubits
@@ -25,15 +39,19 @@ class VQE_and_QAOA:
         
     
         
-        if Hamiltonian:
+        if n_qubits <= 12:
             self.H = Hamiltonian.to_matrix(sparse=True)
             self.eigen_list = self.H.diagonal()
             self.exp_min, self.exp_max, self.ground_id_list = self.Get_minimun_from_H_mat()
+        else:
+            print('\nToo large n_qubits, skip exact diagonalization!')
+            self.exp_min = 1
 
         self.n_qubits = n_qubits
         self.ansatz_type = ansatz_type  ### linear_cnot, circular_cnot, parallel_cz, sstructure_like_qubo_YZ_2 .。。。
         self.alpha = alpha  ### CVaR coefficient
         self.backendoptions = backendoptions
+        self.edge_coeff_dict = edge_coeff_dict
         
         
         
@@ -424,6 +442,8 @@ class VQE_and_QAOA:
     #endregion
     
 
+
+
     def Quantum_circuit(self, params):
         """generate the quantum circuit with the input parameter
         Args:
@@ -521,13 +541,13 @@ class VQE_and_QAOA:
             val_list = []
             poss = 0 ### fidelity, possibility of the optimal solution(s) in the current quantum state
             for bitstr, count in counts.items():
-                id = int(bitstr, 2)  ## q_{N-1}..... q1 q0, in statevector backend
-                val_list.append(self.eigen_list[id])
-                prob_list.append(count / self.shots)
-                if id in self.ground_id_list:
-                    poss += count / self.shots
+                id = int(bitstr, 2)   ## q_{N-1}..... q1 q0, in mps backend
+                eigen = get_eigenvalue_from_bitstring(bitstr, self.edge_coeff_dict)
+                eigen = round(eigen, 4)  ## round the eigenvalue to 4 decimal places, because all coefficients are rounded to 4 decimal places
 
-        
+                val_list.append(eigen)
+                prob_list.append(count / self.shots)
+
         return val_list, prob_list, poss
 
     
