@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: qiskit-ibm-runtime
+Version: 0.34.0
+Summary: IBM Quantum client for Qiskit Runtime.
+Author-email: Qiskit Development Team <qiskit@us.ibm.com>
+License: Apache 2.0
+Project-URL: documentation, https://docs.quantum.ibm.com/
+Project-URL: repository, https://github.com/Qiskit/qiskit-ibm-runtime
+Project-URL: issues, https://github.com/Qiskit/qiskit-ibm-runtime/issues
+Keywords: qiskit,sdk,quantum,api,runtime,ibm
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests>=2.19
+Requires-Dist: requests-ntlm>=1.1.0
+Requires-Dist: numpy>=1.13
+Requires-Dist: urllib3>=1.21.1
+Requires-Dist: python-dateutil>=2.8.0
+Requires-Dist: websocket-client>=1.5.1
+Requires-Dist: ibm-platform-services>=0.22.6
+Requires-Dist: pydantic<2.10,>=2.5.0
+Requires-Dist: qiskit>=1.1.0
+Provides-Extra: common
+Requires-Dist: mypy==0.931; extra == "common"
+Requires-Dist: pylint==3.0.0; extra == "common"
+Requires-Dist: pproxy==2.7.8; extra == "common"
+Requires-Dist: nbqa==1.5.3; extra == "common"
+Requires-Dist: matplotlib>=2.1; extra == "common"
+Requires-Dist: jupyter; extra == "common"
+Requires-Dist: scipy>=1.0; extra == "common"
+Requires-Dist: nbformat>=4.4.0; extra == "common"
+Requires-Dist: nbconvert>=5.3.1; extra == "common"
+Requires-Dist: qiskit-aer>=0.14.2; extra == "common"
+Requires-Dist: websockets>=8; extra == "common"
+Requires-Dist: black~=24.1; extra == "common"
+Requires-Dist: coverage>=6.3; extra == "common"
+Requires-Dist: pylatexenc; extra == "common"
+Requires-Dist: scikit-learn; extra == "common"
+Requires-Dist: setuptools; extra == "common"
+Requires-Dist: ddt!=1.4.0,!=1.4.3,>=1.2.0; extra == "common"
+Provides-Extra: documentation
+Requires-Dist: nbsphinx; extra == "documentation"
+Requires-Dist: Sphinx>=6; extra == "documentation"
+Requires-Dist: sphinx-automodapi; extra == "documentation"
+Requires-Dist: sphinx-autodoc-typehints<=1.19.2; extra == "documentation"
+Requires-Dist: jupyter-sphinx; extra == "documentation"
+Requires-Dist: sphinxcontrib-katex==0.9.9; extra == "documentation"
+Requires-Dist: packaging; extra == "documentation"
+Provides-Extra: visualization
+Requires-Dist: plotly>=5.23.0; extra == "visualization"
+Provides-Extra: dev
+Requires-Dist: qiskit-ibm-runtime[common]; extra == "dev"
+Requires-Dist: qiskit-ibm-runtime[documentation]; extra == "dev"

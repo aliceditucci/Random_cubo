@@ -1,0 +1,16 @@
+/lustre/fs24/group/cqta/atucci/environment2/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+Traceback (most recent call last):
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/VQE_largesize/VQE_QAOA/run_vqe.py", line 309, in <module>
+    main()
+  File "/lustre/fs24/group/cqta/atucci/Random_cubo/VQE_largesize/VQE_QAOA/run_vqe.py", line 182, in main
+    coeff_list = np.loadtxt(coeffs_file)
+  File "/lustre/fs24/group/cqta/atucci/environment2/lib64/python3.9/site-packages/numpy/lib/_npyio_impl.py", line 1381, in loadtxt
+    arr = _read(fname, dtype=dtype, comment=comment, delimiter=delimiter,
+  File "/lustre/fs24/group/cqta/atucci/environment2/lib64/python3.9/site-packages/numpy/lib/_npyio_impl.py", line 997, in _read
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/lustre/fs24/group/cqta/atucci/environment2/lib64/python3.9/site-packages/numpy/lib/_datasource.py", line 192, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/lustre/fs24/group/cqta/atucci/environment2/lib64/python3.9/site-packages/numpy/lib/_datasource.py", line 532, in open
+    raise FileNotFoundError(f"{path} not found.")
+FileNotFoundError: ../instances/000/N_120/QUBO_coeff_120V_r_99.txt not found.

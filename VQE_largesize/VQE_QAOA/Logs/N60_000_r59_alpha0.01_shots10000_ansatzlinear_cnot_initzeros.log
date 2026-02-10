@@ -1,0 +1,42 @@
+000 (15756404.477.000) 2026-02-06 11:24:35 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7414_f73f>
+...
+001 (15756404.477.000) 2026-02-06 18:53:54 Job executing on host: <141.34.15.47:9618?addrs=141.34.15.47-9618+[2001-638-700-f00f--1-2f]-9618&alias=pizza18.zeuthen.desy.de&noUDP&sock=startd_8216_1233>
+	SlotName: slot1_35@pizza18.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2481647"
+	Cpus = 8
+	Disk = 1025696
+	GPUs = 0
+	Memory = 16384
+...
+006 (15756404.477.000) 2026-02-06 18:54:08 Image size of job updated: 91428
+	90  -  MemoryUsage of job (MB)
+	91428  -  ResidentSetSize of job (KB)
+...
+006 (15756404.477.000) 2026-02-06 18:59:09 Image size of job updated: 423016
+	209  -  MemoryUsage of job (MB)
+	213992  -  ResidentSetSize of job (KB)
+...
+006 (15756404.477.000) 2026-02-06 19:04:10 Image size of job updated: 423016
+	210  -  MemoryUsage of job (MB)
+	214404  -  ResidentSetSize of job (KB)
+...
+005 (15756404.477.000) 2026-02-06 19:59:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 03:54:18, Sys 0 02:24:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 03:54:18, Sys 0 02:24:07  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     6.76        8         8 
+	   Disk (KB)            :     1     1024000   1025696 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   210       16384     16384 
+	   TimeExecute (s)      :  3955                       
+	   TimeSlotBusy (s)     :  3955                       
+
+	Job terminated of its own accord at 2026-02-06T18:59:49Z with exit-code 0.
+...

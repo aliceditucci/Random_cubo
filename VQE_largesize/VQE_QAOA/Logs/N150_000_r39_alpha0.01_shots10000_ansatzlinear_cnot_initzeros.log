@@ -1,0 +1,74 @@
+000 (15756404.1317.000) 2026-02-06 11:24:38 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7414_f73f>
+...
+001 (15756404.1317.000) 2026-02-07 19:26:35 Job executing on host: <141.34.15.204:9618?addrs=141.34.15.204-9618+[2001-638-700-f00f--1-cc]-9618&alias=pizza06.zeuthen.desy.de&noUDP&sock=startd_8233_bb4f>
+	SlotName: slot1_4@pizza06.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3408849"
+	Cpus = 8
+	Disk = 1025696
+	GPUs = 0
+	Memory = 16384
+...
+006 (15756404.1317.000) 2026-02-07 19:26:49 Image size of job updated: 109440
+	107  -  MemoryUsage of job (MB)
+	109440  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 19:31:50 Image size of job updated: 880068
+	582  -  MemoryUsage of job (MB)
+	595720  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 19:36:51 Image size of job updated: 880068
+	583  -  MemoryUsage of job (MB)
+	596604  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:01:54 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598516  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:06:55 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598624  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:11:55 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598660  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:16:55 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598672  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:21:56 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598676  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:36:57 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598688  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:41:57 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598692  -  ResidentSetSize of job (KB)
+...
+006 (15756404.1317.000) 2026-02-07 20:46:57 Image size of job updated: 880068
+	585  -  MemoryUsage of job (MB)
+	598704  -  ResidentSetSize of job (KB)
+...
+005 (15756404.1317.000) 2026-02-07 21:01:40 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 04:46:17, Sys 0 02:32:48  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 04:46:17, Sys 0 02:32:48  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     5.81        8         8 
+	   Disk (KB)            :     1     1024000   1025696 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   585       16384     16384 
+	   TimeExecute (s)      :  5705                       
+	   TimeSlotBusy (s)     :  5705                       
+
+	Job terminated of its own accord at 2026-02-07T20:01:40Z with exit-code 0.
+...

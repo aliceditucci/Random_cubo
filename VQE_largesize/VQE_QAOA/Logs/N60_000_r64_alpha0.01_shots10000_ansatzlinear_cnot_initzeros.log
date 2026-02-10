@@ -1,0 +1,50 @@
+000 (15756404.492.000) 2026-02-06 11:24:35 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7414_f73f>
+...
+001 (15756404.492.000) 2026-02-06 18:59:30 Job executing on host: <141.34.15.47:9618?addrs=141.34.15.47-9618+[2001-638-700-f00f--1-2f]-9618&alias=pizza18.zeuthen.desy.de&noUDP&sock=startd_8216_1233>
+	SlotName: slot1_3@pizza18.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2484707"
+	Cpus = 8
+	Disk = 1025696
+	GPUs = 0
+	Memory = 16384
+...
+006 (15756404.492.000) 2026-02-06 18:59:44 Image size of job updated: 91484
+	90  -  MemoryUsage of job (MB)
+	91484  -  ResidentSetSize of job (KB)
+...
+006 (15756404.492.000) 2026-02-06 19:04:45 Image size of job updated: 223780
+	219  -  MemoryUsage of job (MB)
+	223780  -  ResidentSetSize of job (KB)
+...
+006 (15756404.492.000) 2026-02-06 19:09:45 Image size of job updated: 225652
+	221  -  MemoryUsage of job (MB)
+	225652  -  ResidentSetSize of job (KB)
+...
+006 (15756404.492.000) 2026-02-06 19:14:46 Image size of job updated: 225668
+	221  -  MemoryUsage of job (MB)
+	225668  -  ResidentSetSize of job (KB)
+...
+006 (15756404.492.000) 2026-02-06 19:19:47 Image size of job updated: 225732
+	221  -  MemoryUsage of job (MB)
+	225732  -  ResidentSetSize of job (KB)
+...
+005 (15756404.492.000) 2026-02-06 19:47:07 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 02:23:44, Sys 0 01:33:36  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 02:23:44, Sys 0 01:33:36  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     5.32        8         8 
+	   Disk (KB)            :     1     1024000   1025696 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   221       16384     16384 
+	   TimeExecute (s)      :  2857                       
+	   TimeSlotBusy (s)     :  2857                       
+
+	Job terminated of its own accord at 2026-02-06T18:47:07Z with exit-code 0.
+...

@@ -8,7 +8,6 @@ from qiskit import *
 from qiskit_aer import AerSimulator
 import sys
 import numpy as np
-import matplotlib.pyplot as plt
 
 def get_eigenvalue_from_bitstring(bitstr, edge_coeff_dict):
     """get the eigenvalue of Hamiltonian from the bitstring"""

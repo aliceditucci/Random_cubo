@@ -16,7 +16,6 @@ import scipy.sparse.linalg
 from scipy.sparse.linalg import expm
 from scipy.optimize import minimize
 #from qiskit.opflow import PauliSumOp
-import matplotlib.pyplot as plt
 
 import networkx as nx
 import itertools
