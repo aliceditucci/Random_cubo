@@ -32,3 +32,89 @@
 
 	Job terminated of its own accord at 2026-02-07T05:22:18Z with exit-code 1.
 ...
+000 (15950983.014.000) 2026-02-10 16:27:54 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15950983.014.000) 2026-02-10 16:30:55 Job executing on host: <141.34.15.175:9618?addrs=141.34.15.175-9618+[2001-638-700-f00f--1-af]-9618&alias=genoa00.zeuthen.desy.de&noUDP&sock=startd_9658_29c4>
+	SlotName: slot1_28@genoa00.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_743945"
+	Cpus = 1
+	Disk = 1025697
+	GPUs = 0
+	Memory = 5120
+...
+006 (15950983.014.000) 2026-02-10 16:31:08 Image size of job updated: 101300
+	99  -  MemoryUsage of job (MB)
+	101300  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 16:36:08 Image size of job updated: 945656
+	678  -  MemoryUsage of job (MB)
+	693688  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 16:51:10 Image size of job updated: 945656
+	683  -  MemoryUsage of job (MB)
+	698692  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 16:56:11 Image size of job updated: 945656
+	683  -  MemoryUsage of job (MB)
+	698696  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 17:01:11 Image size of job updated: 945656
+	685  -  MemoryUsage of job (MB)
+	700560  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 17:06:12 Image size of job updated: 945656
+	685  -  MemoryUsage of job (MB)
+	700564  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 18:16:18 Image size of job updated: 945656
+	685  -  MemoryUsage of job (MB)
+	700600  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 18:21:18 Image size of job updated: 945656
+	685  -  MemoryUsage of job (MB)
+	701368  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 18:26:19 Image size of job updated: 945656
+	686  -  MemoryUsage of job (MB)
+	701880  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 18:31:20 Image size of job updated: 945656
+	686  -  MemoryUsage of job (MB)
+	702392  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 18:36:20 Image size of job updated: 945656
+	687  -  MemoryUsage of job (MB)
+	703160  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 19:26:25 Image size of job updated: 945656
+	688  -  MemoryUsage of job (MB)
+	703740  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-10 22:56:45 Image size of job updated: 945656
+	688  -  MemoryUsage of job (MB)
+	703908  -  ResidentSetSize of job (KB)
+...
+006 (15950983.014.000) 2026-02-11 03:22:12 Image size of job updated: 945656
+	688  -  MemoryUsage of job (MB)
+	704164  -  ResidentSetSize of job (KB)
+...
+005 (15950983.014.000) 2026-02-11 06:17:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 13:40:13, Sys 0 00:00:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 13:40:13, Sys 0 00:00:19  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025697 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   688        5120      5120 
+	   TimeExecute (s)      : 49607                       
+	   TimeSlotBusy (s)     : 49607                       
+
+	Job terminated of its own accord at 2026-02-11T05:17:42Z with exit-code 0.
+...

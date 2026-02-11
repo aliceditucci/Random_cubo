@@ -32,3 +32,22 @@
     startd address: <141.34.15.45:9618?addrs=141.34.15.45-9618+[2001-638-700-f00f--1-2d]-9618&alias=pizza16.zeuthen.desy.de&noUDP&sock=startd_8270_1c50>
     starter address: <141.34.15.45:9618?addrs=141.34.15.45-9618+[2001-638-700-f00f--1-2d]-9618&alias=pizza16.zeuthen.desy.de&noUDP&sock=slot1_1_8748_81dd_17278>
 ...
+005 (15756407.002.000) 2026-02-10 11:06:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 9 15:44:57, Sys 2 12:35:52  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 18 16:55:31, Sys 4 18:35:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          7.93        8         8 
+	   Disk (KB)            :          1     1024000   1025696 
+	   Memory (MB)          :        977       16384     16384 
+	   TimeExecute (s)      : 1770718003                       
+	   TimeSlotBusy (s)     : 1770718003                       
+
+	Job terminated of its own accord at 2026-02-10T10:06:43Z with exit-code 0.
+...

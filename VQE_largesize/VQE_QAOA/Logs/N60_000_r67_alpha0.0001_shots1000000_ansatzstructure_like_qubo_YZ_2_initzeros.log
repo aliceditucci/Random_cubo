@@ -188,3 +188,19 @@
     startd address: <141.34.103.52:9618?addrs=141.34.103.52-9618+[2001-638-700-f067--1-34]-9618&alias=wgs42.zeuthen.desy.de&noUDP&sock=startd_9894_0a1e>
     starter address: <141.34.103.52:9618?addrs=141.34.103.52-9618+[2001-638-700-f067--1-34]-9618&alias=wgs42.zeuthen.desy.de&noUDP&sock=slot1_2_11187_00e0_15035>
 ...
+004 (15756407.503.000) 2026-02-10 11:42:41 Job was evicted.
+	(0) CPU times
+		Usr 7 02:40:36, Sys 0 07:00:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          7.92        8         8 
+	   Disk (KB)            :          1     1024000   1025025 
+	   Memory (MB)          :       1465       16384     16384 
+	   TimeExecute (s)      : 1770720160                       
+	   TimeSlotBusy (s)     : 1770720161                       
+...
+009 (15756407.503.000) 2026-02-10 11:42:41 Job was aborted.
+	via condor_rm (by user tuccia)
+...

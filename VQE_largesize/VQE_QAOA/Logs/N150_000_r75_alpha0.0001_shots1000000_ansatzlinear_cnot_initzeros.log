@@ -208,3 +208,19 @@
     startd address: <141.34.15.203:9618?addrs=141.34.15.203-9618+[2001-638-700-f00f--1-cb]-9618&alias=pizza05.zeuthen.desy.de&noUDP&sock=startd_8154_8b54>
     starter address: <141.34.15.203:9618?addrs=141.34.15.203-9618+[2001-638-700-f00f--1-cb]-9618&alias=pizza05.zeuthen.desy.de&noUDP&sock=slot1_1_8674_5e1a_10213>
 ...
+004 (15756404.1427.000) 2026-02-10 11:42:24 Job was evicted.
+	(0) CPU times
+		Usr 3 22:23:58, Sys 0 22:05:37  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          0.99        8         8 
+	   Disk (KB)            :          1     1024000   1025696 
+	   Memory (MB)          :       2442       16384     16384 
+	   TimeExecute (s)      : 1770720144                       
+	   TimeSlotBusy (s)     : 1770720144                       
+...
+009 (15756404.1427.000) 2026-02-10 11:42:25 Job was aborted.
+	via condor_rm (by user tuccia)
+...

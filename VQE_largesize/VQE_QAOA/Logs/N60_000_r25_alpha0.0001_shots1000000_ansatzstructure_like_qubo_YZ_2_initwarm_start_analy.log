@@ -1,2 +1,35 @@
 000 (15756408.377.000) 2026-02-06 11:26:57 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7414_f73f>
 ...
+001 (15756408.377.000) 2026-02-10 11:44:00 Job executing on host: <141.34.15.201:9618?addrs=141.34.15.201-9618+[2001-638-700-f00f--1-c9]-9618&alias=pizza03.zeuthen.desy.de&noUDP&sock=startd_9148_5877>
+	SlotName: slot1_3@pizza03.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2651130"
+	Cpus = 8
+	Disk = 1025696
+	GPUs = 0
+	Memory = 16384
+...
+006 (15756408.377.000) 2026-02-10 11:44:14 Image size of job updated: 91492
+	90  -  MemoryUsage of job (MB)
+	91492  -  ResidentSetSize of job (KB)
+...
+006 (15756408.377.000) 2026-02-10 11:47:34 Image size of job updated: 938752
+	90  -  MemoryUsage of job (MB)
+	91492  -  ResidentSetSize of job (KB)
+...
+004 (15756408.377.000) 2026-02-10 11:47:34 Job was evicted.
+	(0) CPU times
+		Usr 0 00:11:36, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        8         8 
+	   Disk (KB)            :        1  1024000   1025696 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       90    16384     16384 
+	   TimeExecute (s)      :      213                    
+	   TimeSlotBusy (s)     :      214                    
+...
+009 (15756408.377.000) 2026-02-10 11:47:34 Job was aborted.
+	via condor_rm (by user tuccia)
+...

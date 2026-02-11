@@ -8,7 +8,7 @@ ansatz: structure_like_qubo_YZ_2,
 layer: 1, 
 tau: 0.3
 
-time for simulated annealing:  70.45603561401367
+time for simulated annealing:  83.66207671165466
 Rank 1: Bitstring=001111011000000101110011000001110101101101011001000101110010, Decimal=276996873983988082, Energy=-48.5207
 Rank 2: Bitstring=001111010000001101100011001001110101101101011001000101110011, Decimal=274779167620698483, Energy=-48.5185
 Rank 3: Bitstring=001111011000000001110011000101010101101101011000000101110010, Decimal=276979285556035954, Energy=-48.4925
@@ -37,8 +37,8 @@ States with energy within 1e-08 of minimum: [276996873983988082]
  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 Write sucessfully to ./data/data_shots_10000_layer_1/alpha_0.01/N_60/r_56/ansatz_type_structure_like_qubo_YZ_2/initialization_zeros
 
-vqe.cvar_eval[0]: -18.585344 , min_cvar: -47.566006000000016 , opt_cvar: -47.566006000000016
+vqe.cvar_eval[0]: -19.069006000000016 , min_cvar: -46.19643400000002 , opt_cvar: -46.19643400000002
 
 vqe.poss_eval[-1]: 0 vqe.poss_eval[0] 0  , max_poss: 0 , opt_poss: 0
 
-vqe.r_eval[-1]: 0.976513900252882 vqe.r_eval[0]: 0.3830394862398935 max_r: 0.9803239854330217 , min_r: 0.3510772515647964
+vqe.r_eval[-1]: 0.9520974347031271 vqe.r_eval[0]: 0.3930076441601217 max_r: 0.9520974347031271 , min_r: 0.3743018958918567

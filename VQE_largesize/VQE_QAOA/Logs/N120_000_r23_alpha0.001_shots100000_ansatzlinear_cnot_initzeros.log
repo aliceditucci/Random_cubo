@@ -33,3 +33,98 @@
 
 	Job terminated of its own accord at 2026-02-07T05:38:20Z with exit-code 1.
 ...
+000 (15950983.094.000) 2026-02-10 16:27:55 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15950983.094.000) 2026-02-10 16:34:02 Job executing on host: <141.34.14.37:9618?addrs=141.34.14.37-9618+[2001-638-700-f00e--1-25]-9618&alias=amphion.zeuthen.desy.de&noUDP&sock=startd_8755_c7bf>
+	SlotName: slot1_21@amphion.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_303648"
+	Cpus = 1
+	Disk = 1025682
+	GPUs = 0
+	Memory = 5120
+...
+006 (15950983.094.000) 2026-02-10 16:34:16 Image size of job updated: 103412
+	101  -  MemoryUsage of job (MB)
+	103412  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 16:39:17 Image size of job updated: 733816
+	498  -  MemoryUsage of job (MB)
+	509248  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 16:44:17 Image size of job updated: 733816
+	500  -  MemoryUsage of job (MB)
+	511448  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 16:49:17 Image size of job updated: 733816
+	517  -  MemoryUsage of job (MB)
+	528956  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 17:09:19 Image size of job updated: 733816
+	520  -  MemoryUsage of job (MB)
+	531812  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 17:14:20 Image size of job updated: 733816
+	520  -  MemoryUsage of job (MB)
+	531816  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 18:29:27 Image size of job updated: 733816
+	520  -  MemoryUsage of job (MB)
+	532080  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 18:34:28 Image size of job updated: 733816
+	521  -  MemoryUsage of job (MB)
+	533304  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 18:39:28 Image size of job updated: 733816
+	522  -  MemoryUsage of job (MB)
+	533816  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 18:44:29 Image size of job updated: 733816
+	522  -  MemoryUsage of job (MB)
+	534328  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 19:34:34 Image size of job updated: 733816
+	523  -  MemoryUsage of job (MB)
+	534584  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 21:04:43 Image size of job updated: 733816
+	523  -  MemoryUsage of job (MB)
+	534844  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 23:19:57 Image size of job updated: 733816
+	523  -  MemoryUsage of job (MB)
+	534860  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-10 23:29:58 Image size of job updated: 733816
+	523  -  MemoryUsage of job (MB)
+	535116  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-11 04:20:28 Image size of job updated: 733816
+	523  -  MemoryUsage of job (MB)
+	535208  -  ResidentSetSize of job (KB)
+...
+006 (15950983.094.000) 2026-02-11 04:25:28 Image size of job updated: 733816
+	523  -  MemoryUsage of job (MB)
+	535372  -  ResidentSetSize of job (KB)
+...
+005 (15950983.094.000) 2026-02-11 07:29:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 14:46:19, Sys 0 00:00:18  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 14:46:19, Sys 0 00:00:18  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025682 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   523        5120      5120 
+	   TimeExecute (s)      : 53717                       
+	   TimeSlotBusy (s)     : 53717                       
+
+	Job terminated of its own accord at 2026-02-11T06:29:19Z with exit-code 0.
+...

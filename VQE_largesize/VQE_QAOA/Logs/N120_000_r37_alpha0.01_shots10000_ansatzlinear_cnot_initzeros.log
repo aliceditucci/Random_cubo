@@ -33,3 +33,45 @@
 
 	Job terminated of its own accord at 2026-02-07T05:44:19Z with exit-code 1.
 ...
+000 (15950983.148.000) 2026-02-10 16:27:55 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15950983.148.000) 2026-02-10 16:36:04 Job executing on host: <141.34.15.178:9618?addrs=141.34.15.178-9618+[2001-638-700-f00f--1-b2]-9618&alias=genoa03.zeuthen.desy.de&noUDP&sock=startd_10467_11e2>
+	SlotName: slot1_20@genoa03.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_1418709"
+	Cpus = 1
+	Disk = 1025697
+	GPUs = 0
+	Memory = 5120
+...
+006 (15950983.148.000) 2026-02-10 16:36:17 Image size of job updated: 101480
+	100  -  MemoryUsage of job (MB)
+	101480  -  ResidentSetSize of job (KB)
+...
+006 (15950983.148.000) 2026-02-10 16:41:17 Image size of job updated: 577644
+	565  -  MemoryUsage of job (MB)
+	577644  -  ResidentSetSize of job (KB)
+...
+006 (15950983.148.000) 2026-02-10 16:46:18 Image size of job updated: 577648
+	565  -  MemoryUsage of job (MB)
+	577644  -  ResidentSetSize of job (KB)
+...
+005 (15950983.148.000) 2026-02-10 18:03:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:26:29, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:26:29, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025697 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   565        5120      5120 
+	   TimeExecute (s)      :  5238                       
+	   TimeSlotBusy (s)     :  5238                       
+
+	Job terminated of its own accord at 2026-02-10T17:03:22Z with exit-code 0.
+...

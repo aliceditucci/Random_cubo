@@ -33,3 +33,53 @@
 
 	Job terminated of its own accord at 2026-02-07T05:34:20Z with exit-code 1.
 ...
+000 (15950983.060.000) 2026-02-10 16:27:55 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15950983.060.000) 2026-02-10 16:33:00 Job executing on host: <141.34.15.86:9618?addrs=141.34.15.86-9618+[2001-638-700-f00f--1-56]-9618&alias=genoa10.zeuthen.desy.de&noUDP&sock=startd_10124_cce6>
+	SlotName: slot1_12@genoa10.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_482946"
+	Cpus = 1
+	Disk = 1025681
+	GPUs = 0
+	Memory = 5120
+...
+006 (15950983.060.000) 2026-02-10 16:33:14 Image size of job updated: 101408
+	100  -  MemoryUsage of job (MB)
+	101408  -  ResidentSetSize of job (KB)
+...
+006 (15950983.060.000) 2026-02-10 16:38:15 Image size of job updated: 945724
+	560  -  MemoryUsage of job (MB)
+	573064  -  ResidentSetSize of job (KB)
+...
+006 (15950983.060.000) 2026-02-10 16:43:15 Image size of job updated: 945724
+	560  -  MemoryUsage of job (MB)
+	573124  -  ResidentSetSize of job (KB)
+...
+006 (15950983.060.000) 2026-02-10 16:48:15 Image size of job updated: 945724
+	560  -  MemoryUsage of job (MB)
+	573148  -  ResidentSetSize of job (KB)
+...
+006 (15950983.060.000) 2026-02-10 16:58:16 Image size of job updated: 945724
+	561  -  MemoryUsage of job (MB)
+	573716  -  ResidentSetSize of job (KB)
+...
+005 (15950983.060.000) 2026-02-10 18:03:38 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:29:50, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:29:50, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025681 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   561        5120      5120 
+	   TimeExecute (s)      :  5438                       
+	   TimeSlotBusy (s)     :  5438                       
+
+	Job terminated of its own accord at 2026-02-10T17:03:38Z with exit-code 0.
+...
