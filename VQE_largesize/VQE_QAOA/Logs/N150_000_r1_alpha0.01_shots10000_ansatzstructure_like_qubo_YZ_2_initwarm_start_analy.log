@@ -61,3 +61,99 @@
 	665  -  MemoryUsage of job (MB)
 	680340  -  ResidentSetSize of job (KB)
 ...
+004 (15951004.802.000) 2026-02-11 11:11:59 Job was evicted.
+	(0) CPU times
+		Usr 0 06:57:06, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025697 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   665        5120      5120 
+	   TimeExecute (s)      : 25243                       
+	   TimeSlotBusy (s)     : 25244                       
+...
+009 (15951004.802.000) 2026-02-11 11:12:00 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+000 (15988842.802.000) 2026-02-11 11:12:47 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15988842.802.000) 2026-02-11 12:57:27 Job executing on host: <141.34.14.32:9618?addrs=141.34.14.32-9618+[2001-638-700-f00e--1-20]-9618&alias=ampere01.zeuthen.desy.de&noUDP&sock=startd_8788_6a5f>
+	SlotName: slot1_23@ampere01.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_439673"
+	Cpus = 1
+	Disk = 1025682
+	GPUs = 0
+	Memory = 5120
+...
+006 (15988842.802.000) 2026-02-11 12:57:40 Image size of job updated: 109360
+	107  -  MemoryUsage of job (MB)
+	109360  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:02:41 Image size of job updated: 958372
+	614  -  MemoryUsage of job (MB)
+	627788  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:07:42 Image size of job updated: 958372
+	661  -  MemoryUsage of job (MB)
+	676716  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:12:42 Image size of job updated: 958372
+	662  -  MemoryUsage of job (MB)
+	676996  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:17:42 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	679940  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:27:43 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	679960  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:42:44 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	679984  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 13:52:45 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	679992  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 14:07:46 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680004  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 14:17:46 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680012  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 14:27:47 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680112  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 14:32:47 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680144  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 15:07:50 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680148  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 15:47:52 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680180  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 16:37:56 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680192  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-11 19:18:09 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680244  -  ResidentSetSize of job (KB)
+...
+006 (15988842.802.000) 2026-02-12 00:23:40 Image size of job updated: 958372
+	665  -  MemoryUsage of job (MB)
+	680296  -  ResidentSetSize of job (KB)
+...

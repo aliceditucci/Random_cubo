@@ -73,3 +73,146 @@
 	611  -  MemoryUsage of job (MB)
 	624776  -  ResidentSetSize of job (KB)
 ...
+004 (15951004.651.000) 2026-02-11 11:11:58 Job was evicted.
+	(0) CPU times
+		Usr 0 16:08:06, Sys 0 00:00:14  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025697 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   611        5120      5120 
+	   TimeExecute (s)      : 58630                       
+	   TimeSlotBusy (s)     : 58631                       
+...
+009 (15951004.651.000) 2026-02-11 11:11:59 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+000 (15988842.651.000) 2026-02-11 11:12:47 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15988842.651.000) 2026-02-11 12:56:47 Job executing on host: <141.34.15.204:9618?addrs=141.34.15.204-9618+[2001-638-700-f00f--1-cc]-9618&alias=pizza06.zeuthen.desy.de&noUDP&sock=startd_8233_bb4f>
+	SlotName: slot1_3@pizza06.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2252814"
+	Cpus = 1
+	Disk = 1025696
+	GPUs = 0
+	Memory = 5120
+...
+006 (15988842.651.000) 2026-02-11 12:57:01 Image size of job updated: 103364
+	101  -  MemoryUsage of job (MB)
+	103364  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:02:02 Image size of job updated: 748036
+	430  -  MemoryUsage of job (MB)
+	439332  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:07:02 Image size of job updated: 748036
+	565  -  MemoryUsage of job (MB)
+	578528  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:12:02 Image size of job updated: 748036
+	566  -  MemoryUsage of job (MB)
+	578704  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:17:03 Image size of job updated: 748036
+	566  -  MemoryUsage of job (MB)
+	578908  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:22:03 Image size of job updated: 748036
+	566  -  MemoryUsage of job (MB)
+	579128  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:27:03 Image size of job updated: 748036
+	566  -  MemoryUsage of job (MB)
+	579332  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:32:04 Image size of job updated: 748036
+	566  -  MemoryUsage of job (MB)
+	579532  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:37:04 Image size of job updated: 748036
+	567  -  MemoryUsage of job (MB)
+	579728  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:42:04 Image size of job updated: 748036
+	567  -  MemoryUsage of job (MB)
+	579928  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:47:05 Image size of job updated: 748036
+	567  -  MemoryUsage of job (MB)
+	580136  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:52:05 Image size of job updated: 748036
+	567  -  MemoryUsage of job (MB)
+	580352  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 13:57:05 Image size of job updated: 748036
+	567  -  MemoryUsage of job (MB)
+	580556  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:02:06 Image size of job updated: 748036
+	568  -  MemoryUsage of job (MB)
+	580752  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:07:06 Image size of job updated: 748036
+	568  -  MemoryUsage of job (MB)
+	580940  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:12:06 Image size of job updated: 748036
+	568  -  MemoryUsage of job (MB)
+	581140  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:17:07 Image size of job updated: 748036
+	568  -  MemoryUsage of job (MB)
+	581344  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:22:08 Image size of job updated: 748036
+	568  -  MemoryUsage of job (MB)
+	581556  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:27:08 Image size of job updated: 748036
+	569  -  MemoryUsage of job (MB)
+	581764  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 14:32:09 Image size of job updated: 748036
+	588  -  MemoryUsage of job (MB)
+	601432  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 16:02:19 Image size of job updated: 748036
+	588  -  MemoryUsage of job (MB)
+	601464  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 16:27:21 Image size of job updated: 748036
+	590  -  MemoryUsage of job (MB)
+	603640  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 17:22:26 Image size of job updated: 748036
+	590  -  MemoryUsage of job (MB)
+	603984  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 18:52:38 Image size of job updated: 748036
+	591  -  MemoryUsage of job (MB)
+	604616  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-11 20:22:50 Image size of job updated: 748036
+	591  -  MemoryUsage of job (MB)
+	604676  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-12 02:58:33 Image size of job updated: 748036
+	591  -  MemoryUsage of job (MB)
+	604740  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-12 07:44:02 Image size of job updated: 748036
+	591  -  MemoryUsage of job (MB)
+	604988  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-12 09:19:13 Image size of job updated: 748036
+	612  -  MemoryUsage of job (MB)
+	626248  -  ResidentSetSize of job (KB)
+...
+006 (15988842.651.000) 2026-02-12 09:24:13 Image size of job updated: 748036
+	612  -  MemoryUsage of job (MB)
+	626252  -  ResidentSetSize of job (KB)
+...

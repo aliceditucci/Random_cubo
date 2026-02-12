@@ -61,3 +61,99 @@
 	677  -  MemoryUsage of job (MB)
 	693196  -  ResidentSetSize of job (KB)
 ...
+004 (15951004.830.000) 2026-02-11 11:12:00 Job was evicted.
+	(0) CPU times
+		Usr 0 06:55:28, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  1024000   1025697 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      677     5120      5120 
+	   TimeExecute (s)      :    25243                    
+	   TimeSlotBusy (s)     :    25244                    
+...
+009 (15951004.830.000) 2026-02-11 11:12:00 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+000 (15988842.830.000) 2026-02-11 11:12:47 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (15988842.830.000) 2026-02-11 13:23:31 Job executing on host: <141.34.14.230:9618?addrs=141.34.14.230-9618+[2001-638-700-f00e--1-e6]-9618&alias=pascal03.zeuthen.desy.de&noUDP&sock=startd_10347_c285>
+	SlotName: slot1_11@pascal03.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_32979"
+	Cpus = 1
+	Disk = 1025109
+	GPUs = 0
+	Memory = 5120
+...
+006 (15988842.830.000) 2026-02-11 13:23:45 Image size of job updated: 107268
+	105  -  MemoryUsage of job (MB)
+	107268  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 13:28:46 Image size of job updated: 960148
+	620  -  MemoryUsage of job (MB)
+	634768  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 13:33:46 Image size of job updated: 960148
+	628  -  MemoryUsage of job (MB)
+	642404  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 13:38:46 Image size of job updated: 960148
+	671  -  MemoryUsage of job (MB)
+	686584  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 13:43:47 Image size of job updated: 960148
+	671  -  MemoryUsage of job (MB)
+	686760  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 13:48:48 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687792  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 14:03:50 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687812  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 15:03:56 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687860  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 15:08:57 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687892  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 16:29:05 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687896  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 16:44:06 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687900  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 17:04:08 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687920  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 17:19:10 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687940  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 18:34:19 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687964  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 19:49:28 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	687996  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 21:19:38 Image size of job updated: 960148
+	672  -  MemoryUsage of job (MB)
+	688100  -  ResidentSetSize of job (KB)
+...
+006 (15988842.830.000) 2026-02-11 23:49:52 Image size of job updated: 960148
+	673  -  MemoryUsage of job (MB)
+	688136  -  ResidentSetSize of job (KB)
+...

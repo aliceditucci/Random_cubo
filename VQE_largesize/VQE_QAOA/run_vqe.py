@@ -237,7 +237,7 @@ def main():
                     n_qubits, tau, layer, edge_coeff_dict, pairs_all, eigen_list, shots, approximation, gi_file_path) #CHAGE!!!!!!!!!!
                 print('\nwarm start fidelity', list(layers_exp_poss_dict['l_'+str(layer)].items())[0])
             elif initialization == 'warm_start_analy':
-                gi_file_path = data_dir + '{}_tau_{}.pkl'.format(initialization, tau)
+                gi_file_path = data_dir + '/initialization_tau_{}.pkl'.format(tau)
                 edge_params_dict, params_init, layers_exp_poss_dict = get_good_initial_params_analy(\
                     n_qubits, tau, layer, edge_coeff_dict, pairs_all, eigen_idvalue_dict, gi_file_path, backendoptions)    #CHANGE!!!!!!!!!!!
                 print('\nwarm start fidelity', list(layers_exp_poss_dict['l_'+str(layer)].items())[0])
