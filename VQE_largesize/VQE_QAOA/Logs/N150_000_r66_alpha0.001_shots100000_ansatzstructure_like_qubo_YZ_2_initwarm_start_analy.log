@@ -336,3 +336,52 @@
 	803  -  MemoryUsage of job (MB)
 	821724  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.933.000) 2026-02-12 16:58:20 Image size of job updated: 848536
+	803  -  MemoryUsage of job (MB)
+	821752  -  ResidentSetSize of job (KB)
+...
+006 (15988842.933.000) 2026-02-12 20:33:44 Image size of job updated: 848880
+	803  -  MemoryUsage of job (MB)
+	822000  -  ResidentSetSize of job (KB)
+...
+006 (15988842.933.000) 2026-02-12 21:43:52 Image size of job updated: 848880
+	803  -  MemoryUsage of job (MB)
+	822048  -  ResidentSetSize of job (KB)
+...
+006 (15988842.933.000) 2026-02-12 22:54:01 Image size of job updated: 848880
+	803  -  MemoryUsage of job (MB)
+	822088  -  ResidentSetSize of job (KB)
+...
+006 (15988842.933.000) 2026-02-12 23:59:07 Image size of job updated: 848932
+	803  -  MemoryUsage of job (MB)
+	822088  -  ResidentSetSize of job (KB)
+...
+006 (15988842.933.000) 2026-02-13 01:04:13 Image size of job updated: 848932
+	826  -  MemoryUsage of job (MB)
+	844924  -  ResidentSetSize of job (KB)
+...
+021 (15988842.933.000) 2026-02-13 13:25:27 Error from starter on slot1_73@genoa04.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.933.000) 2026-02-13 13:25:27 Job was evicted.
+	(0) CPU times
+		Usr 1 23:30:26, Sys 0 00:00:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_73@genoa04.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025697 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    826        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.933.000) 2026-02-13 13:25:27 Job was held.
+	Error from slot1_73@genoa04.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.933.000) 2026-02-16 17:16:43 Job was aborted.
+	via condor_rm (by user tuccia)
+...

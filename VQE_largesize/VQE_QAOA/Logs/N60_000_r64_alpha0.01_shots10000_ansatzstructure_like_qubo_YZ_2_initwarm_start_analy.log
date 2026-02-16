@@ -192,3 +192,100 @@
 	238  -  MemoryUsage of job (MB)
 	242948  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.328.000) 2026-02-12 13:09:17 Image size of job updated: 325512
+	238  -  MemoryUsage of job (MB)
+	243104  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 14:14:22 Image size of job updated: 325512
+	238  -  MemoryUsage of job (MB)
+	243108  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 14:19:23 Image size of job updated: 325512
+	238  -  MemoryUsage of job (MB)
+	243200  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 14:24:23 Image size of job updated: 325512
+	238  -  MemoryUsage of job (MB)
+	243360  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 15:09:29 Image size of job updated: 325512
+	238  -  MemoryUsage of job (MB)
+	243516  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 15:49:35 Image size of job updated: 325512
+	238  -  MemoryUsage of job (MB)
+	243564  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 15:54:35 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	243772  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 17:29:42 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	243808  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 17:34:42 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	243812  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 17:39:42 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	244028  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 18:09:44 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	244048  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 18:19:45 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	244072  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 18:24:45 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	244256  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 18:29:46 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	244284  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 19:34:54 Image size of job updated: 325512
+	239  -  MemoryUsage of job (MB)
+	244440  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 19:39:55 Image size of job updated: 325512
+	240  -  MemoryUsage of job (MB)
+	244752  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 22:10:10 Image size of job updated: 325512
+	240  -  MemoryUsage of job (MB)
+	244904  -  ResidentSetSize of job (KB)
+...
+006 (15988842.328.000) 2026-02-12 22:25:12 Image size of job updated: 325512
+	240  -  MemoryUsage of job (MB)
+	245064  -  ResidentSetSize of job (KB)
+...
+021 (15988842.328.000) 2026-02-13 11:36:36 Error from starter on slot1_7@bladeja.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.328.000) 2026-02-13 11:36:36 Job was evicted.
+	(0) CPU times
+		Usr 1 23:46:42, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_7@bladeja.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    240        5120      5120 
+	   TimeSlotBusy (s)     : 172803                       
+...
+012 (15988842.328.000) 2026-02-13 11:36:36 Job was held.
+	Error from slot1_7@bladeja.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.328.000) 2026-02-16 17:16:34 Job was aborted.
+	via condor_rm (by user tuccia)
+...

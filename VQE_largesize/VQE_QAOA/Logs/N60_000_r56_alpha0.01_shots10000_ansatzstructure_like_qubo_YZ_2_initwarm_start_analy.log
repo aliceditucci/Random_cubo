@@ -261,3 +261,87 @@
 	230  -  MemoryUsage of job (MB)
 	234872  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.312.000) 2026-02-12 12:28:55 Image size of job updated: 477196
+	230  -  MemoryUsage of job (MB)
+	234888  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-12 12:33:55 Image size of job updated: 477196
+	230  -  MemoryUsage of job (MB)
+	234964  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-12 12:38:55 Image size of job updated: 477196
+	230  -  MemoryUsage of job (MB)
+	234984  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-12 12:43:56 Image size of job updated: 477196
+	230  -  MemoryUsage of job (MB)
+	235128  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-12 13:49:01 Image size of job updated: 477196
+	230  -  MemoryUsage of job (MB)
+	235192  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-12 13:59:02 Image size of job updated: 477196
+	230  -  MemoryUsage of job (MB)
+	235384  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-12 14:29:06 Image size of job updated: 477196
+	231  -  MemoryUsage of job (MB)
+	235644  -  ResidentSetSize of job (KB)
+...
+006 (15988842.312.000) 2026-02-13 05:30:35 Image size of job updated: 477196
+	231  -  MemoryUsage of job (MB)
+	235712  -  ResidentSetSize of job (KB)
+...
+004 (15988842.312.000) 2026-02-13 11:26:13 Job was evicted.
+	(0) CPU times
+		Usr 1 23:39:23, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025109 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    231        5120      5120 
+	   TimeExecute (s)      : 172200                       
+	   TimeSlotBusy (s)     : 172201                       
+...
+001 (15988842.312.000) 2026-02-13 11:34:36 Job executing on host: <141.34.15.197:9618?addrs=141.34.15.197-9618+[2001-638-700-f00f--1-c5]-9618&alias=bladekd.zeuthen.desy.de&noUDP&sock=startd_9313_8598>
+	SlotName: slot1_4@bladekd.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3812454"
+	Cpus = 1
+	Disk = 1025024
+	GPUs = 0
+	Memory = 5120
+...
+006 (15988842.312.000) 2026-02-13 11:39:51 Image size of job updated: 513120
+	245  -  MemoryUsage of job (MB)
+	250000  -  ResidentSetSize of job (KB)
+...
+021 (15988842.312.000) 2026-02-15 11:34:41 Error from starter on slot1_4@bladekd.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.312.000) 2026-02-15 11:34:41 Job was evicted.
+	(0) CPU times
+		Usr 1 23:47:09, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_4@bladekd.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    245        5120      5120 
+	   TimeExecute (s)      : 172200                       
+	   TimeSlotBusy (s)     : 172805                       
+...
+012 (15988842.312.000) 2026-02-15 11:34:41 Job was held.
+	Error from slot1_4@bladekd.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.312.000) 2026-02-16 17:16:33 Job was aborted.
+	via condor_rm (by user tuccia)
+...

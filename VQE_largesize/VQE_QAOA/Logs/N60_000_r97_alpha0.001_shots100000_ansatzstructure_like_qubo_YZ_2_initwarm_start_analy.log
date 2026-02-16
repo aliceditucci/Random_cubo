@@ -404,3 +404,96 @@
 	320  -  MemoryUsage of job (MB)
 	327172  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.395.000) 2026-02-12 18:56:15 Image size of job updated: 397388
+	320  -  MemoryUsage of job (MB)
+	327296  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 19:16:17 Image size of job updated: 397388
+	320  -  MemoryUsage of job (MB)
+	327560  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 19:41:19 Image size of job updated: 397388
+	320  -  MemoryUsage of job (MB)
+	327572  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 20:06:22 Image size of job updated: 397388
+	321  -  MemoryUsage of job (MB)
+	327836  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 22:11:35 Image size of job updated: 397388
+	321  -  MemoryUsage of job (MB)
+	328072  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 22:31:37 Image size of job updated: 397388
+	321  -  MemoryUsage of job (MB)
+	328332  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 22:56:40 Image size of job updated: 397388
+	321  -  MemoryUsage of job (MB)
+	328592  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 23:21:43 Image size of job updated: 397388
+	322  -  MemoryUsage of job (MB)
+	329100  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-12 23:46:45 Image size of job updated: 397388
+	322  -  MemoryUsage of job (MB)
+	329360  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 00:06:48 Image size of job updated: 397388
+	322  -  MemoryUsage of job (MB)
+	329608  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 00:11:48 Image size of job updated: 397388
+	322  -  MemoryUsage of job (MB)
+	329620  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 00:31:51 Image size of job updated: 397388
+	323  -  MemoryUsage of job (MB)
+	329884  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 00:56:53 Image size of job updated: 397388
+	323  -  MemoryUsage of job (MB)
+	330152  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 01:21:56 Image size of job updated: 397388
+	323  -  MemoryUsage of job (MB)
+	330424  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 01:46:58 Image size of job updated: 397388
+	323  -  MemoryUsage of job (MB)
+	330692  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 02:12:02 Image size of job updated: 397388
+	324  -  MemoryUsage of job (MB)
+	330960  -  ResidentSetSize of job (KB)
+...
+006 (15988842.395.000) 2026-02-13 02:32:03 Image size of job updated: 397388
+	324  -  MemoryUsage of job (MB)
+	331144  -  ResidentSetSize of job (KB)
+...
+021 (15988842.395.000) 2026-02-13 11:38:01 Error from starter on slot1_54@genoa08.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.395.000) 2026-02-13 11:38:01 Job was evicted.
+	(0) CPU times
+		Usr 1 23:30:03, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_54@genoa08.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025681 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    324        5120      5120 
+	   TimeSlotBusy (s)     : 172805                       
+...
+012 (15988842.395.000) 2026-02-13 11:38:01 Job was held.
+	Error from slot1_54@genoa08.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.395.000) 2026-02-16 17:16:35 Job was aborted.
+	via condor_rm (by user tuccia)
+...

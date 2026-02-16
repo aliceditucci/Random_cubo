@@ -314,3 +314,64 @@
 	466  -  MemoryUsage of job (MB)
 	477004  -  ResidentSetSize of job (KB)
 ...
+006 (15949295.339.000) 2026-02-12 13:50:31 Image size of job updated: 477056
+	466  -  MemoryUsage of job (MB)
+	477004  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-12 14:20:35 Image size of job updated: 477056
+	466  -  MemoryUsage of job (MB)
+	477048  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-12 14:55:39 Image size of job updated: 477060
+	466  -  MemoryUsage of job (MB)
+	477060  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-12 15:00:39 Image size of job updated: 477080
+	466  -  MemoryUsage of job (MB)
+	477080  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-12 18:15:58 Image size of job updated: 477096
+	466  -  MemoryUsage of job (MB)
+	477096  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-12 18:31:00 Image size of job updated: 477148
+	466  -  MemoryUsage of job (MB)
+	477148  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-12 21:51:21 Image size of job updated: 477152
+	466  -  MemoryUsage of job (MB)
+	477152  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-13 00:16:35 Image size of job updated: 477188
+	467  -  MemoryUsage of job (MB)
+	477188  -  ResidentSetSize of job (KB)
+...
+006 (15949295.339.000) 2026-02-13 02:56:51 Image size of job updated: 477204
+	467  -  MemoryUsage of job (MB)
+	477188  -  ResidentSetSize of job (KB)
+...
+021 (15949295.339.000) 2026-02-13 15:58:06 Error from starter on slot1_1@pizza20.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15949295.339.000) 2026-02-13 15:58:06 Job was evicted.
+	(0) CPU times
+		Usr 12 15:59:53, Sys 0 07:59:35  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_1@pizza20.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      7.94        8         8 
+	   Disk (KB)            :      1     1024000   1025696 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    467       16384     16384 
+	   TimeSlotBusy (s)     : 172802                       
+...
+012 (15949295.339.000) 2026-02-13 15:58:06 Job was held.
+	Error from slot1_1@pizza20.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15949295.339.000) 2026-02-16 17:16:23 Job was aborted.
+	via condor_rm (by user tuccia)
+...

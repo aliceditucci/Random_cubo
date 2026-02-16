@@ -196,3 +196,48 @@
 	484  -  MemoryUsage of job (MB)
 	495124  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.722.000) 2026-02-12 11:34:06 Image size of job updated: 947668
+	484  -  MemoryUsage of job (MB)
+	495172  -  ResidentSetSize of job (KB)
+...
+006 (15988842.722.000) 2026-02-12 11:44:07 Image size of job updated: 947668
+	484  -  MemoryUsage of job (MB)
+	495380  -  ResidentSetSize of job (KB)
+...
+006 (15988842.722.000) 2026-02-12 13:54:20 Image size of job updated: 947668
+	484  -  MemoryUsage of job (MB)
+	495420  -  ResidentSetSize of job (KB)
+...
+006 (15988842.722.000) 2026-02-12 17:19:39 Image size of job updated: 947668
+	484  -  MemoryUsage of job (MB)
+	495480  -  ResidentSetSize of job (KB)
+...
+006 (15988842.722.000) 2026-02-12 21:20:03 Image size of job updated: 947668
+	484  -  MemoryUsage of job (MB)
+	495592  -  ResidentSetSize of job (KB)
+...
+021 (15988842.722.000) 2026-02-13 12:56:50 Error from starter on slot1_30@wgs43.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.722.000) 2026-02-13 12:56:50 Job was evicted.
+	(0) CPU times
+		Usr 1 23:36:04, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_30@wgs43.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025025 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    484        5120      5120 
+	   TimeSlotBusy (s)     : 172803                       
+...
+012 (15988842.722.000) 2026-02-13 12:56:50 Job was held.
+	Error from slot1_30@wgs43.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.722.000) 2026-02-16 17:16:39 Job was aborted.
+	via condor_rm (by user tuccia)
+...

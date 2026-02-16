@@ -140,3 +140,56 @@
 	638  -  MemoryUsage of job (MB)
 	652796  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.734.000) 2026-02-12 17:24:49 Image size of job updated: 868736
+	638  -  MemoryUsage of job (MB)
+	653276  -  ResidentSetSize of job (KB)
+...
+006 (15988842.734.000) 2026-02-12 17:29:49 Image size of job updated: 868736
+	639  -  MemoryUsage of job (MB)
+	653432  -  ResidentSetSize of job (KB)
+...
+006 (15988842.734.000) 2026-02-12 20:50:08 Image size of job updated: 868736
+	639  -  MemoryUsage of job (MB)
+	653576  -  ResidentSetSize of job (KB)
+...
+006 (15988842.734.000) 2026-02-12 21:45:14 Image size of job updated: 868736
+	639  -  MemoryUsage of job (MB)
+	653616  -  ResidentSetSize of job (KB)
+...
+006 (15988842.734.000) 2026-02-12 21:55:15 Image size of job updated: 868736
+	639  -  MemoryUsage of job (MB)
+	653832  -  ResidentSetSize of job (KB)
+...
+006 (15988842.734.000) 2026-02-12 23:05:22 Image size of job updated: 868736
+	639  -  MemoryUsage of job (MB)
+	653848  -  ResidentSetSize of job (KB)
+...
+006 (15988842.734.000) 2026-02-12 23:20:25 Image size of job updated: 868736
+	639  -  MemoryUsage of job (MB)
+	654088  -  ResidentSetSize of job (KB)
+...
+021 (15988842.734.000) 2026-02-13 12:56:50 Error from starter on slot1_25@wgs45.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.734.000) 2026-02-13 12:56:50 Job was evicted.
+	(0) CPU times
+		Usr 1 23:33:49, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_25@wgs45.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025025 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    639        5120      5120 
+	   TimeSlotBusy (s)     : 172802                       
+...
+012 (15988842.734.000) 2026-02-13 12:56:50 Job was held.
+	Error from slot1_25@wgs45.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.734.000) 2026-02-16 17:16:40 Job was aborted.
+	via condor_rm (by user tuccia)
+...

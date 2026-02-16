@@ -10,3 +10,64 @@
 ...
 000 (15949295.970.000) 2026-02-10 11:46:05 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
 ...
+001 (15949295.970.000) 2026-02-16 05:32:24 Job executing on host: <141.34.103.54:9618?addrs=141.34.103.54-9618+[2001-638-700-f067--1-36]-9618&alias=wgs44.zeuthen.desy.de&noUDP&sock=startd_7775_94ef>
+	SlotName: slot1_3@wgs44.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3816712"
+	Cpus = 8
+	Disk = 1025025
+	GPUs = 0
+	Memory = 16384
+...
+006 (15949295.970.000) 2026-02-16 05:32:37 Image size of job updated: 109404
+	107  -  MemoryUsage of job (MB)
+	109404  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 05:37:37 Image size of job updated: 936832
+	592  -  MemoryUsage of job (MB)
+	606028  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 05:42:38 Image size of job updated: 936832
+	598  -  MemoryUsage of job (MB)
+	611404  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 05:47:39 Image size of job updated: 936832
+	762  -  MemoryUsage of job (MB)
+	779276  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 05:52:39 Image size of job updated: 936832
+	762  -  MemoryUsage of job (MB)
+	779564  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 05:57:40 Image size of job updated: 936832
+	767  -  MemoryUsage of job (MB)
+	785044  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 06:27:42 Image size of job updated: 936832
+	769  -  MemoryUsage of job (MB)
+	786812  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 06:37:44 Image size of job updated: 936832
+	770  -  MemoryUsage of job (MB)
+	787568  -  ResidentSetSize of job (KB)
+...
+006 (15949295.970.000) 2026-02-16 06:42:44 Image size of job updated: 936832
+	818  -  MemoryUsage of job (MB)
+	837116  -  ResidentSetSize of job (KB)
+...
+004 (15949295.970.000) 2026-02-16 17:16:26 Job was evicted.
+	(0) CPU times
+		Usr 1 10:01:53, Sys 0 00:07:46  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        8         8 
+	   Disk (KB)            :     1     1024000   1025025 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   818       16384     16384 
+	   TimeExecute (s)      : 42241                       
+	   TimeSlotBusy (s)     : 42243                       
+...
+009 (15949295.970.000) 2026-02-16 17:16:26 Job was aborted.
+	via condor_rm (by user tuccia)
+...

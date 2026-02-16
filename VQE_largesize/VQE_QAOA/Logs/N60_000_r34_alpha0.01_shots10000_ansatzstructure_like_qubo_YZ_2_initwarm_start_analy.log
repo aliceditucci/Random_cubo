@@ -206,3 +206,56 @@
 	238  -  MemoryUsage of job (MB)
 	243080  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.268.000) 2026-02-12 11:47:48 Image size of job updated: 243192
+	238  -  MemoryUsage of job (MB)
+	243192  -  ResidentSetSize of job (KB)
+...
+006 (15988842.268.000) 2026-02-12 20:23:40 Image size of job updated: 243276
+	238  -  MemoryUsage of job (MB)
+	243276  -  ResidentSetSize of job (KB)
+...
+006 (15988842.268.000) 2026-02-12 20:28:41 Image size of job updated: 243448
+	238  -  MemoryUsage of job (MB)
+	243448  -  ResidentSetSize of job (KB)
+...
+006 (15988842.268.000) 2026-02-12 22:13:55 Image size of job updated: 243468
+	238  -  MemoryUsage of job (MB)
+	243468  -  ResidentSetSize of job (KB)
+...
+006 (15988842.268.000) 2026-02-12 22:18:55 Image size of job updated: 243484
+	238  -  MemoryUsage of job (MB)
+	243484  -  ResidentSetSize of job (KB)
+...
+006 (15988842.268.000) 2026-02-12 22:28:57 Image size of job updated: 243704
+	238  -  MemoryUsage of job (MB)
+	243704  -  ResidentSetSize of job (KB)
+...
+006 (15988842.268.000) 2026-02-13 00:29:05 Image size of job updated: 244172
+	239  -  MemoryUsage of job (MB)
+	244172  -  ResidentSetSize of job (KB)
+...
+021 (15988842.268.000) 2026-02-13 11:35:14 Error from starter on slot1_14@bladekb.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.268.000) 2026-02-13 11:35:14 Job was evicted.
+	(0) CPU times
+		Usr 1 23:42:05, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_14@bladekb.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    239        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.268.000) 2026-02-13 11:35:14 Job was held.
+	Error from slot1_14@bladekb.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.268.000) 2026-02-16 17:16:32 Job was aborted.
+	via condor_rm (by user tuccia)
+...

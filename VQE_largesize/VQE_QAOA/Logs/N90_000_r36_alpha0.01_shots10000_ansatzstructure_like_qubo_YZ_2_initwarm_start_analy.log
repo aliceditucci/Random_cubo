@@ -148,3 +148,40 @@
 	488  -  MemoryUsage of job (MB)
 	499076  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.472.000) 2026-02-12 17:09:08 Image size of job updated: 499636
+	488  -  MemoryUsage of job (MB)
+	499636  -  ResidentSetSize of job (KB)
+...
+006 (15988842.472.000) 2026-02-12 17:14:08 Image size of job updated: 499700
+	488  -  MemoryUsage of job (MB)
+	499700  -  ResidentSetSize of job (KB)
+...
+006 (15988842.472.000) 2026-02-12 17:24:10 Image size of job updated: 499792
+	489  -  MemoryUsage of job (MB)
+	499792  -  ResidentSetSize of job (KB)
+...
+021 (15988842.472.000) 2026-02-13 11:41:04 Error from starter on slot1_13@bladej8.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.472.000) 2026-02-13 11:41:04 Job was evicted.
+	(0) CPU times
+		Usr 1 23:47:02, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_13@bladej8.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    489        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.472.000) 2026-02-13 11:41:04 Job was held.
+	Error from slot1_13@bladej8.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.472.000) 2026-02-16 17:16:36 Job was aborted.
+	via condor_rm (by user tuccia)
+...

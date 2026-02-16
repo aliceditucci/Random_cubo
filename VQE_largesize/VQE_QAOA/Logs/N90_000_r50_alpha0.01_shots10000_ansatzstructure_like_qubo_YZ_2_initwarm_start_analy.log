@@ -189,3 +189,48 @@
 	492  -  MemoryUsage of job (MB)
 	503724  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.500.000) 2026-02-12 23:31:01 Image size of job updated: 503772
+	492  -  MemoryUsage of job (MB)
+	503772  -  ResidentSetSize of job (KB)
+...
+006 (15988842.500.000) 2026-02-13 02:01:18 Image size of job updated: 503928
+	493  -  MemoryUsage of job (MB)
+	503928  -  ResidentSetSize of job (KB)
+...
+006 (15988842.500.000) 2026-02-13 02:06:18 Image size of job updated: 504084
+	493  -  MemoryUsage of job (MB)
+	504084  -  ResidentSetSize of job (KB)
+...
+006 (15988842.500.000) 2026-02-13 07:46:59 Image size of job updated: 504244
+	493  -  MemoryUsage of job (MB)
+	504244  -  ResidentSetSize of job (KB)
+...
+006 (15988842.500.000) 2026-02-13 07:51:59 Image size of job updated: 504400
+	493  -  MemoryUsage of job (MB)
+	504400  -  ResidentSetSize of job (KB)
+...
+021 (15988842.500.000) 2026-02-13 11:42:05 Error from starter on slot1_31@amphion.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.500.000) 2026-02-13 11:42:05 Job was evicted.
+	(0) CPU times
+		Usr 1 23:24:55, Sys 0 00:00:16  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_31@amphion.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025682 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    493        5120      5120 
+	   TimeSlotBusy (s)     : 172805                       
+...
+012 (15988842.500.000) 2026-02-13 11:42:05 Job was held.
+	Error from slot1_31@amphion.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.500.000) 2026-02-16 17:16:36 Job was aborted.
+	via condor_rm (by user tuccia)
+...

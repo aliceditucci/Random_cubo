@@ -528,3 +528,28 @@
 	424  -  MemoryUsage of job (MB)
 	433528  -  ResidentSetSize of job (KB)
 ...
+021 (15949295.303.000) 2026-02-12 11:48:16 Error from starter on slot1_12@wgs44.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15949295.303.000) 2026-02-12 11:48:16 Job was evicted.
+	(0) CPU times
+		Usr 12 09:37:29, Sys 0 00:52:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_12@wgs44.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        8         8 
+	   Disk (KB)            :      1     1024000   1025025 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    424       16384     16384 
+	   TimeSlotBusy (s)     : 172803                       
+...
+012 (15949295.303.000) 2026-02-12 11:48:16 Job was held.
+	Error from slot1_12@wgs44.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15949295.303.000) 2026-02-16 17:16:22 Job was aborted.
+	via condor_rm (by user tuccia)
+...

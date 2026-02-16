@@ -228,3 +228,100 @@
 	584  -  MemoryUsage of job (MB)
 	597668  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.555.000) 2026-02-12 13:06:31 Image size of job updated: 618224
+	584  -  MemoryUsage of job (MB)
+	597712  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 14:06:37 Image size of job updated: 618224
+	584  -  MemoryUsage of job (MB)
+	597980  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 16:56:54 Image size of job updated: 618616
+	584  -  MemoryUsage of job (MB)
+	597980  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 18:47:06 Image size of job updated: 618920
+	584  -  MemoryUsage of job (MB)
+	597980  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 19:47:12 Image size of job updated: 618920
+	585  -  MemoryUsage of job (MB)
+	598152  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 20:42:17 Image size of job updated: 619120
+	585  -  MemoryUsage of job (MB)
+	598476  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 21:37:23 Image size of job updated: 619120
+	585  -  MemoryUsage of job (MB)
+	598512  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 22:32:29 Image size of job updated: 619120
+	585  -  MemoryUsage of job (MB)
+	598572  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-12 23:32:34 Image size of job updated: 619120
+	585  -  MemoryUsage of job (MB)
+	598892  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 00:27:40 Image size of job updated: 619120
+	585  -  MemoryUsage of job (MB)
+	598964  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 01:22:45 Image size of job updated: 619120
+	585  -  MemoryUsage of job (MB)
+	599036  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 02:17:51 Image size of job updated: 619120
+	586  -  MemoryUsage of job (MB)
+	599280  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 03:17:57 Image size of job updated: 619468
+	586  -  MemoryUsage of job (MB)
+	599292  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 04:13:02 Image size of job updated: 619468
+	586  -  MemoryUsage of job (MB)
+	599320  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 05:03:06 Image size of job updated: 619468
+	586  -  MemoryUsage of job (MB)
+	599860  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 05:58:12 Image size of job updated: 619468
+	587  -  MemoryUsage of job (MB)
+	600144  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 10:48:42 Image size of job updated: 619468
+	587  -  MemoryUsage of job (MB)
+	600296  -  ResidentSetSize of job (KB)
+...
+006 (15988842.555.000) 2026-02-13 11:48:47 Image size of job updated: 619468
+	587  -  MemoryUsage of job (MB)
+	600616  -  ResidentSetSize of job (KB)
+...
+021 (15988842.555.000) 2026-02-13 11:48:54 Error from starter on slot1_29@pizza01.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.555.000) 2026-02-13 11:48:54 Job was evicted.
+	(0) CPU times
+		Usr 1 23:29:26, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_29@pizza01.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025696 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    587        5120      5120 
+	   TimeSlotBusy (s)     : 172803                       
+...
+012 (15988842.555.000) 2026-02-13 11:48:54 Job was held.
+	Error from slot1_29@pizza01.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.555.000) 2026-02-16 17:16:37 Job was aborted.
+	via condor_rm (by user tuccia)
+...

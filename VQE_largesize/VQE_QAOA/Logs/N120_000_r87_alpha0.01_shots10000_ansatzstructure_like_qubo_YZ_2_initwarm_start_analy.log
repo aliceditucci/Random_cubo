@@ -205,3 +205,48 @@
 	472  -  MemoryUsage of job (MB)
 	483156  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.774.000) 2026-02-12 13:39:32 Image size of job updated: 513296
+	472  -  MemoryUsage of job (MB)
+	483192  -  ResidentSetSize of job (KB)
+...
+006 (15988842.774.000) 2026-02-12 13:44:32 Image size of job updated: 513296
+	473  -  MemoryUsage of job (MB)
+	483348  -  ResidentSetSize of job (KB)
+...
+006 (15988842.774.000) 2026-02-13 03:45:56 Image size of job updated: 513296
+	473  -  MemoryUsage of job (MB)
+	483500  -  ResidentSetSize of job (KB)
+...
+006 (15988842.774.000) 2026-02-13 09:11:29 Image size of job updated: 513296
+	473  -  MemoryUsage of job (MB)
+	483656  -  ResidentSetSize of job (KB)
+...
+006 (15988842.774.000) 2026-02-13 12:16:47 Image size of job updated: 513296
+	473  -  MemoryUsage of job (MB)
+	483812  -  ResidentSetSize of job (KB)
+...
+021 (15988842.774.000) 2026-02-13 12:57:08 Error from starter on slot1_19@ampere01.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.774.000) 2026-02-13 12:57:08 Job was evicted.
+	(0) CPU times
+		Usr 1 23:21:22, Sys 0 00:02:23  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_19@ampere01.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025682 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    473        5120      5120 
+	   TimeSlotBusy (s)     : 172801                       
+...
+012 (15988842.774.000) 2026-02-13 12:57:08 Job was held.
+	Error from slot1_19@ampere01.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.774.000) 2026-02-16 17:16:40 Job was aborted.
+	via condor_rm (by user tuccia)
+...

@@ -10,3 +10,93 @@
 ...
 000 (15949295.964.000) 2026-02-10 11:46:05 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
 ...
+001 (15949295.964.000) 2026-02-16 05:26:37 Job executing on host: <141.34.15.177:9618?addrs=141.34.15.177-9618+[2001-638-700-f00f--1-b1]-9618&alias=genoa02.zeuthen.desy.de&noUDP&sock=startd_9554_d3eb>
+	SlotName: slot1_1@genoa02.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2599764"
+	Cpus = 8
+	Disk = 1025697
+	GPUs = 0
+	Memory = 16384
+...
+006 (15949295.964.000) 2026-02-16 05:26:51 Image size of job updated: 107428
+	105  -  MemoryUsage of job (MB)
+	107428  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 05:31:52 Image size of job updated: 980772
+	570  -  MemoryUsage of job (MB)
+	583184  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 05:36:52 Image size of job updated: 980772
+	586  -  MemoryUsage of job (MB)
+	599344  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 05:41:53 Image size of job updated: 980772
+	650  -  MemoryUsage of job (MB)
+	665488  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 05:46:54 Image size of job updated: 980772
+	654  -  MemoryUsage of job (MB)
+	669040  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 05:51:54 Image size of job updated: 980772
+	654  -  MemoryUsage of job (MB)
+	669492  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 06:01:56 Image size of job updated: 980772
+	703  -  MemoryUsage of job (MB)
+	719612  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 06:21:58 Image size of job updated: 980772
+	704  -  MemoryUsage of job (MB)
+	720244  -  ResidentSetSize of job (KB)
+...
+006 (15949295.964.000) 2026-02-16 06:42:01 Image size of job updated: 980772
+	761  -  MemoryUsage of job (MB)
+	778508  -  ResidentSetSize of job (KB)
+...
+022 (15949295.964.000) 2026-02-16 07:16:00 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@genoa02.zeuthen.desy.de <141.34.15.177:9618?addrs=141.34.15.177-9618+[2001-638-700-f00f--1-b1]-9618&alias=genoa02.zeuthen.desy.de&noUDP&sock=startd_9554_d3eb>
+...
+024 (15949295.964.000) 2026-02-16 07:56:00 Job reconnection failed
+    Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+    Can not reconnect to slot1_1@genoa02.zeuthen.desy.de, rescheduling job
+...
+004 (15949295.964.000) 2026-02-16 07:56:10 Job was evicted.
+	(0) CPU times
+		Usr 0 03:42:30, Sys 0 00:10:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        8         8 
+	   Disk (KB)            :     1     1024000   1025697 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   761       16384     16384 
+...
+001 (15949295.964.000) 2026-02-16 08:11:22 Job executing on host: <141.34.15.42:9618?addrs=141.34.15.42-9618+[2001-638-700-f00f--1-2a]-9618&alias=pizza13.zeuthen.desy.de&noUDP&sock=startd_8168_25a7>
+	SlotName: slot1_11@pizza13.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2339995"
+	Cpus = 8
+	Disk = 1025696
+	GPUs = 0
+	Memory = 16384
+...
+004 (15949295.964.000) 2026-02-16 17:16:26 Job was evicted.
+	(0) CPU times
+		Usr 1 01:22:35, Sys 0 00:52:53  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        8         8 
+	   Disk (KB)            :     1     1024000   1025696 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   977       16384     16384 
+	   TimeExecute (s)      : 32703                       
+	   TimeSlotBusy (s)     : 32704                       
+...
+009 (15949295.964.000) 2026-02-16 17:16:26 Job was aborted.
+	via condor_rm (by user tuccia)
+...

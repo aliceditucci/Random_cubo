@@ -631,3 +631,32 @@
 	421  -  MemoryUsage of job (MB)
 	431028  -  ResidentSetSize of job (KB)
 ...
+006 (15949295.315.000) 2026-02-12 14:22:36 Image size of job updated: 513160
+	421  -  MemoryUsage of job (MB)
+	431040  -  ResidentSetSize of job (KB)
+...
+021 (15949295.315.000) 2026-02-12 18:27:51 Error from starter on slot1_5@bladeke.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15949295.315.000) 2026-02-12 18:27:51 Job was evicted.
+	(0) CPU times
+		Usr 12 19:01:35, Sys 0 01:03:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_5@bladeke.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      7.96        8         8 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    421       16384     16384 
+	   TimeSlotBusy (s)     : 172801                       
+...
+012 (15949295.315.000) 2026-02-12 18:27:51 Job was held.
+	Error from slot1_5@bladeke.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15949295.315.000) 2026-02-16 17:16:23 Job was aborted.
+	via condor_rm (by user tuccia)
+...

@@ -176,3 +176,100 @@
 	262  -  MemoryUsage of job (MB)
 	267508  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.326.000) 2026-02-12 11:24:11 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	267712  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 11:34:12 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	267764  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 12:14:15 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	267816  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 12:24:16 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	268020  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 13:44:24 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	268096  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 13:49:25 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	268276  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 14:54:32 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	268280  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 15:14:34 Image size of job updated: 459256
+	262  -  MemoryUsage of job (MB)
+	268284  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 15:19:35 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	268332  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 15:24:35 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	268532  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 15:44:37 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	268548  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 15:49:38 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	268688  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 21:15:10 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	268812  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 21:20:11 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	268968  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 21:50:14 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	269120  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-12 23:45:25 Image size of job updated: 459256
+	263  -  MemoryUsage of job (MB)
+	269280  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-13 06:21:05 Image size of job updated: 459256
+	264  -  MemoryUsage of job (MB)
+	269436  -  ResidentSetSize of job (KB)
+...
+006 (15988842.326.000) 2026-02-13 09:56:26 Image size of job updated: 459256
+	264  -  MemoryUsage of job (MB)
+	269592  -  ResidentSetSize of job (KB)
+...
+021 (15988842.326.000) 2026-02-13 11:36:37 Error from starter on slot1_27@wgs45.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.326.000) 2026-02-13 11:36:37 Job was evicted.
+	(0) CPU times
+		Usr 1 23:33:19, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_27@wgs45.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025025 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    264        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.326.000) 2026-02-13 11:36:37 Job was held.
+	Error from slot1_27@wgs45.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.326.000) 2026-02-16 17:16:34 Job was aborted.
+	via condor_rm (by user tuccia)
+...

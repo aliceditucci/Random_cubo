@@ -289,3 +289,68 @@
 	325  -  MemoryUsage of job (MB)
 	332452  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.391.000) 2026-02-12 18:31:15 Image size of job updated: 417836
+	326  -  MemoryUsage of job (MB)
+	333420  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-12 18:36:16 Image size of job updated: 417836
+	326  -  MemoryUsage of job (MB)
+	333424  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-12 23:06:43 Image size of job updated: 417836
+	326  -  MemoryUsage of job (MB)
+	333576  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-12 23:26:46 Image size of job updated: 417836
+	326  -  MemoryUsage of job (MB)
+	333732  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-12 23:41:48 Image size of job updated: 417836
+	327  -  MemoryUsage of job (MB)
+	333900  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-13 00:01:50 Image size of job updated: 417836
+	327  -  MemoryUsage of job (MB)
+	334120  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-13 00:21:51 Image size of job updated: 417836
+	327  -  MemoryUsage of job (MB)
+	334156  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-13 00:56:54 Image size of job updated: 417836
+	327  -  MemoryUsage of job (MB)
+	334204  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-13 01:16:55 Image size of job updated: 417836
+	327  -  MemoryUsage of job (MB)
+	334412  -  ResidentSetSize of job (KB)
+...
+006 (15988842.391.000) 2026-02-13 01:31:56 Image size of job updated: 417836
+	327  -  MemoryUsage of job (MB)
+	334416  -  ResidentSetSize of job (KB)
+...
+021 (15988842.391.000) 2026-02-13 11:38:00 Error from starter on slot1_7@amphion.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.391.000) 2026-02-13 11:38:00 Job was evicted.
+	(0) CPU times
+		Usr 1 23:26:09, Sys 0 00:01:29  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_7@amphion.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025682 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    327        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.391.000) 2026-02-13 11:38:00 Job was held.
+	Error from slot1_7@amphion.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.391.000) 2026-02-16 17:16:35 Job was aborted.
+	via condor_rm (by user tuccia)
+...

@@ -132,3 +132,68 @@
 	634  -  MemoryUsage of job (MB)
 	649108  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.756.000) 2026-02-12 19:09:53 Image size of job updated: 946748
+	634  -  MemoryUsage of job (MB)
+	649168  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 19:24:54 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	649364  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 21:00:03 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	649376  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 21:15:05 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	649620  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 21:45:07 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	649644  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 22:00:08 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	649876  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 23:30:18 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	649932  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-12 23:45:19 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	650132  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-13 00:15:22 Image size of job updated: 946748
+	635  -  MemoryUsage of job (MB)
+	650192  -  ResidentSetSize of job (KB)
+...
+006 (15988842.756.000) 2026-02-13 00:30:24 Image size of job updated: 946748
+	636  -  MemoryUsage of job (MB)
+	650388  -  ResidentSetSize of job (KB)
+...
+021 (15988842.756.000) 2026-02-13 12:56:51 Error from starter on slot1_9@bladejf.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.756.000) 2026-02-13 12:56:51 Job was evicted.
+	(0) CPU times
+		Usr 1 23:46:54, Sys 0 00:00:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_9@bladejf.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    636        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.756.000) 2026-02-13 12:56:51 Job was held.
+	Error from slot1_9@bladejf.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.756.000) 2026-02-16 17:16:40 Job was aborted.
+	via condor_rm (by user tuccia)
+...

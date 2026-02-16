@@ -10,3 +10,100 @@
 ...
 000 (15949295.938.000) 2026-02-10 11:46:05 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
 ...
+001 (15949295.938.000) 2026-02-16 04:14:38 Job executing on host: <141.34.15.38:9618?addrs=141.34.15.38-9618+[2001-638-700-f00f--1-26]-9618&alias=pizza09.zeuthen.desy.de&noUDP&sock=startd_8238_2948>
+	SlotName: slot1_10@pizza09.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3183559"
+	Cpus = 8
+	Disk = 1025696
+	GPUs = 0
+	Memory = 16384
+...
+006 (15949295.938.000) 2026-02-16 04:14:52 Image size of job updated: 109416
+	107  -  MemoryUsage of job (MB)
+	109416  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:19:53 Image size of job updated: 980336
+	579  -  MemoryUsage of job (MB)
+	591964  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:29:53 Image size of job updated: 980336
+	584  -  MemoryUsage of job (MB)
+	597988  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:34:54 Image size of job updated: 980336
+	585  -  MemoryUsage of job (MB)
+	598620  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:39:54 Image size of job updated: 980336
+	658  -  MemoryUsage of job (MB)
+	673444  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:44:55 Image size of job updated: 980336
+	663  -  MemoryUsage of job (MB)
+	678740  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:49:56 Image size of job updated: 980336
+	679  -  MemoryUsage of job (MB)
+	694636  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 04:54:56 Image size of job updated: 980336
+	713  -  MemoryUsage of job (MB)
+	729280  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 06:25:07 Image size of job updated: 980336
+	714  -  MemoryUsage of job (MB)
+	730312  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 06:50:11 Image size of job updated: 980336
+	741  -  MemoryUsage of job (MB)
+	758472  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 06:55:11 Image size of job updated: 980336
+	742  -  MemoryUsage of job (MB)
+	758824  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 07:55:19 Image size of job updated: 980336
+	742  -  MemoryUsage of job (MB)
+	759232  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 09:50:32 Image size of job updated: 980336
+	779  -  MemoryUsage of job (MB)
+	797088  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 09:55:32 Image size of job updated: 980336
+	779  -  MemoryUsage of job (MB)
+	797136  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 12:05:41 Image size of job updated: 980336
+	913  -  MemoryUsage of job (MB)
+	934412  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 12:10:41 Image size of job updated: 980336
+	924  -  MemoryUsage of job (MB)
+	945996  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 14:35:51 Image size of job updated: 980336
+	947  -  MemoryUsage of job (MB)
+	969284  -  ResidentSetSize of job (KB)
+...
+006 (15949295.938.000) 2026-02-16 15:10:54 Image size of job updated: 980336
+	949  -  MemoryUsage of job (MB)
+	970864  -  ResidentSetSize of job (KB)
+...
+004 (15949295.938.000) 2026-02-16 17:16:25 Job was evicted.
+	(0) CPU times
+		Usr 1 06:22:09, Sys 0 02:23:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        8         8 
+	   Disk (KB)            :     1     1024000   1025696 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   949       16384     16384 
+	   TimeExecute (s)      : 46906                       
+	   TimeSlotBusy (s)     : 46907                       
+...
+009 (15949295.938.000) 2026-02-16 17:16:25 Job was aborted.
+	via condor_rm (by user tuccia)
+...

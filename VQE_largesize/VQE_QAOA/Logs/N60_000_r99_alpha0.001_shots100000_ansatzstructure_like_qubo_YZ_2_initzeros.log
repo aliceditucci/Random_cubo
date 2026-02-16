@@ -378,3 +378,40 @@
 	422  -  MemoryUsage of job (MB)
 	431368  -  ResidentSetSize of job (KB)
 ...
+006 (15949295.399.000) 2026-02-12 12:10:35 Image size of job updated: 431372
+	422  -  MemoryUsage of job (MB)
+	431372  -  ResidentSetSize of job (KB)
+...
+006 (15949295.399.000) 2026-02-12 13:10:39 Image size of job updated: 431424
+	422  -  MemoryUsage of job (MB)
+	431424  -  ResidentSetSize of job (KB)
+...
+006 (15949295.399.000) 2026-02-12 13:25:40 Image size of job updated: 431628
+	422  -  MemoryUsage of job (MB)
+	431628  -  ResidentSetSize of job (KB)
+...
+021 (15949295.399.000) 2026-02-13 15:58:07 Error from starter on slot1_6@pizza13.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15949295.399.000) 2026-02-13 15:58:07 Job was evicted.
+	(0) CPU times
+		Usr 13 07:22:54, Sys 0 01:26:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_6@pizza13.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      7.91        8         8 
+	   Disk (KB)            :      1     1024000   1025696 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    422       16384     16384 
+	   TimeSlotBusy (s)     : 172802                       
+...
+012 (15949295.399.000) 2026-02-13 15:58:07 Job was held.
+	Error from slot1_6@pizza13.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15949295.399.000) 2026-02-16 17:16:24 Job was aborted.
+	via condor_rm (by user tuccia)
+...

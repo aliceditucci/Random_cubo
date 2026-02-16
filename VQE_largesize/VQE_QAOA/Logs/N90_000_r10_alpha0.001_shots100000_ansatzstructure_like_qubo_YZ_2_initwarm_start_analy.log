@@ -216,3 +216,52 @@
 	726  -  MemoryUsage of job (MB)
 	743028  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.421.000) 2026-02-12 11:46:20 Image size of job updated: 746504
+	726  -  MemoryUsage of job (MB)
+	743028  -  ResidentSetSize of job (KB)
+...
+006 (15988842.421.000) 2026-02-12 18:57:10 Image size of job updated: 746736
+	726  -  MemoryUsage of job (MB)
+	743028  -  ResidentSetSize of job (KB)
+...
+006 (15988842.421.000) 2026-02-12 20:52:24 Image size of job updated: 746992
+	726  -  MemoryUsage of job (MB)
+	743028  -  ResidentSetSize of job (KB)
+...
+006 (15988842.421.000) 2026-02-13 01:47:52 Image size of job updated: 747392
+	726  -  MemoryUsage of job (MB)
+	743028  -  ResidentSetSize of job (KB)
+...
+006 (15988842.421.000) 2026-02-13 06:28:23 Image size of job updated: 747532
+	726  -  MemoryUsage of job (MB)
+	743028  -  ResidentSetSize of job (KB)
+...
+006 (15988842.421.000) 2026-02-13 08:48:34 Image size of job updated: 747620
+	726  -  MemoryUsage of job (MB)
+	743028  -  ResidentSetSize of job (KB)
+...
+021 (15988842.421.000) 2026-02-13 11:38:43 Error from starter on slot1_22@wgs42.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.421.000) 2026-02-13 11:38:43 Job was evicted.
+	(0) CPU times
+		Usr 1 23:29:17, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_22@wgs42.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025025 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    726        5120      5120 
+	   TimeSlotBusy (s)     : 172805                       
+...
+012 (15988842.421.000) 2026-02-13 11:38:43 Job was held.
+	Error from slot1_22@wgs42.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.421.000) 2026-02-16 17:16:35 Job was aborted.
+	via condor_rm (by user tuccia)
+...

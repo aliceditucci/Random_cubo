@@ -264,3 +264,60 @@
 	803  -  MemoryUsage of job (MB)
 	821480  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.985.000) 2026-02-13 02:46:05 Image size of job updated: 847780
+	803  -  MemoryUsage of job (MB)
+	821592  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 03:56:14 Image size of job updated: 847780
+	803  -  MemoryUsage of job (MB)
+	821700  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 05:06:20 Image size of job updated: 847780
+	803  -  MemoryUsage of job (MB)
+	821824  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 08:21:39 Image size of job updated: 847780
+	828  -  MemoryUsage of job (MB)
+	847124  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 08:26:40 Image size of job updated: 847960
+	828  -  MemoryUsage of job (MB)
+	847128  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 10:36:53 Image size of job updated: 848324
+	828  -  MemoryUsage of job (MB)
+	847128  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 11:47:01 Image size of job updated: 848368
+	828  -  MemoryUsage of job (MB)
+	847128  -  ResidentSetSize of job (KB)
+...
+006 (15988842.985.000) 2026-02-13 12:52:08 Image size of job updated: 848684
+	828  -  MemoryUsage of job (MB)
+	847128  -  ResidentSetSize of job (KB)
+...
+021 (15988842.985.000) 2026-02-13 13:27:04 Error from starter on slot1_7@genoa03.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.985.000) 2026-02-13 13:27:05 Job was evicted.
+	(0) CPU times
+		Usr 1 23:24:45, Sys 0 00:00:32  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_7@genoa03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025697 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    828        5120      5120 
+	   TimeSlotBusy (s)     : 172802                       
+...
+012 (15988842.985.000) 2026-02-13 13:27:05 Job was held.
+	Error from slot1_7@genoa03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.985.000) 2026-02-16 17:16:44 Job was aborted.
+	via condor_rm (by user tuccia)
+...

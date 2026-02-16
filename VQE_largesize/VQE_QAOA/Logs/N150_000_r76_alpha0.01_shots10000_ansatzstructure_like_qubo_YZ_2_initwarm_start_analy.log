@@ -189,3 +189,60 @@
 	661  -  MemoryUsage of job (MB)
 	676284  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.952.000) 2026-02-12 14:48:30 Image size of job updated: 869580
+	661  -  MemoryUsage of job (MB)
+	676336  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 15:03:32 Image size of job updated: 869580
+	661  -  MemoryUsage of job (MB)
+	676464  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 17:53:49 Image size of job updated: 869580
+	661  -  MemoryUsage of job (MB)
+	676480  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 17:58:50 Image size of job updated: 869580
+	661  -  MemoryUsage of job (MB)
+	676584  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 18:03:50 Image size of job updated: 869580
+	661  -  MemoryUsage of job (MB)
+	676712  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 18:23:53 Image size of job updated: 869580
+	663  -  MemoryUsage of job (MB)
+	678504  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 19:13:57 Image size of job updated: 869580
+	663  -  MemoryUsage of job (MB)
+	678520  -  ResidentSetSize of job (KB)
+...
+006 (15988842.952.000) 2026-02-12 19:18:58 Image size of job updated: 869580
+	663  -  MemoryUsage of job (MB)
+	678600  -  ResidentSetSize of job (KB)
+...
+021 (15988842.952.000) 2026-02-13 13:25:45 Error from starter on slot1_1@pascal05.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.952.000) 2026-02-13 13:25:45 Job was evicted.
+	(0) CPU times
+		Usr 1 23:43:41, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_1@pascal05.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025109 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    663        5120      5120 
+	   TimeSlotBusy (s)     : 172802                       
+...
+012 (15988842.952.000) 2026-02-13 13:25:45 Job was held.
+	Error from slot1_1@pascal05.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.952.000) 2026-02-16 17:16:43 Job was aborted.
+	via condor_rm (by user tuccia)
+...

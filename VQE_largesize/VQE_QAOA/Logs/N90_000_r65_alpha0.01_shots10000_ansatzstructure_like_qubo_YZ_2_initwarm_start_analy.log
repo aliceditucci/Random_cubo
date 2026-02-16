@@ -240,3 +240,52 @@
 	616  -  MemoryUsage of job (MB)
 	630228  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.530.000) 2026-02-12 13:12:09 Image size of job updated: 630376
+	616  -  MemoryUsage of job (MB)
+	630228  -  ResidentSetSize of job (KB)
+...
+006 (15988842.530.000) 2026-02-12 13:52:13 Image size of job updated: 630508
+	616  -  MemoryUsage of job (MB)
+	630228  -  ResidentSetSize of job (KB)
+...
+006 (15988842.530.000) 2026-02-12 14:02:14 Image size of job updated: 630564
+	616  -  MemoryUsage of job (MB)
+	630228  -  ResidentSetSize of job (KB)
+...
+006 (15988842.530.000) 2026-02-12 14:17:16 Image size of job updated: 630692
+	616  -  MemoryUsage of job (MB)
+	630692  -  ResidentSetSize of job (KB)
+...
+006 (15988842.530.000) 2026-02-12 14:37:17 Image size of job updated: 630892
+	616  -  MemoryUsage of job (MB)
+	630692  -  ResidentSetSize of job (KB)
+...
+006 (15988842.530.000) 2026-02-12 14:47:18 Image size of job updated: 630896
+	616  -  MemoryUsage of job (MB)
+	630692  -  ResidentSetSize of job (KB)
+...
+021 (15988842.530.000) 2026-02-13 11:44:27 Error from starter on slot1_4@genoa06.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.530.000) 2026-02-13 11:44:27 Job was evicted.
+	(0) CPU times
+		Usr 1 23:30:43, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_4@genoa06.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025681 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    616        5120      5120 
+	   TimeSlotBusy (s)     : 172803                       
+...
+012 (15988842.530.000) 2026-02-13 11:44:27 Job was held.
+	Error from slot1_4@genoa06.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.530.000) 2026-02-16 17:16:37 Job was aborted.
+	via condor_rm (by user tuccia)
+...

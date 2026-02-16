@@ -10,3 +10,108 @@
 ...
 000 (15949295.848.000) 2026-02-10 11:46:05 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
 ...
+001 (15949295.848.000) 2026-02-15 17:54:44 Job executing on host: <141.34.103.55:9618?addrs=141.34.103.55-9618+[2001-638-700-f067--1-37]-9618&alias=wgs45.zeuthen.desy.de&noUDP&sock=startd_7794_9d3c>
+	SlotName: slot1_14@wgs45.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3120399"
+	Cpus = 8
+	Disk = 1025025
+	GPUs = 0
+	Memory = 16384
+...
+006 (15949295.848.000) 2026-02-15 17:54:58 Image size of job updated: 109480
+	107  -  MemoryUsage of job (MB)
+	109480  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 17:59:59 Image size of job updated: 1127300
+	583  -  MemoryUsage of job (MB)
+	596792  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:05:00 Image size of job updated: 1127300
+	597  -  MemoryUsage of job (MB)
+	610936  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:10:00 Image size of job updated: 1127300
+	605  -  MemoryUsage of job (MB)
+	619152  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:15:01 Image size of job updated: 1127300
+	633  -  MemoryUsage of job (MB)
+	647992  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:20:02 Image size of job updated: 1127300
+	670  -  MemoryUsage of job (MB)
+	685616  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:25:02 Image size of job updated: 1127300
+	670  -  MemoryUsage of job (MB)
+	686012  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:35:04 Image size of job updated: 1127300
+	689  -  MemoryUsage of job (MB)
+	704664  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:40:04 Image size of job updated: 1127300
+	689  -  MemoryUsage of job (MB)
+	704672  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 18:55:06 Image size of job updated: 1127300
+	700  -  MemoryUsage of job (MB)
+	715820  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:15:07 Image size of job updated: 1127300
+	725  -  MemoryUsage of job (MB)
+	741460  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:20:08 Image size of job updated: 1127300
+	733  -  MemoryUsage of job (MB)
+	749572  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:25:08 Image size of job updated: 1127300
+	733  -  MemoryUsage of job (MB)
+	750284  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:30:08 Image size of job updated: 1127300
+	734  -  MemoryUsage of job (MB)
+	751508  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:35:09 Image size of job updated: 1127300
+	735  -  MemoryUsage of job (MB)
+	751920  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:50:11 Image size of job updated: 1127300
+	735  -  MemoryUsage of job (MB)
+	751988  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-15 19:55:11 Image size of job updated: 1127300
+	815  -  MemoryUsage of job (MB)
+	834088  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-16 04:11:02 Image size of job updated: 1127300
+	860  -  MemoryUsage of job (MB)
+	879860  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-16 04:16:03 Image size of job updated: 1127300
+	890  -  MemoryUsage of job (MB)
+	910792  -  ResidentSetSize of job (KB)
+...
+006 (15949295.848.000) 2026-02-16 04:31:05 Image size of job updated: 1127300
+	946  -  MemoryUsage of job (MB)
+	968488  -  ResidentSetSize of job (KB)
+...
+004 (15949295.848.000) 2026-02-16 17:16:23 Job was evicted.
+	(0) CPU times
+		Usr 1 22:27:22, Sys 0 07:34:49  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        8         8 
+	   Disk (KB)            :     1     1024000   1025025 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   946       16384     16384 
+	   TimeExecute (s)      : 84098                       
+	   TimeSlotBusy (s)     : 84099                       
+...
+009 (15949295.848.000) 2026-02-16 17:16:23 Job was aborted.
+	via condor_rm (by user tuccia)
+...

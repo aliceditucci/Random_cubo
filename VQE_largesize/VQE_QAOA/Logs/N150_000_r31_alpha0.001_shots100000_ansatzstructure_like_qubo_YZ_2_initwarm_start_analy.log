@@ -284,3 +284,56 @@
 	801  -  MemoryUsage of job (MB)
 	819896  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.863.000) 2026-02-12 14:41:39 Image size of job updated: 1046024
+	801  -  MemoryUsage of job (MB)
+	820132  -  ResidentSetSize of job (KB)
+...
+006 (15988842.863.000) 2026-02-12 18:17:00 Image size of job updated: 1046024
+	802  -  MemoryUsage of job (MB)
+	820356  -  ResidentSetSize of job (KB)
+...
+006 (15988842.863.000) 2026-02-12 21:52:21 Image size of job updated: 1046024
+	802  -  MemoryUsage of job (MB)
+	820592  -  ResidentSetSize of job (KB)
+...
+006 (15988842.863.000) 2026-02-13 03:27:56 Image size of job updated: 1046024
+	802  -  MemoryUsage of job (MB)
+	820624  -  ResidentSetSize of job (KB)
+...
+006 (15988842.863.000) 2026-02-13 07:03:17 Image size of job updated: 1046024
+	802  -  MemoryUsage of job (MB)
+	820816  -  ResidentSetSize of job (KB)
+...
+006 (15988842.863.000) 2026-02-13 08:48:27 Image size of job updated: 1046024
+	802  -  MemoryUsage of job (MB)
+	820896  -  ResidentSetSize of job (KB)
+...
+006 (15988842.863.000) 2026-02-13 08:53:28 Image size of job updated: 1046024
+	802  -  MemoryUsage of job (MB)
+	821036  -  ResidentSetSize of job (KB)
+...
+021 (15988842.863.000) 2026-02-13 13:23:56 Error from starter on slot1_7@pizza14.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.863.000) 2026-02-13 13:23:56 Job was evicted.
+	(0) CPU times
+		Usr 1 23:28:55, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_7@pizza14.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025696 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    802        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.863.000) 2026-02-13 13:23:56 Job was held.
+	Error from slot1_7@pizza14.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.863.000) 2026-02-16 17:16:42 Job was aborted.
+	via condor_rm (by user tuccia)
+...

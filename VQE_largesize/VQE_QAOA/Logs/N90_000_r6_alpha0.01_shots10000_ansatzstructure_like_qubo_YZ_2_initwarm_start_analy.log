@@ -232,3 +232,44 @@
 	489  -  MemoryUsage of job (MB)
 	500068  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.412.000) 2026-02-12 20:21:47 Image size of job updated: 500552
+	489  -  MemoryUsage of job (MB)
+	500324  -  ResidentSetSize of job (KB)
+...
+006 (15988842.412.000) 2026-02-12 20:41:48 Image size of job updated: 500564
+	489  -  MemoryUsage of job (MB)
+	500324  -  ResidentSetSize of job (KB)
+...
+006 (15988842.412.000) 2026-02-12 21:11:51 Image size of job updated: 500744
+	489  -  MemoryUsage of job (MB)
+	500324  -  ResidentSetSize of job (KB)
+...
+006 (15988842.412.000) 2026-02-12 21:36:54 Image size of job updated: 500992
+	489  -  MemoryUsage of job (MB)
+	500324  -  ResidentSetSize of job (KB)
+...
+021 (15988842.412.000) 2026-02-13 11:38:21 Error from starter on slot1_32@genoa03.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.412.000) 2026-02-13 11:38:21 Job was evicted.
+	(0) CPU times
+		Usr 1 23:30:43, Sys 0 00:00:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_32@genoa03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025697 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    489        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.412.000) 2026-02-13 11:38:21 Job was held.
+	Error from slot1_32@genoa03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.412.000) 2026-02-16 17:16:35 Job was aborted.
+	via condor_rm (by user tuccia)
+...

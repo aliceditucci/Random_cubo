@@ -161,3 +161,36 @@
 	614  -  MemoryUsage of job (MB)
 	628480  -  ResidentSetSize of job (KB)
 ...
+006 (15988842.476.000) 2026-02-13 00:49:54 Image size of job updated: 717968
+	614  -  MemoryUsage of job (MB)
+	628636  -  ResidentSetSize of job (KB)
+...
+006 (15988842.476.000) 2026-02-13 01:04:56 Image size of job updated: 717968
+	615  -  MemoryUsage of job (MB)
+	629572  -  ResidentSetSize of job (KB)
+...
+021 (15988842.476.000) 2026-02-13 11:41:04 Error from starter on slot1_24@ampere03.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (15988842.476.000) 2026-02-13 11:41:04 Job was evicted.
+	(0) CPU times
+		Usr 1 23:26:11, Sys 0 00:00:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_24@ampere03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025682 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    615        5120      5120 
+	   TimeSlotBusy (s)     : 172804                       
+...
+012 (15988842.476.000) 2026-02-13 11:41:04 Job was held.
+	Error from slot1_24@ampere03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (15988842.476.000) 2026-02-16 17:16:36 Job was aborted.
+	via condor_rm (by user tuccia)
+...
