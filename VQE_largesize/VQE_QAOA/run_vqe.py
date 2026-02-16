@@ -134,7 +134,7 @@ def main():
     parser.add_argument("--N", help="Number of qubits", required=False, type=int, default=6)
     parser.add_argument("--r", help="instances index", required=False, type=int, default=0)
     parser.add_argument("--alpha", help="CVaR coeffcient", required=False, type=float, default=0.1)
-    parser.add_argument("--ansatz_type", help="type of ansatz, qaoa or 'parallel_cz and so on'", required=False, type=str, default='parallel_cz')
+    parser.add_argument("--ansatz_type", help="type of ansatz, qaoa or 'parallel_cz', structure_like_qubo_YZ_2 and so on'", required=False, type=str, default='structure_like_qubo_YZ_2')
     parser.add_argument("--tau", help="imiginary time evolution parameter if using warm start", required=False, type=float, default=0.3)
     parser.add_argument("--layer", help="Number of repetions of the ansatz layers", required=False, type=int, default=1)
 
@@ -145,7 +145,7 @@ def main():
 
     # parser.add_argument("--graph_density", help="density of the graph, 1 for complete graph, 0 for 3reg graph", required=False, type=float, default=0.0)
 
-    parser.add_argument("--initialization", help="Parameter initialization 'random', 'zeros', 'warm_start_analy'", required=False, type=str, default='random')
+    parser.add_argument("--initialization", help="Parameter initialization 'random', 'zeros', 'warm_start_analy'", required=False, type=str, default='warm_start_analy')
 
     args = parser.parse_args()
     n_qubits = args.N
