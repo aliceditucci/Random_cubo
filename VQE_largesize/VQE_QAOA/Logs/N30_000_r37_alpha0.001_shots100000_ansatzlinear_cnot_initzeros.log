@@ -32,3 +32,65 @@
 
 	Job terminated of its own accord at 2026-02-06T10:30:53Z with exit-code 1.
 ...
+000 (16213981.150.000) 2026-02-16 17:41:21 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16213981.150.000) 2026-02-16 17:41:49 Job executing on host: <141.34.15.83:9618?addrs=141.34.15.83-9618+[2001-638-700-f00f--1-53]-9618&alias=genoa07.zeuthen.desy.de&noUDP&sock=startd_10269_4222>
+	SlotName: slot1_32@genoa07.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_1831781"
+	Cpus = 1
+	Disk = 1025681
+	GPUs = 0
+	Memory = 5120
+...
+006 (16213981.150.000) 2026-02-16 17:42:03 Image size of job updated: 87956
+	86  -  MemoryUsage of job (MB)
+	87956  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 17:47:04 Image size of job updated: 261712
+	243  -  MemoryUsage of job (MB)
+	248072  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 17:52:04 Image size of job updated: 261712
+	251  -  MemoryUsage of job (MB)
+	256532  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 17:57:04 Image size of job updated: 261712
+	251  -  MemoryUsage of job (MB)
+	256540  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 18:07:05 Image size of job updated: 261712
+	251  -  MemoryUsage of job (MB)
+	256544  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 18:12:05 Image size of job updated: 261712
+	251  -  MemoryUsage of job (MB)
+	256600  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 19:12:09 Image size of job updated: 261712
+	251  -  MemoryUsage of job (MB)
+	256820  -  ResidentSetSize of job (KB)
+...
+006 (16213981.150.000) 2026-02-16 19:32:11 Image size of job updated: 261712
+	251  -  MemoryUsage of job (MB)
+	256844  -  ResidentSetSize of job (KB)
+...
+005 (16213981.150.000) 2026-02-16 22:24:50 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 04:39:08, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 04:39:08, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025681 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   251        5120      5120 
+	   TimeExecute (s)      : 16981                       
+	   TimeSlotBusy (s)     : 16983                       
+
+	Job terminated of its own accord at 2026-02-16T21:24:50Z with exit-code 0.
+...

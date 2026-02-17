@@ -7,3 +7,34 @@ shots: 10000,
 ansatz: linear_cnot, 
 layer: 1, 
 tau: 0.3
+
+time for simulated annealing:  37.380812644958496
+Rank 1: Bitstring=010011010011011101110100000000, Decimal=323869952, Energy=-26.0095
+Rank 2: Bitstring=010011010011010111111110000000, Decimal=323846016, Energy=-25.5637
+Rank 3: Bitstring=000011010011010110111010100001, Decimal=55406241, Energy=-25.3575
+Rank 4: Bitstring=000011010011010110110000100001, Decimal=55405601, Energy=-24.7745
+Rank 5: Bitstring=011001100001011101111101000010, Decimal=428203842, Energy=-24.2113
+Rank 6: Bitstring=011001000010011101111111000010, Decimal=420077506, Energy=-23.8933
+Rank 7: Bitstring=011011010011011001100100010100, Decimal=458070292, Energy=-23.8161
+Rank 8: Bitstring=000001000010010110111010100001, Decimal=17395361, Energy=-23.5803
+Rank 9: Bitstring=011011010011010011101110010100, Decimal=458046356, Energy=-23.3703
+Rank 10: Bitstring=001011010011010010101010110101, Decimal=189606581, Energy=-23.1641
+
+E_min from simulated annealing:  -26.0095
+Minimum energy: -26.0095
+States with energy within 1e-08 of minimum: [323869952]
+4
+
+
+################## Start optimization with initial parameters: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Write sucessfully to ./data/data_shots_10000_layer_1/alpha_0.01/N_30/r_75/ansatz_type_linear_cnot/initialization_zeros
+
+vqe.cvar_eval[0]: -12.956290000000005 , min_cvar: -25.357499999999998 , opt_cvar: -25.357499999999998
+
+vqe.poss_eval[-1]: 0 vqe.poss_eval[0] 0  , max_poss: 0 , opt_poss: 0
+
+vqe.r_eval[-1]: 0.9749322362982756 vqe.r_eval[0]: 0.49813683461812047 max_r: 0.9749322362982756 , min_r: 0.459496184086584

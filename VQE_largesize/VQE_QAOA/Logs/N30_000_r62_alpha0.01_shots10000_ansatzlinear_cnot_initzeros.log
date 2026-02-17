@@ -32,3 +32,45 @@
 
 	Job terminated of its own accord at 2026-02-06T10:31:34Z with exit-code 1.
 ...
+000 (16213981.248.000) 2026-02-16 17:41:22 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16213981.248.000) 2026-02-16 17:41:46 Job executing on host: <141.34.15.86:9618?addrs=141.34.15.86-9618+[2001-638-700-f00f--1-56]-9618&alias=genoa10.zeuthen.desy.de&noUDP&sock=startd_10124_cce6>
+	SlotName: slot1_12@genoa10.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_2244820"
+	Cpus = 1
+	Disk = 1025681
+	GPUs = 0
+	Memory = 5120
+...
+006 (16213981.248.000) 2026-02-16 17:42:00 Image size of job updated: 87944
+	86  -  MemoryUsage of job (MB)
+	87944  -  ResidentSetSize of job (KB)
+...
+006 (16213981.248.000) 2026-02-16 17:47:01 Image size of job updated: 284744
+	200  -  MemoryUsage of job (MB)
+	204408  -  ResidentSetSize of job (KB)
+...
+006 (16213981.248.000) 2026-02-16 17:57:02 Image size of job updated: 284744
+	201  -  MemoryUsage of job (MB)
+	204836  -  ResidentSetSize of job (KB)
+...
+005 (16213981.248.000) 2026-02-16 18:08:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:26:13, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:26:13, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025681 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   201        5120      5120 
+	   TimeExecute (s)      :  1594                       
+	   TimeSlotBusy (s)     :  1594                       
+
+	Job terminated of its own accord at 2026-02-16T17:08:20Z with exit-code 0.
+...

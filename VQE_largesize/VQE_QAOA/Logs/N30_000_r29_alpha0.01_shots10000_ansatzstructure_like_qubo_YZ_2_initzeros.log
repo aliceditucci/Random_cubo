@@ -71,3 +71,54 @@
 
 	Job terminated of its own accord at 2026-02-10T10:47:41Z with exit-code 1.
 ...
+000 (16213981.117.000) 2026-02-16 17:41:21 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16213981.117.000) 2026-02-16 17:41:46 Job executing on host: <141.34.14.36:9618?addrs=141.34.14.36-9618+[2001-638-700-f00e--1-24]-9618&alias=ampere05.zeuthen.desy.de&noUDP&sock=startd_7996_2b5d>
+	SlotName: slot1_25@ampere05.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_3260707"
+	Cpus = 1
+	Disk = 1025682
+	GPUs = 0
+	Memory = 5120
+...
+006 (16213981.117.000) 2026-02-16 17:42:00 Image size of job updated: 90100
+	88  -  MemoryUsage of job (MB)
+	90100  -  ResidentSetSize of job (KB)
+...
+006 (16213981.117.000) 2026-02-16 17:47:01 Image size of job updated: 218000
+	213  -  MemoryUsage of job (MB)
+	218000  -  ResidentSetSize of job (KB)
+...
+006 (16213981.117.000) 2026-02-16 17:52:01 Image size of job updated: 218056
+	213  -  MemoryUsage of job (MB)
+	218056  -  ResidentSetSize of job (KB)
+...
+006 (16213981.117.000) 2026-02-16 17:57:02 Image size of job updated: 218300
+	214  -  MemoryUsage of job (MB)
+	218300  -  ResidentSetSize of job (KB)
+...
+006 (16213981.117.000) 2026-02-16 18:07:03 Image size of job updated: 218456
+	214  -  MemoryUsage of job (MB)
+	218456  -  ResidentSetSize of job (KB)
+...
+005 (16213981.117.000) 2026-02-17 02:25:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 08:37:06, Sys 0 00:00:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 08:37:06, Sys 0 00:00:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1     1024000   1025682 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   214        5120      5120 
+	   TimeExecute (s)      : 31446                       
+	   TimeSlotBusy (s)     : 31446                       
+
+	Job terminated of its own accord at 2026-02-17T01:25:52Z with exit-code 0.
+...

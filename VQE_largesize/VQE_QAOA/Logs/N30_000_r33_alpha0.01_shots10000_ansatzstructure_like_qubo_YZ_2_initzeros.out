@@ -7,3 +7,30 @@ shots: 10000,
 ansatz: structure_like_qubo_YZ_2, 
 layer: 1, 
 tau: 0.3
+
+time for simulated annealing:  27.132976531982422
+Rank 1: Bitstring=110110100110101010010111011000, Decimal=916104664, Energy=-25.8533
+Rank 2: Bitstring=110110100010101010010111001000, Decimal=915056072, Energy=-25.8105
+Rank 3: Bitstring=110110110110101000010111010000, Decimal=920290768, Energy=-25.7683
+Rank 4: Bitstring=110111100110001010011101011000, Decimal=932751192, Energy=-24.4563
+Rank 5: Bitstring=100110100110101010010011111010, Decimal=647668986, Energy=-21.6473
+Rank 6: Bitstring=100110110110101000010011110010, Decimal=651855090, Energy=-21.5623
+Rank 7: Bitstring=100110100010101010010011101010, Decimal=646620394, Energy=-21.4777
+
+E_min from simulated annealing:  -25.8533
+Minimum energy: -25.8533
+States with energy within 1e-08 of minimum: [916104664]
+
+
+################## Start optimization with initial parameters: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Write sucessfully to ./data/data_shots_10000_layer_1/alpha_0.01/N_30/r_33/ansatz_type_structure_like_qubo_YZ_2/initialization_zeros
+
+vqe.cvar_eval[0]: -13.35940200000001 , min_cvar: -25.8533 , opt_cvar: -25.8533
+
+vqe.poss_eval[-1]: 0.0071 vqe.poss_eval[0] 0  , max_poss: 0.039 , opt_poss: 0.039
+
+vqe.r_eval[-1]: 0.9990465433813093 vqe.r_eval[0]: 0.5167387528864791 max_r: 1.0 , min_r: 0.47154521859878656

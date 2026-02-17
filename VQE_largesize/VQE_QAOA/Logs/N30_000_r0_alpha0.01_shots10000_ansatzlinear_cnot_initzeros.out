@@ -8,17 +8,21 @@ ansatz: linear_cnot,
 layer: 1, 
 tau: 0.3
 
-time for simulated annealing:  38.30166578292847
-Rank 1: Bitstring=010110101101101100010101100011, Decimal=381076835, Energy=-26.2257
-Rank 2: Bitstring=010110111101101000011101100011, Decimal=385255267, Energy=-25.6911
-Rank 3: Bitstring=000110101101101100010101110011, Decimal=112641395, Energy=-25.5745
-Rank 4: Bitstring=000110101101101111010101110011, Decimal=112653683, Energy=-25.2333
-Rank 5: Bitstring=001111101001101111010101110001, Decimal=262600049, Energy=-24.0535
-Rank 6: Bitstring=010010111100111000111111100110, Decimal=317951974, Energy=-22.2813
+time for simulated annealing:  45.709801197052
+Rank 1: Bitstring=110110101101010001011100100100, Decimal=917837604, Energy=-23.7558
+Rank 2: Bitstring=000011010111101100000011111111, Decimal=56541439, Energy=-23.22
+Rank 3: Bitstring=110111101101011001011100100100, Decimal=934647588, Energy=-23.2194
+Rank 4: Bitstring=000011010111001100000111111111, Decimal=56410623, Energy=-23.1924
+Rank 5: Bitstring=010011010111101000001011100111, Decimal=324960999, Energy=-23.1644
+Rank 6: Bitstring=010011010111001000001111100111, Decimal=324830183, Energy=-23.1368
+Rank 7: Bitstring=110111101101011001111100100000, Decimal=934649632, Energy=-23.1106
+Rank 8: Bitstring=000011010111001100100111111011, Decimal=56412667, Energy=-23.0836
+Rank 9: Bitstring=010011010111001000101111100011, Decimal=324832227, Energy=-23.028
+Rank 10: Bitstring=110110101111000001011100100110, Decimal=918296358, Energy=-22.7614
 
-E_min from simulated annealing:  -26.2257
-Minimum energy: -26.2257
-States with energy within 1e-08 of minimum: [381076835]
+E_min from simulated annealing:  -23.7558
+Minimum energy: -23.7558
+States with energy within 1e-08 of minimum: [917837604]
 4
 
 
@@ -29,8 +33,8 @@ States with energy within 1e-08 of minimum: [381076835]
  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 Write sucessfully to ./data/data_shots_10000_layer_1/alpha_0.01/N_30/r_0/ansatz_type_linear_cnot/initialization_zeros
 
-vqe.cvar_eval[0]: -12.571318000000007 , min_cvar: -26.2257 , opt_cvar: -26.2257
+vqe.cvar_eval[0]: -12.805398000000006 , min_cvar: -21.308118000000004 , opt_cvar: -21.308118000000004
 
-vqe.poss_eval[-1]: 0.0101 vqe.poss_eval[0] 0  , max_poss: 0.0128 , opt_poss: 0.0128
+vqe.poss_eval[-1]: 0 vqe.poss_eval[0] 0  , max_poss: 0 , opt_poss: 0
 
-vqe.r_eval[-1]: 1.0 vqe.r_eval[0]: 0.47935109453703834 max_r: 1.0 , min_r: 0.47122105415680055
+vqe.r_eval[-1]: 0.8933348487527257 vqe.r_eval[0]: 0.5390430126537521 max_r: 0.8969648675270883 , min_r: 0.5307235285698655

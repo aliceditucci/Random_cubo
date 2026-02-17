@@ -3,7 +3,7 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [30, 60, 90, 120, 150]
+N_list = [30]
 r_list = range(100)
 alpha_list = [0.01, 0.001]
 ansatz_type_list = ['structure_like_qubo_YZ_2']
@@ -19,7 +19,7 @@ job = htcondor.Submit({
     "log": "/lustre/fs24/group/cqta/atucci/Random_cubo/VQE_largesize/VQE_QAOA/Logs/N$(N)_000_r$(r)_alpha$(alpha)_shots$(shots)_ansatz$(ansatz_type)_init$(initialization).log",
     "request_cpus": "1",
     "request_memory": "5GB",
-    "+JobBatchName": "\"qubo_iteans_warmanaly\"",
+    "+JobBatchName": "\"qubo_N30_warmanaly\"",
     "PREEMPTION_REQUIREMENTS": "True",
 })
 itemdata = []
