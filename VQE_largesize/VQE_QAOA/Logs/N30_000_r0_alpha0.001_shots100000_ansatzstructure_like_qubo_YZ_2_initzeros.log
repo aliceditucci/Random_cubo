@@ -261,3 +261,28 @@
 	257  -  MemoryUsage of job (MB)
 	263056  -  ResidentSetSize of job (KB)
 ...
+006 (16213981.003.000) 2026-02-17 19:14:31 Image size of job updated: 263072
+	257  -  MemoryUsage of job (MB)
+	263072  -  ResidentSetSize of job (KB)
+...
+006 (16213981.003.000) 2026-02-17 19:49:34 Image size of job updated: 263076
+	257  -  MemoryUsage of job (MB)
+	263076  -  ResidentSetSize of job (KB)
+...
+004 (16213981.003.000) 2026-02-18 10:33:49 Job was evicted.
+	(0) CPU times
+		Usr 1 16:41:56, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    257        5120      5120 
+	   TimeExecute (s)      : 147123                       
+	   TimeSlotBusy (s)     : 147124                       
+...
+009 (16213981.003.000) 2026-02-18 10:33:49 Job was aborted.
+	via condor_rm (by user tuccia)
+...

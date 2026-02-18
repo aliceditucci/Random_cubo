@@ -1,0 +1,39 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+n_qubits: 30, 
+r: 91, 
+alpha: 0.001, 
+shots: 100000, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3
+
+time for simulated annealing:  40.034621715545654
+Rank 1: Bitstring=010110010111111000001011001100, Decimal=375358156, Energy=-26.7074
+Rank 2: Bitstring=010110000111111000001111001100, Decimal=371164108, Energy=-25.9164
+Rank 3: Bitstring=010110001111111100001111001010, Decimal=373277642, Energy=-25.162
+Rank 4: Bitstring=110110010111110000011011001100, Decimal=912197324, Energy=-25.1408
+Rank 5: Bitstring=010110001111111100001111001000, Decimal=373277640, Energy=-25.1266
+Rank 6: Bitstring=011110010111111001101001011100, Decimal=509581916, Energy=-24.9876
+Rank 7: Bitstring=110110000111110000011111001100, Decimal=908003276, Energy=-24.3498
+Rank 8: Bitstring=111100010110110000010011001101, Decimal=1012597965, Energy=-24.1474
+Rank 9: Bitstring=000110001101011110001111000010, Decimal=104195010, Energy=-23.8248
+Rank 10: Bitstring=110110001111110100011111001010, Decimal=910116810, Energy=-23.5954
+
+E_min from simulated annealing:  -26.7074
+Minimum energy: -26.7074
+States with energy within 1e-08 of minimum: [375358156]
+
+
+################## Start optimization with initial parameters: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Write sucessfully to ./data/data_shots_100000_layer_1/alpha_0.001/N_30/r_91/ansatz_type_structure_like_qubo_YZ_2/initialization_zeros
+
+vqe.cvar_eval[0]: -16.349581999999966 , min_cvar: -26.7074 , opt_cvar: -26.7074
+
+vqe.poss_eval[-1]: 0.00112 vqe.poss_eval[0] 0  , max_poss: 0.01397 , opt_poss: 0.01397
+
+vqe.r_eval[-1]: 1.0 vqe.r_eval[0]: 0.6121742288654068 max_r: 1.0 , min_r: 0.5966147210136508

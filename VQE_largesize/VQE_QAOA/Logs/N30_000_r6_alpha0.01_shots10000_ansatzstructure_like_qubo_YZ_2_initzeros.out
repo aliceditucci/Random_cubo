@@ -1,0 +1,39 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+n_qubits: 30, 
+r: 6, 
+alpha: 0.01, 
+shots: 10000, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3
+
+time for simulated annealing:  47.272889375686646
+Rank 1: Bitstring=100010001010010101100000100100, Decimal=573134884, Energy=-28.0556
+Rank 2: Bitstring=100010001110010101100000100100, Decimal=574183460, Energy=-28.0458
+Rank 3: Bitstring=100010001011011101101000100100, Decimal=573430308, Energy=-27.7578
+Rank 4: Bitstring=000010001110010101100000101111, Decimal=37312559, Energy=-27.6834
+Rank 5: Bitstring=110010001010010101100000000100, Decimal=841570308, Energy=-26.9872
+Rank 6: Bitstring=110010001110010101100000000100, Decimal=842618884, Energy=-26.9774
+Rank 7: Bitstring=101010101010000101100000100100, Decimal=715675684, Energy=-26.652
+Rank 8: Bitstring=101010101110000101100000100100, Decimal=716724260, Energy=-26.6422
+Rank 9: Bitstring=101010101011001101101000100100, Decimal=715971108, Energy=-26.3542
+Rank 10: Bitstring=001010101110000101100000101111, Decimal=179853359, Energy=-26.2798
+
+E_min from simulated annealing:  -28.0556
+Minimum energy: -28.0556
+States with energy within 1e-08 of minimum: [573134884]
+
+
+################## Start optimization with initial parameters: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Write sucessfully to ./data/data_shots_10000_layer_1/alpha_0.01/N_30/r_6/ansatz_type_structure_like_qubo_YZ_2/initialization_zeros
+
+vqe.cvar_eval[0]: -14.235028000000007 , min_cvar: -27.694271999999998 , opt_cvar: -27.694271999999998
+
+vqe.poss_eval[-1]: 0 vqe.poss_eval[0] 0  , max_poss: 0.0001 , opt_poss: 0.0001
+
+vqe.r_eval[-1]: 0.9867334863627938 vqe.r_eval[0]: 0.5073863328533343 max_r: 0.98712100258059 , min_r: 0.47639665521321994

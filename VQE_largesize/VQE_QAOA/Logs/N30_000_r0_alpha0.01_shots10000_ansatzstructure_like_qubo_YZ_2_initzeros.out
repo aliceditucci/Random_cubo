@@ -1,0 +1,39 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+n_qubits: 30, 
+r: 0, 
+alpha: 0.01, 
+shots: 10000, 
+ansatz: structure_like_qubo_YZ_2, 
+layer: 1, 
+tau: 0.3
+
+time for simulated annealing:  43.23198366165161
+Rank 1: Bitstring=110110101101010001011100100100, Decimal=917837604, Energy=-23.7558
+Rank 2: Bitstring=000011010111101100000011111111, Decimal=56541439, Energy=-23.22
+Rank 3: Bitstring=110111101101011001011100100100, Decimal=934647588, Energy=-23.2194
+Rank 4: Bitstring=000011010111001100000111111111, Decimal=56410623, Energy=-23.1924
+Rank 5: Bitstring=010011010111101000001011100111, Decimal=324960999, Energy=-23.1644
+Rank 6: Bitstring=010011010111001000001111100111, Decimal=324830183, Energy=-23.1368
+Rank 7: Bitstring=110111101101011001111100100000, Decimal=934649632, Energy=-23.1106
+Rank 8: Bitstring=000011010111001100100111111011, Decimal=56412667, Energy=-23.0836
+Rank 9: Bitstring=010011010111001000101111100011, Decimal=324832227, Energy=-23.028
+Rank 10: Bitstring=110110101111000001011100100110, Decimal=918296358, Energy=-22.7614
+
+E_min from simulated annealing:  -23.7558
+Minimum energy: -23.7558
+States with energy within 1e-08 of minimum: [917837604]
+
+
+################## Start optimization with initial parameters: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Write sucessfully to ./data/data_shots_10000_layer_1/alpha_0.01/N_30/r_0/ansatz_type_structure_like_qubo_YZ_2/initialization_zeros
+
+vqe.cvar_eval[0]: -12.677270000000005 , min_cvar: -22.550067999999996 , opt_cvar: -22.550067999999996
+
+vqe.poss_eval[-1]: 0 vqe.poss_eval[0] 0  , max_poss: 0.0001 , opt_poss: 0.0001
+
+vqe.r_eval[-1]: 0.9485360206770559 vqe.r_eval[0]: 0.5336494666565641 max_r: 0.9492447318128624 , min_r: 0.5235941538487446
