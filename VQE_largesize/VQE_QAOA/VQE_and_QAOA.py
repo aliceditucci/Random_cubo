@@ -46,6 +46,7 @@ class VQE_and_QAOA:
         #     print('\nToo large n_qubits, skip exact diagonalization!')
         #     self.exp_min = 1
 
+        self.data_dir = None #ADDED LAST MINUTE FOR FINAL REFEREE CHECK 
         self.ground_id_list = None
 
         self.n_qubits = n_qubits
@@ -633,31 +634,41 @@ class VQE_and_QAOA:
         return cvar, std
       
     
-    def call_back(self, params):
-        self.n_iter += 1
-        print('\nn_iter: ', self.n_iter)
-        print('cvar: ', self.cvar_eval[-1], '  poss: ', self.poss_eval[-1])
+    # def call_back(self, params):
+    #     self.n_iter += 1
+    #     print('\nn_iter: ', self.n_iter)
+    #     print('cvar: ', self.cvar_eval[-1], '  poss: ', self.poss_eval[-1])
         
-        if self.ansatz_type == 'classical_ansatz':
-            prob_list = self.Classical_circuit(params)
-        else:
-            prob_list = self.Quantum_circuit(params)
+    #     if self.ansatz_type == 'classical_ansatz':
+    #         prob_list = self.Classical_circuit(params)
+    #     else:
+    #         prob_list = self.Quantum_circuit(params)
         
-        print('n_eval: ', len(self.cvar_eval))
+    #     print('n_eval: ', len(self.cvar_eval))
         
-        exp_poss_dict = {}
-        for i in range(len(self.eigen_list)):
-            exp = self.eigen_list[i]
-            if exp in exp_poss_dict.keys():
-                exp_poss_dict[exp] += prob_list[i]
-            else:
-                exp_poss_dict[exp] = prob_list[i]
+    #     exp_poss_dict = {}
+    #     for i in range(len(self.eigen_list)):
+    #         exp = self.eigen_list[i]
+    #         if exp in exp_poss_dict.keys():
+    #             exp_poss_dict[exp] += prob_list[i]
+    #         else:
+    #             exp_poss_dict[exp] = prob_list[i]
                 
-        sorted_exp_poss_dict = dict(sorted(exp_poss_dict.items(), key=lambda x:x[0]))
-        self.distribution[self.ansatz_type].append(sorted_exp_poss_dict)
+    #     sorted_exp_poss_dict = dict(sorted(exp_poss_dict.items(), key=lambda x:x[0]))
+    #     self.distribution[self.ansatz_type].append(sorted_exp_poss_dict)
                 
         
         return False
+    
+    def callback_function(self, params):
+        """Callback to save intermediate results every 100 iterations."""
+        iteration = len(self.cvar_eval)  # Assuming this tracks iterations
+        
+        if iteration % 100 == 0 and iteration > 0:
+            # Save intermediate results
+            save_list = np.array([self.cvar_eval, self.r_eval, self.poss_eval, self.std_eval])
+            np.savetxt(self.data_dir + f'/intermediate_result_{iteration}.txt', save_list.T)
+            print(f'Intermediate results saved at iteration {iteration}')
     
     def call_back_histogram(self, params):
     

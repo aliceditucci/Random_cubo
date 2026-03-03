@@ -280,12 +280,13 @@ def main():
         vqe.poss_eval= []
         vqe.cvar_eval = []
         vqe.std_eval = []
+        vqe.data_dir = data_dir
         final = minimize(vqe.CVaR_expectation,
                         params_init,
                         jac=False,
                         bounds=None,
                         method='COBYLA',
-                        callback=None,
+                        callback=vqe.callback_function,
                         options={'maxiter': 1000})
 
         min_cvar = min(vqe.cvar_eval)
