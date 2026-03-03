@@ -205,3 +205,216 @@
 009 (15988842.408.000) 2026-02-16 17:16:35 Job was aborted.
 	via condor_rm (by user tuccia)
 ...
+000 (16309174.104.000) 2026-02-18 10:42:57 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16309174.104.000) 2026-02-18 10:43:15 Job executing on host: <141.34.14.33:9618?addrs=141.34.14.33-9618+[2001-638-700-f00e--1-21]-9618&alias=ampere02.zeuthen.desy.de&noUDP&sock=startd_9421_99d2>
+	SlotName: slot1_22@ampere02.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_583878"
+	Cpus = 1
+	Disk = 1025682
+	GPUs = 0
+	Memory = 5120
+...
+006 (16309174.104.000) 2026-02-18 10:43:29 Image size of job updated: 97492
+	96  -  MemoryUsage of job (MB)
+	97492  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 10:48:30 Image size of job updated: 496284
+	485  -  MemoryUsage of job (MB)
+	496284  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 10:53:30 Image size of job updated: 499060
+	488  -  MemoryUsage of job (MB)
+	499060  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 10:58:30 Image size of job updated: 499072
+	488  -  MemoryUsage of job (MB)
+	499072  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 11:33:33 Image size of job updated: 499088
+	488  -  MemoryUsage of job (MB)
+	499088  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 12:53:38 Image size of job updated: 499124
+	488  -  MemoryUsage of job (MB)
+	499124  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 13:08:40 Image size of job updated: 499152
+	488  -  MemoryUsage of job (MB)
+	499152  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 13:28:42 Image size of job updated: 499200
+	488  -  MemoryUsage of job (MB)
+	499200  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 17:44:06 Image size of job updated: 499256
+	488  -  MemoryUsage of job (MB)
+	499256  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 18:54:13 Image size of job updated: 499412
+	488  -  MemoryUsage of job (MB)
+	499412  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 20:24:23 Image size of job updated: 499880
+	489  -  MemoryUsage of job (MB)
+	499880  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-18 21:34:29 Image size of job updated: 500020
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 04:30:12 Image size of job updated: 500108
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 05:15:17 Image size of job updated: 500480
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 05:40:19 Image size of job updated: 500500
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 05:45:19 Image size of job updated: 500524
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 06:05:21 Image size of job updated: 500608
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 06:25:23 Image size of job updated: 500724
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+006 (16309174.104.000) 2026-02-19 06:50:25 Image size of job updated: 500904
+	489  -  MemoryUsage of job (MB)
+	500020  -  ResidentSetSize of job (KB)
+...
+022 (16309174.104.000) 2026-02-20 03:44:37 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_22@ampere02.zeuthen.desy.de <141.34.14.33:9618?addrs=141.34.14.33-9618+[2001-638-700-f00e--1-21]-9618&alias=ampere02.zeuthen.desy.de&noUDP&sock=startd_9421_99d2>
+...
+023 (16309174.104.000) 2026-02-20 03:44:45 Job reconnected to slot1_22@ampere02.zeuthen.desy.de
+    startd address: <141.34.14.33:9618?addrs=141.34.14.33-9618+[2001-638-700-f00e--1-21]-9618&alias=ampere02.zeuthen.desy.de&noUDP&sock=startd_9421_99d2>
+    starter address: <141.34.14.33:9618?addrs=141.34.14.33-9618+[2001-638-700-f00e--1-21]-9618&alias=ampere02.zeuthen.desy.de&noUDP&sock=slot1_22_9893_436b_24901>
+...
+021 (16309174.104.000) 2026-02-20 10:43:19 Error from starter on slot1_22@ampere02.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (16309174.104.000) 2026-02-20 10:43:19 Job was evicted.
+	(0) CPU times
+		Usr 1 23:18:13, Sys 0 00:02:32  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_22@ampere02.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          0.98        1         1 
+	   Disk (KB)            :          1     1024000   1025682 
+	   Memory (MB)          :        733        5120      5120 
+	   TimeSlotBusy (s)     : 1771580599                       
+...
+012 (16309174.104.000) 2026-02-20 10:43:19 Job was held.
+	Error from slot1_22@ampere02.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (16309174.104.000) 2026-02-23 19:29:11 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+000 (16619852.104.000) 2026-02-23 19:30:03 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16619852.104.000) 2026-02-23 19:30:22 Job executing on host: <141.34.14.36:9618?addrs=141.34.14.36-9618+[2001-638-700-f00e--1-24]-9618&alias=ampere05.zeuthen.desy.de&noUDP&sock=startd_7996_2b5d>
+	SlotName: slot1_21@ampere05.zeuthen.desy.de
+	AvailableGPUs = {  }
+	CondorScratchDir = "/batch/dir_1829363"
+	Cpus = 1
+	Disk = 1025682
+	GPUs = 0
+	Memory = 5120
+...
+006 (16619852.104.000) 2026-02-23 19:30:36 Image size of job updated: 97400
+	96  -  MemoryUsage of job (MB)
+	97400  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 19:35:37 Image size of job updated: 741660
+	488  -  MemoryUsage of job (MB)
+	499344  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 19:40:37 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501912  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 19:45:37 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501924  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 19:55:38 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501940  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 20:10:40 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501944  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 20:15:41 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501960  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 20:50:45 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501968  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-23 22:30:55 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	501976  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-24 00:16:08 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	502124  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-24 02:56:25 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	502128  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-24 06:11:46 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	502232  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-24 06:21:47 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	502388  -  ResidentSetSize of job (KB)
+...
+006 (16619852.104.000) 2026-02-24 07:26:53 Image size of job updated: 741660
+	491  -  MemoryUsage of job (MB)
+	502544  -  ResidentSetSize of job (KB)
+...
+022 (16619852.104.000) 2026-02-24 08:04:09 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_21@ampere05.zeuthen.desy.de <141.34.14.36:9618?addrs=141.34.14.36-9618+[2001-638-700-f00e--1-24]-9618&alias=ampere05.zeuthen.desy.de&noUDP&sock=startd_7996_2b5d>
+...
+023 (16619852.104.000) 2026-02-24 08:04:19 Job reconnected to slot1_21@ampere05.zeuthen.desy.de
+    startd address: <141.34.14.36:9618?addrs=141.34.14.36-9618+[2001-638-700-f00e--1-24]-9618&alias=ampere05.zeuthen.desy.de&noUDP&sock=startd_7996_2b5d>
+    starter address: <141.34.14.36:9618?addrs=141.34.14.36-9618+[2001-638-700-f00e--1-24]-9618&alias=ampere05.zeuthen.desy.de&noUDP&sock=slot1_21_8571_cb76_17833>
+...
+005 (16619852.104.000) 2026-02-27 08:07:00 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 08:34:08, Sys 0 01:08:23  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 3 20:31:12, Sys 0 01:10:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          0.98        1         1 
+	   Disk (KB)            :          1     1024000   1025682 
+	   Memory (MB)          :        733        5120      5120 
+	   TimeExecute (s)      : 1772176020                       
+	   TimeSlotBusy (s)     : 1772176020                       
+
+	Job terminated of its own accord at 2026-02-27T07:07:00Z with exit-code 0.
+...

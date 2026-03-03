@@ -173,3 +173,200 @@
 009 (15988842.742.000) 2026-02-16 17:16:40 Job was aborted.
 	via condor_rm (by user tuccia)
 ...
+000 (16309174.271.000) 2026-02-18 10:42:58 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16309174.271.000) 2026-02-18 10:43:15 Job executing on host: <141.34.15.178:9618?addrs=141.34.15.178-9618+[2001-638-700-f00f--1-b2]-9618&alias=genoa03.zeuthen.desy.de&noUDP&sock=startd_10467_11e2>
+	SlotName: slot1_13@genoa03.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_801017"
+	Cpus = 1
+	Disk = 1025697
+	GPUs = 0
+	Memory = 5120
+...
+006 (16309174.271.000) 2026-02-18 10:43:30 Image size of job updated: 101404
+	100  -  MemoryUsage of job (MB)
+	101404  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 10:48:30 Image size of job updated: 845460
+	605  -  MemoryUsage of job (MB)
+	618696  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 10:53:30 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	653652  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 11:03:32 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	653656  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 11:28:35 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	653728  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 11:33:36 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	653812  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 14:13:52 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	653908  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 15:24:00 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	654072  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 19:44:26 Image size of job updated: 845460
+	639  -  MemoryUsage of job (MB)
+	654204  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-18 19:49:26 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	654360  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-19 07:05:11 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	654876  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-19 07:10:11 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	654952  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-19 07:20:12 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	655012  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-19 08:00:15 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	655112  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-19 08:25:16 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	655116  -  ResidentSetSize of job (KB)
+...
+006 (16309174.271.000) 2026-02-19 08:30:17 Image size of job updated: 845460
+	640  -  MemoryUsage of job (MB)
+	655224  -  ResidentSetSize of job (KB)
+...
+022 (16309174.271.000) 2026-02-20 03:44:37 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_13@genoa03.zeuthen.desy.de <141.34.15.178:9618?addrs=141.34.15.178-9618+[2001-638-700-f00f--1-b2]-9618&alias=genoa03.zeuthen.desy.de&noUDP&sock=startd_10467_11e2>
+...
+023 (16309174.271.000) 2026-02-20 03:44:45 Job reconnected to slot1_13@genoa03.zeuthen.desy.de
+    startd address: <141.34.15.178:9618?addrs=141.34.15.178-9618+[2001-638-700-f00f--1-b2]-9618&alias=genoa03.zeuthen.desy.de&noUDP&sock=startd_10467_11e2>
+    starter address: <141.34.15.178:9618?addrs=141.34.15.178-9618+[2001-638-700-f00f--1-b2]-9618&alias=genoa03.zeuthen.desy.de&noUDP&sock=slot1_13_11072_f9bb_29368>
+...
+021 (16309174.271.000) 2026-02-20 10:43:17 Error from starter on slot1_13@genoa03.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (16309174.271.000) 2026-02-20 10:43:17 Job was evicted.
+	(0) CPU times
+		Usr 1 23:35:32, Sys 0 00:00:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_13@genoa03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          0.99        1         1 
+	   Disk (KB)            :          1     1024000   1025697 
+	   Memory (MB)          :        733        5120      5120 
+	   TimeSlotBusy (s)     : 1771580597                       
+...
+012 (16309174.271.000) 2026-02-20 10:43:17 Job was held.
+	Error from slot1_13@genoa03.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+009 (16309174.271.000) 2026-02-23 19:29:15 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+000 (16619852.271.000) 2026-02-23 19:30:03 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7302_24a3>
+...
+001 (16619852.271.000) 2026-02-23 19:30:26 Job executing on host: <141.34.15.84:9618?addrs=141.34.15.84-9618+[2001-638-700-f00f--1-54]-9618&alias=genoa08.zeuthen.desy.de&noUDP&sock=startd_10285_3ba6>
+	SlotName: slot1_63@genoa08.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_432751"
+	Cpus = 1
+	Disk = 1025681
+	GPUs = 0
+	Memory = 5120
+...
+006 (16619852.271.000) 2026-02-23 19:30:39 Image size of job updated: 101384
+	100  -  MemoryUsage of job (MB)
+	101384  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 19:35:39 Image size of job updated: 824536
+	607  -  MemoryUsage of job (MB)
+	620880  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 19:40:39 Image size of job updated: 824536
+	637  -  MemoryUsage of job (MB)
+	652116  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 19:45:40 Image size of job updated: 824536
+	640  -  MemoryUsage of job (MB)
+	654352  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 19:50:41 Image size of job updated: 824536
+	640  -  MemoryUsage of job (MB)
+	654356  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 21:05:51 Image size of job updated: 824536
+	640  -  MemoryUsage of job (MB)
+	654364  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 22:55:58 Image size of job updated: 824536
+	640  -  MemoryUsage of job (MB)
+	654396  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 23:15:59 Image size of job updated: 824536
+	640  -  MemoryUsage of job (MB)
+	654476  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-23 23:21:00 Image size of job updated: 824536
+	640  -  MemoryUsage of job (MB)
+	654632  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-24 01:31:12 Image size of job updated: 824536
+	642  -  MemoryUsage of job (MB)
+	656892  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-24 01:51:15 Image size of job updated: 824536
+	642  -  MemoryUsage of job (MB)
+	656896  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-24 06:06:41 Image size of job updated: 824536
+	642  -  MemoryUsage of job (MB)
+	657048  -  ResidentSetSize of job (KB)
+...
+006 (16619852.271.000) 2026-02-24 07:11:50 Image size of job updated: 824536
+	642  -  MemoryUsage of job (MB)
+	657052  -  ResidentSetSize of job (KB)
+...
+022 (16619852.271.000) 2026-02-24 08:04:10 Job disconnected, attempting to reconnect
+    Local schedd and job shadow died, schedd now running again
+    Trying to reconnect to slot1_63@genoa08.zeuthen.desy.de <141.34.15.84:9618?addrs=141.34.15.84-9618+[2001-638-700-f00f--1-54]-9618&alias=genoa08.zeuthen.desy.de&noUDP&sock=startd_10285_3ba6>
+...
+023 (16619852.271.000) 2026-02-24 08:04:20 Job reconnected to slot1_63@genoa08.zeuthen.desy.de
+    startd address: <141.34.15.84:9618?addrs=141.34.15.84-9618+[2001-638-700-f00f--1-54]-9618&alias=genoa08.zeuthen.desy.de&noUDP&sock=startd_10285_3ba6>
+    starter address: <141.34.15.84:9618?addrs=141.34.15.84-9618+[2001-638-700-f00f--1-54]-9618&alias=genoa08.zeuthen.desy.de&noUDP&sock=slot1_63_10860_9a33_2111>
+...
+021 (16619852.271.000) 2026-02-28 19:30:23 Error from starter on slot1_63@genoa08.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (16619852.271.000) 2026-02-28 19:30:23 Job was evicted.
+	(0) CPU times
+		Usr 4 22:41:06, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_63@genoa08.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :         Usage  Request Allocated 
+	   Cpus                 :          0.99        1         1 
+	   Disk (KB)            :          1     1024000   1025681 
+	   Memory (MB)          :        733        5120      5120 
+	   TimeSlotBusy (s)     : 1772303423                       
+...
+012 (16619852.271.000) 2026-02-28 19:30:23 Job was held.
+	Error from slot1_63@genoa08.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
