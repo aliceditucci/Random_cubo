@@ -817,3 +817,20 @@
 	733  -  MemoryUsage of job (MB)
 	750000  -  ResidentSetSize of job (KB)
 ...
+004 (16619873.049.000) 2026-03-03 17:07:02 Job was evicted.
+	(0) CPU times
+		Usr 2 23:58:30, Sys 0 00:29:38  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    733        5120      5120 
+	   TimeExecute (s)      : 262524                       
+	   TimeSlotBusy (s)     : 262525                       
+...
+009 (16619873.049.000) 2026-03-03 17:07:02 Job was aborted.
+	via condor_rm (by user tuccia)
+...

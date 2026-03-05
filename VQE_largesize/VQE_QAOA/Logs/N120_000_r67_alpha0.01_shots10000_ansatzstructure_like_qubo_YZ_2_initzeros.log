@@ -592,3 +592,28 @@
 	Error from slot1_11@bladeke.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
 	Code 21 Subcode 103
 ...
+009 (16619873.067.000) 2026-03-03 17:07:01 Job was aborted.
+	via condor_rm (by user tuccia)
+...
+000 (17041494.009.000) 2026-03-03 17:14:54 Job submitted from host: <141.34.103.35:9618?addrs=141.34.103.35-9618+[2001-638-700-f067--1-23]-9618&alias=wgs39.zeuthen.desy.de&noUDP&sock=schedd_7422_7401>
+...
+001 (17041494.009.000) 2026-03-03 17:14:55 Job executing on host: <141.34.15.61:9618?addrs=141.34.15.61-9618+[2001-638-700-f00f--1-3d]-9618&alias=bladej6.zeuthen.desy.de&noUDP&sock=startd_10302_e4c2>
+	SlotName: slot1_10@bladej6.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_1328708"
+	Cpus = 1
+	Disk = 1025024
+	GPUs = 0
+	Memory = 5120
+...
+006 (17041494.009.000) 2026-03-03 17:15:08 Image size of job updated: 89376
+	88  -  MemoryUsage of job (MB)
+	89376  -  ResidentSetSize of job (KB)
+...
+006 (17041494.009.000) 2026-03-03 17:20:08 Image size of job updated: 898656
+	878  -  MemoryUsage of job (MB)
+	898656  -  ResidentSetSize of job (KB)
+...
+006 (17041494.009.000) 2026-03-03 17:25:09 Image size of job updated: 945596
+	878  -  MemoryUsage of job (MB)
+	898848  -  ResidentSetSize of job (KB)
+...

@@ -3,8 +3,8 @@ import classad   # for interacting with ClassAds, HTCondor's internal data forma
 import os
 
 
-N_list = [120, 150]
-r_list = range(100)
+N_list = [150]
+r_list = [1, 2, 4, 5, 6, 11, 16, 19, 31, 32, 33, 34, 35, 36, 37, 39, 40, 41, 42, 44, 45, 49, 51, 58, 60, 64, 68, 70, 73, 77, 85, 88, 92, 95, 96, 98, 99]
 alpha_list = [0.01]
 ansatz_type_list = ['structure_like_qubo_YZ_2']
 initialization_list = ['zeros']
@@ -20,7 +20,7 @@ job = htcondor.Submit({
     "request_cpus": "1",
     "request_memory": "5GB",
     "+RequestRuntime": "432000",
-    "+JobBatchName": "\"qubo_ansalikequbo_zeros\"",
+    "+JobBatchName": "\"qubo_ansalikequbo_zeros_150\"",
     "PREEMPTION_REQUIREMENTS": "True",
 })
 itemdata = []
