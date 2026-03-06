@@ -527,3 +527,53 @@
 	664  -  MemoryUsage of job (MB)
 	679376  -  ResidentSetSize of job (KB)
 ...
+004 (17041398.148.000) 2026-03-05 17:01:27 Job was evicted.
+	(0) CPU times
+		Usr 1 23:37:45, Sys 0 00:00:18  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    664        5120      5120 
+	   TimeExecute (s)      : 172203                       
+	   TimeSlotBusy (s)     : 172204                       
+...
+001 (17041398.148.000) 2026-03-05 17:01:52 Job executing on host: <141.34.15.206:9618?addrs=141.34.15.206-9618+[2001-638-700-f00f--1-ce]-9618&alias=pizza08.zeuthen.desy.de&noUDP&sock=startd_8320_680c>
+	SlotName: slot1_1@pizza08.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3775945"
+	Cpus = 1
+	Disk = 1025696
+	GPUs = 0
+	Memory = 5120
+...
+006 (17041398.148.000) 2026-03-05 17:07:07 Image size of job updated: 1380604
+	1087  -  MemoryUsage of job (MB)
+	1112928  -  ResidentSetSize of job (KB)
+...
+006 (17041398.148.000) 2026-03-05 17:12:08 Image size of job updated: 1380604
+	1135  -  MemoryUsage of job (MB)
+	1161252  -  ResidentSetSize of job (KB)
+...
+006 (17041398.148.000) 2026-03-05 17:17:08 Image size of job updated: 1380604
+	1135  -  MemoryUsage of job (MB)
+	1161476  -  ResidentSetSize of job (KB)
+...
+006 (17041398.148.000) 2026-03-05 17:22:09 Image size of job updated: 1380604
+	1138  -  MemoryUsage of job (MB)
+	1164476  -  ResidentSetSize of job (KB)
+...
+006 (17041398.148.000) 2026-03-05 17:32:10 Image size of job updated: 1380604
+	1138  -  MemoryUsage of job (MB)
+	1164480  -  ResidentSetSize of job (KB)
+...
+006 (17041398.148.000) 2026-03-05 17:47:11 Image size of job updated: 1380604
+	1138  -  MemoryUsage of job (MB)
+	1164500  -  ResidentSetSize of job (KB)
+...
+006 (17041398.148.000) 2026-03-05 18:12:13 Image size of job updated: 1380604
+	1138  -  MemoryUsage of job (MB)
+	1164532  -  ResidentSetSize of job (KB)
+...

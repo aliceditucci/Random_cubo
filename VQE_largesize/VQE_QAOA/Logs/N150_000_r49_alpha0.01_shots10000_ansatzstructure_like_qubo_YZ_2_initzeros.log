@@ -696,3 +696,57 @@
 	650  -  MemoryUsage of job (MB)
 	665520  -  ResidentSetSize of job (KB)
 ...
+006 (17041504.021.000) 2026-03-05 11:25:39 Image size of job updated: 1037496
+	650  -  MemoryUsage of job (MB)
+	665532  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 11:30:40 Image size of job updated: 1037496
+	650  -  MemoryUsage of job (MB)
+	665548  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 12:40:44 Image size of job updated: 1037496
+	651  -  MemoryUsage of job (MB)
+	665632  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 13:50:51 Image size of job updated: 1037496
+	651  -  MemoryUsage of job (MB)
+	665784  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 14:15:54 Image size of job updated: 1037496
+	651  -  MemoryUsage of job (MB)
+	665812  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 15:41:02 Image size of job updated: 1037496
+	651  -  MemoryUsage of job (MB)
+	665936  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 15:46:02 Image size of job updated: 1037496
+	651  -  MemoryUsage of job (MB)
+	665972  -  ResidentSetSize of job (KB)
+...
+006 (17041504.021.000) 2026-03-05 15:51:03 Image size of job updated: 1037496
+	651  -  MemoryUsage of job (MB)
+	666124  -  ResidentSetSize of job (KB)
+...
+004 (17041504.021.000) 2026-03-05 17:06:09 Job was evicted.
+	(0) CPU times
+		Usr 1 23:10:45, Sys 0 00:02:26  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025696 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    651        5120      5120 
+	   TimeExecute (s)      : 172201                       
+	   TimeSlotBusy (s)     : 172202                       
+...
+001 (17041504.021.000) 2026-03-05 17:06:19 Job executing on host: <141.34.15.34:9618?addrs=141.34.15.34-9618+[2001-638-700-f00f--1-22]-9618&alias=bladej3.zeuthen.desy.de&noUDP&sock=startd_10200_ee19>
+	SlotName: slot1_17@bladej3.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3317974"
+	Cpus = 1
+	Disk = 1025024
+	GPUs = 0
+	Memory = 5120
+...
