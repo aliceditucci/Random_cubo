@@ -714,3 +714,25 @@
 	474  -  MemoryUsage of job (MB)
 	484648  -  ResidentSetSize of job (KB)
 ...
+004 (17041398.016.000) 2026-03-07 10:35:07 Job was evicted.
+	(0) CPU times
+		Usr 3 17:02:05, Sys 0 00:00:32  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    474        5120      5120 
+	   TimeExecute (s)      : 321824                       
+	   TimeSlotBusy (s)     : 321824                       
+...
+001 (17041398.016.000) 2026-03-07 10:37:27 Job executing on host: <141.34.103.51:9618?addrs=141.34.103.51-9618+[2001-638-700-f067--1-33]-9618&alias=wgs41.zeuthen.desy.de&noUDP&sock=startd_9274_c566>
+	SlotName: slot1_14@wgs41.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_4172974"
+	Cpus = 1
+	Disk = 1025025
+	GPUs = 0
+	Memory = 5120
+...

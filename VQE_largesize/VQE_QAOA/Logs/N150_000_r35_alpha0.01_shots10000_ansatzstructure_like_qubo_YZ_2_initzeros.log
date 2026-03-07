@@ -724,3 +724,25 @@
 	GPUs = 0
 	Memory = 5120
 ...
+004 (17041504.012.000) 2026-03-06 16:56:48 Job was evicted.
+	(0) CPU times
+		Usr 1 23:10:25, Sys 0 00:28:57  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    733        5120      5120 
+	   TimeExecute (s)      : 172204                       
+	   TimeSlotBusy (s)     : 172205                       
+...
+001 (17041504.012.000) 2026-03-06 16:59:11 Job executing on host: <141.34.15.15:9618?addrs=141.34.15.15-9618+[2001-638-700-f00f--1-f]-9618&alias=bladej2.zeuthen.desy.de&noUDP&sock=startd_10325_ab70>
+	SlotName: slot1_17@bladej2.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_72786"
+	Cpus = 1
+	Disk = 1025024
+	GPUs = 0
+	Memory = 5120
+...
