@@ -746,3 +746,25 @@
 	GPUs = 0
 	Memory = 5120
 ...
+004 (17041504.012.000) 2026-03-08 16:49:15 Job was evicted.
+	(0) CPU times
+		Usr 1 20:28:02, Sys 0 03:13:22  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    733        5120      5120 
+	   TimeExecute (s)      : 172203                       
+	   TimeSlotBusy (s)     : 172204                       
+...
+001 (17041504.012.000) 2026-03-08 17:40:19 Job executing on host: <141.34.15.45:9618?addrs=141.34.15.45-9618+[2001-638-700-f00f--1-2d]-9618&alias=pizza16.zeuthen.desy.de&noUDP&sock=startd_9248_eff0>
+	SlotName: slot1_26@pizza16.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_1902250"
+	Cpus = 1
+	Disk = 1025696
+	GPUs = 0
+	Memory = 5120
+...

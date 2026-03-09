@@ -424,3 +424,29 @@
 	648  -  MemoryUsage of job (MB)
 	662644  -  ResidentSetSize of job (KB)
 ...
+006 (17041398.074.000) 2026-03-08 08:28:11 Image size of job updated: 953788
+	648  -  MemoryUsage of job (MB)
+	662652  -  ResidentSetSize of job (KB)
+...
+021 (17041398.074.000) 2026-03-08 17:11:27 Error from starter on slot1_34@genoa10.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (17041398.074.000) 2026-03-08 17:11:27 Job was evicted.
+	(0) CPU times
+		Usr 4 22:56:57, Sys 0 00:00:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_34@genoa10.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            :      1     1024000   1025681 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    648        5120      5120 
+	   TimeSlotBusy (s)     : 432003                       
+...
+012 (17041398.074.000) 2026-03-08 17:11:27 Job was held.
+	Error from slot1_34@genoa10.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...

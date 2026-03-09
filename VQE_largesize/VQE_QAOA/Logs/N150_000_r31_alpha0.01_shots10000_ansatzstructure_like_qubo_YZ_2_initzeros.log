@@ -799,3 +799,49 @@
 	650  -  MemoryUsage of job (MB)
 	664792  -  ResidentSetSize of job (KB)
 ...
+006 (17041504.008.000) 2026-03-07 20:06:13 Image size of job updated: 1043940
+	650  -  MemoryUsage of job (MB)
+	664908  -  ResidentSetSize of job (KB)
+...
+006 (17041504.008.000) 2026-03-07 20:11:13 Image size of job updated: 1043940
+	650  -  MemoryUsage of job (MB)
+	664996  -  ResidentSetSize of job (KB)
+...
+006 (17041504.008.000) 2026-03-07 20:16:13 Image size of job updated: 1043940
+	650  -  MemoryUsage of job (MB)
+	665084  -  ResidentSetSize of job (KB)
+...
+006 (17041504.008.000) 2026-03-07 20:36:15 Image size of job updated: 1043940
+	650  -  MemoryUsage of job (MB)
+	665276  -  ResidentSetSize of job (KB)
+...
+006 (17041504.008.000) 2026-03-07 21:11:19 Image size of job updated: 1043940
+	650  -  MemoryUsage of job (MB)
+	665356  -  ResidentSetSize of job (KB)
+...
+006 (17041504.008.000) 2026-03-07 21:16:19 Image size of job updated: 1043940
+	650  -  MemoryUsage of job (MB)
+	665416  -  ResidentSetSize of job (KB)
+...
+004 (17041504.008.000) 2026-03-07 22:16:02 Job was evicted.
+	(0) CPU times
+		Usr 4 04:37:20, Sys 0 00:00:18  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    650        5120      5120 
+	   TimeExecute (s)      : 363595                       
+	   TimeSlotBusy (s)     : 363595                       
+...
+001 (17041504.008.000) 2026-03-07 22:21:08 Job executing on host: <141.34.15.84:9618?addrs=141.34.15.84-9618+[2001-638-700-f00f--1-54]-9618&alias=genoa08.zeuthen.desy.de&noUDP&sock=startd_10285_3ba6>
+	SlotName: slot1_11@genoa08.zeuthen.desy.de
+	CondorScratchDir = "/batch/dir_3482988"
+	Cpus = 1
+	Disk = 1025681
+	GPUs = 0
+	Memory = 5120
+...

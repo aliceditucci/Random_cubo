@@ -558,3 +558,41 @@
 	680  -  MemoryUsage of job (MB)
 	695844  -  ResidentSetSize of job (KB)
 ...
+006 (17041398.138.000) 2026-03-08 06:27:24 Image size of job updated: 1046168
+	680  -  MemoryUsage of job (MB)
+	695952  -  ResidentSetSize of job (KB)
+...
+006 (17041398.138.000) 2026-03-08 15:43:19 Image size of job updated: 1046168
+	680  -  MemoryUsage of job (MB)
+	696008  -  ResidentSetSize of job (KB)
+...
+006 (17041398.138.000) 2026-03-08 16:43:25 Image size of job updated: 1046168
+	680  -  MemoryUsage of job (MB)
+	696204  -  ResidentSetSize of job (KB)
+...
+006 (17041398.138.000) 2026-03-08 16:48:25 Image size of job updated: 1046168
+	681  -  MemoryUsage of job (MB)
+	696360  -  ResidentSetSize of job (KB)
+...
+021 (17041398.138.000) 2026-03-08 17:11:25 Error from starter on slot1_16@bladekf.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (17041398.138.000) 2026-03-08 17:11:25 Job was evicted.
+	(0) CPU times
+		Usr 4 23:31:23, Sys 0 00:00:23  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_16@bladekf.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    681        5120      5120 
+	   TimeSlotBusy (s)     : 432001                       
+...
+012 (17041398.138.000) 2026-03-08 17:11:25 Job was held.
+	Error from slot1_16@bladekf.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...

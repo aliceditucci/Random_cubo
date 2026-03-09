@@ -626,3 +626,25 @@
 	664  -  MemoryUsage of job (MB)
 	679724  -  ResidentSetSize of job (KB)
 ...
+021 (17041398.103.000) 2026-03-08 17:11:28 Error from starter on slot1_8@bladej3.zeuthen.desy.de:
+	runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
+004 (17041398.103.000) 2026-03-08 17:11:28 Job was evicted.
+	(0) CPU times
+		Usr 4 23:29:26, Sys 0 00:00:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Error from slot1_8@bladej3.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      1     1024000   1025024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    664        5120      5120 
+	   TimeSlotBusy (s)     : 432005                       
+...
+012 (17041398.103.000) 2026-03-08 17:11:28 Job was held.
+	Error from slot1_8@bladej3.zeuthen.desy.de: runtime exceeded maximum (target.Runtime seconds)
+	Code 21 Subcode 103
+...
